@@ -1,0 +1,43 @@
+@media screen {
+    
+}
+
+html {
+    background-image: url(/resource/bg_black_yellow.avif);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sideBar {
+    /* dùng cái này kết hợp với navigation bar */
+    border-radius: 12px;
+    left: 40px;
+    top: calc(50% - 45vh);
+    position: fixed;
+    width: 200px;
+    height: 90vh;
+    background-color: aqua;
+    z-index: 10000;
+}
+
+.sideBarOpen1 {
+    height: 90vh;
+}
+.sideBarOpen2 {
+    width: 94vh;
+}
+
+.sideBarClick {
+    font-size: 30px;
+    width: 50px;
+}
+
+.Main {
+    background-color:antiquewhite ;
+    position: relative;
+    top: 0;
+    left: 0;
+}
