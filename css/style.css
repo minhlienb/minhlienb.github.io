@@ -2,6 +2,7 @@
     
 }
 
+
 html {
     background-image: url(/resource/bg_black_yellow.avif);
 }
@@ -18,16 +19,19 @@ html {
     top: calc(50% - 45vh);
     position: fixed;
     width: 200px;
-    height: 90vh;
+    height: 10vh;
     background-color: aqua;
     z-index: 10000;
+    transition: 0.9s cubic-bezier(0.84, 0.43, 0.04, 1.09);
 }
 
 .sideBarOpen1 {
     height: 90vh;
+    transition: 0.3s;
 }
 .sideBarOpen2 {
     width: 94vh;
+    transition: 0.9s cubic-bezier(0.84, 0.43, 0.04, 1.09) ;
 }
 
 .sideBarClick {
@@ -36,6 +40,7 @@ html {
 }
 
 .Main {
+    display: none;
     background-color:antiquewhite ;
     position: relative;
     top: 0;

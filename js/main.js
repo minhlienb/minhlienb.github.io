@@ -1,15 +1,25 @@
 isSidebarToggled = 0
 
-var btn_sidebar = $('.sideBarClick')
-var sideBar = $('.sideBar') // Chứa đoạn side bar và cả navigation bar
+let btn_sidebar = $('.sideBarClick')
+let sideBar = $('.sideBar') // Chứa đoạn side bar và cả navigation bar
 
-btn_sidebar.click(function() {
-    if (isSidebarToggled) {
-       //sideBar.removeClass('sideBarOpen1')
-        sideBar.removeClass('sideBarOpen2')
-        isSidebarToggled = 0
-    } else {
-        sideBar.addClass('sideBarOpen2')
-        isSidebarToggled = 1
-    }
+$(document).ready(function() {
+    $('.sideBarClick').click(function() {
+        if (isSidebarToggled) {
+            $('.sideBar').removeClass('sideBarOpen1')
+            $('.sideBar').removeClass('sideBarOpen2')
+            isSidebarToggled = 0
+        } else { ///isToggled == 0
+            setTimeout(() => {
+                $('.sideBar').addClass('sideBarOpen1')
+                
+            }, 200);
+            $('.sideBar').addClass('sideBarOpen2')
+            isSidebarToggled = 1
+
+        }
+    })
 })
+
+
+
