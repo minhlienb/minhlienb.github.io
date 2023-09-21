@@ -3,7 +3,17 @@
     src: url(https://5ggllw.bn.files.1drv.com/y4mdU6E1tVNiEp5ikyEiH98aB0vReBikd_mEH0Kz1_NiV5DLHFC424zO_8qmGkQ-hNDazuOe3gO1L1502UbO_xHRZ9hCa_gTqzbQNIn4QK7YJXcQruP9svcQRT9nz0iR_BTkC5kZb03w5jNwteF6ovrWKpJWYIw8Ui0xR2eYCm2PTzBJG3fhm1txmFX-Jgg2BQE2Z9du7VPpRzYb-Ch8usnnA);
 } */
 
-@font-face {
+/* @font-face {
     font-family: Montserrat-Bold;
     src: url(Montserrat-Bold.ttf);
+} */
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Black;
+    src: url(Poppins-Black.ttf);
 }

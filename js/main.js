@@ -10,11 +10,11 @@ $(document).ready(function() {
             $('.sideBar').removeClass('sideBarOpen2')
             isSidebarToggled = 0
         } else { ///isToggled == 0
+            $('.sideBar').addClass('sideBarOpen1')
             setTimeout(() => {
-                $('.sideBar').addClass('sideBarOpen1')
+                $('.sideBar').addClass('sideBarOpen2')
                 
             }, 200);
-            $('.sideBar').addClass('sideBarOpen2')
             isSidebarToggled = 1
 
         }
