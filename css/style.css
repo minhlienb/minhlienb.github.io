@@ -58,11 +58,16 @@ body {
 }
 
 .box1 {
+    line-height: 1.69rem;
     padding: 20px;
     background-color: #fff;
     border: 1px yellowgreen;
     width: 600px;
-    box-shadow: 20px 20px 90px #b7b7b7;
     margin: 50px 0 50px 0;
     white-space: inherit;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.box1:hover {
+    box-shadow: 20px 20px 90px #b7b7b7;
 }
