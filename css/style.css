@@ -57,7 +57,7 @@ body {
     position: relative;
 }
 
-.box1 {
+.box {
     line-height: 1.69rem;
     padding: 20px;
     background-color: #fff;
@@ -65,9 +65,10 @@ body {
     width: 600px;
     margin: 50px 0 50px 0;
     white-space: inherit;
-    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 2s;
 }
 
-.box1:hover {
-    box-shadow: 20px 20px 90px #b7b7b7;
+
+.effectShadow {
+    box-shadow: 20px 20px 90px #000000;
 }
