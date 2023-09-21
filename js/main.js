@@ -22,4 +22,5 @@ $(document).ready(function() {
 })
 
 
-
+ScrollReveal({reset: true})
+ScrollReveal().reveal('.box1', { delay: 1000 });
