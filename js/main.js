@@ -21,22 +21,19 @@
 //     })
 // })
 
-function RunAnim(cl) {
-    $(`.box${cl}}`).addClass('effectShadow')
-}
 
 function callback(cl) {
     $(`.box${cl}`).removeClass('effectShadow')
 }
-ScrollReveal().reveal('.box4', 
-    { reset: true},
-);
 
-// ScrollReveal().watch('.box',
-//     function onEnter (el) {
-//         el.classList.add('effectShadow')
-//     },
-//     function onExit (el) {
-//         el.classList.remove('effectShadow')
-//     }
-// )
+function Execute(cl) {
+    $('.box').removeClass('effectShadow');
+    $(`.box${cl}}`).addClass('effectShadow')
+}
+
+ScrollReveal().reveal('.box4', {
+    reset: false,
+    duration: 900,
+    delay: 900,
+    }, Execute("4")
+)
