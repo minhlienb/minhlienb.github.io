@@ -21,19 +21,83 @@
 //     })
 // })
 
+var Box1 = document.getElementsByClassName("box1")[0];
+var Box2 = document.getElementsByClassName("box2")[0];
+var Box3 = document.getElementsByClassName("box3")[0];
+var Box4 = document.getElementsByClassName("box4")[0];
+var Box5 = document.getElementsByClassName("box5")[0];
+var Box6 = document.getElementsByClassName("box6")[0];
 
-function callback(cl) {
-    $(`.box${cl}`).removeClass('effectShadow')
-}
 
-function Execute(cl) {
-    $('.box').removeClass('effectShadow');
-    $(`.box${cl}}`).addClass('effectShadow')
-}
-
+ScrollReveal().reveal('.box1', {
+    reset: true,
+    duration: 500,
+    delay: 1200,
+    afterReveal: function() {
+        Box1.classList.add("effectShadow")
+       },
+    afterReset: function() {
+        Box1.classList.remove("effectShadow")
+       }
+    }
+)
+ScrollReveal().reveal('.box2', {
+    reset: true,
+    duration: 500,
+    delay: 1200,
+    afterReveal: function() {
+        Box2.classList.add("effectShadow")
+       },
+    afterReset: function() {
+        Box2.classList.remove("effectShadow")
+       }
+    }
+)
+ScrollReveal().reveal('.box3', {
+    reset: true,
+    duration: 500,
+    delay: 1200,
+    afterReveal: function() {
+        Box3.classList.add("effectShadow")
+       },
+    afterReset: function() {
+        Box3.classList.remove("effectShadow")
+       }
+    }
+)
 ScrollReveal().reveal('.box4', {
-    reset: false,
-    duration: 900,
-    delay: 900,
-    }, Execute("4")
+    reset: true,
+    duration: 500,
+    delay: 1200,
+    afterReveal: function() {
+        Box4.classList.add("effectShadow")
+       },
+    afterReset: function() {
+        Box4.classList.remove("effectShadow")
+       }
+    }
+)
+ScrollReveal().reveal('.box5', {
+    reset: true,
+    duration: 500,
+    delay: 1200,
+    afterReveal: function() {
+        Box5.classList.add("effectShadow")
+       },
+    afterReset: function() {
+        Box5.classList.remove("effectShadow")
+       }
+    }
+)
+ScrollReveal().reveal('.box6', {
+    reset: true,
+    duration: 500,
+    delay: 1200,
+    afterReveal: function() {
+        Box6.classList.add("effectShadow")
+       },
+    afterReset: function() {
+        Box6.classList.remove("effectShadow")
+       }
+    }
 )

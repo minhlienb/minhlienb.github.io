@@ -68,6 +68,9 @@ body {
     transition: 2s;
 }
 
+.box4 {
+    background-color: antiquewhite;
+}
 
 .effectShadow {
     box-shadow: 20px 20px 90px #000000;
