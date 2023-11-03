@@ -7,6 +7,8 @@
 </head>
 <body>
     <div id="ctn-streak-dates"></div>
+     <button onclick="YesConfirm()">YesConfirm</button>
+     <button onclick="NoConfirm()">NoConfirm</button>
     <style>
         * {
             margin: 0;
@@ -25,7 +27,7 @@
         }
 
         .green {
-            background-color: rgb(0, 255, 0);
+            background-color: rgb(0, 220, 0);
         }
 
         .wgreen {
@@ -52,86 +54,43 @@
     </style>
 
     <script>
+        function NoConfirm() {
+            for (var i = 0; i < savedStreaks.length; i++) {
+                if (savedStreaks[i] === "green") {
+                    savedStreaks[i] = "wgreen"
+            }}
+            savedStreaks.push("gray")
+            UpdateView()
+        }
+
+        function YesConfirm() {
+            savedStreaks.push("green")
+            UpdateView()
+        }
+
+        var savedDate = "";
         var savedStreaks = [];
         var ctnDates =  document.getElementById('ctn-streak-dates');
         savedStreaks.push("wgreen");
         savedStreaks.push("wgreen");
         savedStreaks.push("gray");
-        savedStreaks.push("green");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
-        savedStreaks.push("green");
-        savedStreaks.forEach((currentValue) => {
-            console.log(currentValue);
-            ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
-        })
 
+        function UpdateView() {
+            ctnDates.innerHTML = ""
+            savedStreaks.forEach((currentValue) => {
+                console.log(currentValue);
+                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
+            })
+        }
 
-
-
-
-const axios = require('axios');
-
-const githubUsername = 'minhlienb';
-const repoName = 'storage';
-const filePath = 'main/file.txt';
-const token = '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'; // Bạn cần thay thế thành Personal Access Token của bạn
-
-const content = 'Nội dung của file'; // Nội dung bạn muốn ghi vào file
-
-axios.put(`https://api.github.com/repos/${githubUsername}/${repoName}/contents/${filePath}`, {
-  message: 'Thêm file mới thông qua API',
-  content: Buffer.from(content).toString('base64'), // Chuyển nội dung thành chuỗi base64
-  branch: 'main', // Chỉ định nhánh bạn muốn thêm file vào
-}, {
-  headers: {
-    Authorization: `token ${token}`,
-  },
-})
-.then(response => {
-  console.log('File đã được tạo:', response.data);
-})
-.catch(error => {
-  console.error('Lỗi khi tạo file:', error);
-});
-
+        function InitView() {
+            savedStreaks.forEach((currentValue) => {
+                console.log(currentValue);
+                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
+            })
+        }
+    
+        InitView()
     </script>
 </body>
 </html>
