@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Habit builder</title>
 </head>
 <body>
     <div id="ctn-streak-dates"></div>
@@ -54,6 +54,10 @@
     </style>
 
     <script>
+        var savedDate = "";
+        var savedStreaks = [];
+        var ctnDates =  document.getElementById('ctn-streak-dates');
+        LoadData()
         function NoConfirm() {
             for (var i = 0; i < savedStreaks.length; i++) {
                 if (savedStreaks[i] === "green") {
@@ -68,29 +72,37 @@
             UpdateView()
         }
 
-        var savedDate = "";
-        var savedStreaks = [];
-        var ctnDates =  document.getElementById('ctn-streak-dates');
-        savedStreaks.push("wgreen");
-        savedStreaks.push("wgreen");
-        savedStreaks.push("gray");
+
 
         function UpdateView() {
             ctnDates.innerHTML = ""
             savedStreaks.forEach((currentValue) => {
-                console.log(currentValue);
                 ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
             })
+            SaveData();
         }
 
         function InitView() {
             savedStreaks.forEach((currentValue) => {
-                console.log(currentValue);
                 ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
             })
         }
-    
+        
         InitView()
+
+        function SaveData() {
+            localStorage.setItem('savedStreaks', savedStreaks);
+        }
+
+        function LoadData() {
+            //console.log(localStorage.getItem('savedStreaks'))
+            var svd = localStorage.getItem('savedStreaks').split(',')
+            savedStreaks = svd
+            console.log(savedStreaks)
+            
+        }
+
+
     </script>
 </body>
 </html>
