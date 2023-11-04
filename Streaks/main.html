@@ -64,26 +64,48 @@
 
     <script>
         let today = new Date().toLocaleDateString()
-        var savedDate = "";
+        var savedDate = localStorage.getItem('savedDate');
         var savedStreaks = [];
         var ctnDates =  document.getElementById('ctn-streak-dates');
-        LoadData()
-        function NoConfirm() {
-            for (var i = 0; i < savedStreaks.length; i++) {
-                if (savedStreaks[i] === "green") {
-                    savedStreaks[i] = "wgreen"
-            }}
-            savedStreaks.push("gray")
+        LoadData();
+
+        //if unchecked in some day it should be auto set as no confirm
+        setInterval(() => {
+            today = new Date().toLocaleDateString()
+        }, 1000);
+
+        if ((getDifferenceInDays(savedDate, today)) > 2) {
+            savedStreaks.push('gray')
             UpdateView()
+        }
+        
+        function ShowDateDiff() {
+            
+            console.log(getDifferenceInDays(savedDate, today))
+        }
+
+        function getDifferenceInDays(date1, date2) {
+            const diffInMs = Math.abs(date2 - date1);
+            return diffInMs / (1000 * 60 * 60 * 24);
+        }
+
+        function NoConfirm() {
+            if (savedDate != today) {
+                for (var i = 0; i < savedStreaks.length; i++) {
+                    if (savedStreaks[i] === "green") {
+                        savedStreaks[i] = "wgreen"
+                }}
+                savedStreaks.push("gray")
+                UpdateView()
+            } else {
+                alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
+            }
         }
 
         function YesConfirm() {
-            if (localStorage.getItem('savedDate') == savedDate) {
-                console.log(localStorage.getItem('savedDate') == savedDate)
-                console.log(savedDate)
+            if (savedDate == today) {
+                alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
             } else {
-                console.log(localStorage.getItem('savedDate') == savedDate)
-                console.log(savedDate)
                 savedStreaks.push("green")
                 savedDate = today
                 localStorage.setItem('savedDate', savedDate)
@@ -94,11 +116,11 @@
 
 
         function UpdateView() {
+            SaveData()
             ctnDates.innerHTML = ""
             savedStreaks.forEach((currentValue) => {
-                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
+                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`
             })
-            SaveData();
         }
 
         function InitView() {
@@ -111,6 +133,7 @@
 
         function SaveData() {
             localStorage.setItem('savedStreaks', savedStreaks);
+            localStorage.setItem('savedDate', savedDate)
         }
 
         function LoadData() {
@@ -121,9 +144,12 @@
         }
 
         const ClearData = () => {
-            savedStreaks = [];
-            SaveData()
-            UpdateView()
+            var answer = window.confirm("Confirm??")
+            if (answer) {
+                savedStreaks = [];
+                SaveData()
+                UpdateView()
+            } 
         }
     </script>
 </body>
