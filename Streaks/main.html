@@ -72,16 +72,22 @@
         //if unchecked in some day it should be auto set as no confirm
         setInterval(() => {
             today = new Date().toLocaleDateString()
-        }, 1000);
+        }, 10000);
 
-        if ((getDifferenceInDays(savedDate, today)) > 2) {
-            savedStreaks.push('gray')
-            UpdateView()
+        var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
+        if (diffBetweenTwoDay > 1) {
+            for (var i = 0; i < c - 1; i++) {
+                savedStreaks.push('gray')
+            }
         }
         
-        function ShowDateDiff() {
-            
-            console.log(getDifferenceInDays(savedDate, today))
+        
+        
+        var d1 = new Date('11/1/2023')
+        var d2 = new Date('11/4/2023')
+        function Showrr() {
+            console.log(savedDate)
+            console.log(getDifferenceInDays(d1, d2))
         }
 
         function getDifferenceInDays(date1, date2) {
@@ -129,7 +135,7 @@
             })
         }
         
-        InitView()
+
 
         function SaveData() {
             localStorage.setItem('savedStreaks', savedStreaks);
@@ -151,6 +157,10 @@
                 UpdateView()
             } 
         }
+        InitView();
+        SaveData();
+        
+        console.log(savedStreaks)
     </script>
 </body>
 </html>
