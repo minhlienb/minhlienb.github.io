@@ -64,7 +64,7 @@
 
     <script>
         let today = new Date().toLocaleDateString()
-        var savedDate = '11/2/2023'//localStorage.getItem('savedDate');
+        var savedDate = localStorage.getItem('savedDate');
         var savedStreaks = [];
         var ctnDates =  document.getElementById('ctn-streak-dates');
         LoadData();
