@@ -12,6 +12,13 @@
         <button onclick="NoConfirm()">NoConfirm</button>
         <!-- <button onclick="ClearData()">ClearData</button>--> <!-- for development only -->
     </div>
+
+    <div class="center">
+        <div id="progress-bar">
+            <div class="green-bar"></div>
+            <div class="gray-bar"></div>
+        </div>
+    </div>
     <style>
         * {
             margin: 0;
@@ -58,7 +65,21 @@
         }
         
         #progress-bar {
-            
+            margin: 20px;
+            width: 80vw;
+            display: flex;
+            flex-direction: row;        
+        }
+        
+        .green-bar {
+            background-color: #007b00;
+            width: 70%;
+        }
+
+        .gray-bar {
+            background-color: #6c6c6c;
+            width: 30%;
+            height: 16px;
         }
 
         .center {
@@ -68,6 +89,7 @@
         }
     </style>
 
+    <script src="../lib/jquery-3.6.2.min.js"></script>
     <script>
         let today = new Date().toLocaleDateString()
         var savedDate = localStorage.getItem('savedDate');
@@ -80,13 +102,28 @@
             today = new Date().toLocaleDateString()
         }, 10000);
 
+
+        ///////////////////////////
         var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
         if (diffBetweenTwoDay > 1) {
             for (var i = 0; i < c - 1; i++) {
                 savedStreaks.push('gray')
             }
         }
+
         
+        let gBar = 0
+        savedStreaks.forEach((currentValue) => {
+            if (currentValue == 'green' || currentValue == 'wgreen') {
+                gBar += 1
+            }
+        })
+
+        greenBP = (gBar / savedStreaks.length) * 100
+        grayBP = 100 - greenBP
+
+        $('.green-bar').css({'width': `${greenBP}%`})
+        $('.gray-bar').css({'width': `${grayBP}%`})
         
         
         var d1 = new Date('11/1/2023')
@@ -112,6 +149,7 @@
             } else {
                 alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
             }
+            localStorage.setItem('savedDate', savedDate);
         }
 
         function YesConfirm() {
@@ -165,8 +203,6 @@
         }
         InitView();
         SaveData();
-        
-        console.log(savedStreaks)
     </script>
 </body>
 </html>
