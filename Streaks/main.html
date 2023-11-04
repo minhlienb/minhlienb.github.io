@@ -7,8 +7,11 @@
 </head>
 <body>
     <div id="ctn-streak-dates"></div>
-     <button onclick="YesConfirm()">YesConfirm</button>
-     <button onclick="NoConfirm()">NoConfirm</button>
+    <div class="ctn center">
+        <button onclick="YesConfirm()">YesConfirm</button>
+        <button onclick="NoConfirm()">NoConfirm</button>
+        <button onclick="ClearData()">ClearData</button>
+    </div>
     <style>
         * {
             margin: 0;
@@ -20,7 +23,7 @@
         }
 
         .box-date {
-            width: 1rem;
+            width: 1.8rem;
             aspect-ratio: 1;
             background-color: black;
             margin: 4px;
@@ -51,9 +54,16 @@
         #progress-bar {
             
         }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
     </style>
 
     <script>
+        let today = new Date().toLocaleDateString()
         var savedDate = "";
         var savedStreaks = [];
         var ctnDates =  document.getElementById('ctn-streak-dates');
@@ -68,7 +78,16 @@
         }
 
         function YesConfirm() {
-            savedStreaks.push("green")
+            if (localStorage.getItem('savedDate') == savedDate) {
+                console.log(localStorage.getItem('savedDate') == savedDate)
+                console.log(savedDate)
+            } else {
+                console.log(localStorage.getItem('savedDate') == savedDate)
+                console.log(savedDate)
+                savedStreaks.push("green")
+                savedDate = today
+                localStorage.setItem('savedDate', savedDate)
+            }
             UpdateView()
         }
 
@@ -96,12 +115,16 @@
 
         function LoadData() {
             var svd = localStorage.getItem('savedStreaks').split(',')
+            if (svd[0] != "") 
             savedStreaks = svd
             console.log(savedStreaks)
-            
         }
 
-
+        const ClearData = () => {
+            savedStreaks = [];
+            SaveData()
+            UpdateView()
+        }
     </script>
 </body>
 </html>
