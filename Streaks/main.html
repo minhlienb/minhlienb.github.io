@@ -98,11 +98,7 @@
         var savedStreaks = [];
         var ctnDates =  document.getElementById('ctn-streak-dates');
         LoadData();
-
         //if unchecked in some day it should be auto set as no confirm
-        setInterval(() => {
-            today = new Date().toLocaleDateString()
-        }, 10000);
 
         ///////////////////////////
         var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
