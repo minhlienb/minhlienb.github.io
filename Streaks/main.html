@@ -95,18 +95,23 @@
     <script>
         const today = new Date().toLocaleDateString()
         var savedDate
-        var savedStreaks = [];
-        var ctnDates =  document.getElementById('ctn-streak-dates');
-        LoadData();
-        //if unchecked in some day it should be auto set as no confirm
+        var savedStreaks = []
+        var ctnDates = document.getElementById('ctn-streak-dates')
+        LoadData()
 
-        ///////////////////////////
-        var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
-        if (diffBetweenTwoDay > 1) {
-            for (var i = 0; i < c - 1; i++) {
-                savedStreaks.push('gray')
-            }
+        function getDifferenceInDays(date1, date2) {
+            const diffInMs = Math.abs(date2 - date1)
+            return diffInMs / (1000 * 60 * 60 * 24)
         }
+        (function UnconfimedDates() {
+            var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
+            if (diffBetweenTwoDay > 1) {
+                for (var i = 0; i < c - 1; i++) {
+                    savedStreaks.push('gray')
+                }
+            }
+            console.log('It just running!')
+        })()
 
         let gBar = 0
         savedStreaks.forEach((currentValue) => {
@@ -118,15 +123,7 @@
         greenBP = (gBar / savedStreaks.length) * 100
         grayBP = 100 - greenBP
 
-        function Showrr() {
-            console.log(savedDate)
-            console.log(getDifferenceInDays(d1, d2))
-        }
 
-        function getDifferenceInDays(date1, date2) {
-            const diffInMs = Math.abs(date2 - date1);
-            return diffInMs / (1000 * 60 * 60 * 24);
-        }
 
         function NoConfirm() {
             if (savedDate == today) {
@@ -138,7 +135,6 @@
                     }}
                     savedStreaks.push("gray")
                     savedDate = today
-                    localStorage.setItem('savedDate', savedDate);
                     UpdateView()
                 }
         }
@@ -149,7 +145,6 @@
             } else {
                 savedStreaks.push("green")
                 savedDate = today
-                localStorage.setItem('savedDate', savedDate)
                 UpdateView()
             }
         }
@@ -165,7 +160,7 @@
         }
         function InitView() {
             savedStreaks.forEach((currentValue) => {
-                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
+                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`
             })
         }
 
@@ -186,14 +181,14 @@
         const ClearData = () => {
             var answer = window.confirm("Confirm??")
             if (answer) {
-                savedStreaks = [];
+                savedStreaks = []
                 SaveData()
                 UpdateView()
                 savedDate = ""
             } 
         }
-        InitView();
-        SaveData();
+        InitView()
+        SaveData()
         $('.green-bar').css({'width': `${greenBP}%`})
         $('.gray-bar').css({'width': `${grayBP}%`})
     </script>
