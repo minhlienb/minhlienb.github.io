@@ -140,17 +140,17 @@
         }
 
         function NoConfirm() {
-            if (savedDate != today) {
+            if (savedDate == today) {
+                alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
+            } else {
                 for (var i = 0; i < savedStreaks.length; i++) {
                     if (savedStreaks[i] === "green") {
                         savedStreaks[i] = "wgreen"
-                }}
-                savedStreaks.push("gray")
+                    }}
+                    savedStreaks.push("gray")
+                    localStorage.setItem('savedDate', savedDate);
+                }
                 UpdateView()
-            } else {
-                alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
-            }
-            localStorage.setItem('savedDate', savedDate);
         }
 
         function YesConfirm() {
@@ -160,8 +160,8 @@
                 savedStreaks.push("green")
                 savedDate = today
                 localStorage.setItem('savedDate', savedDate)
+                UpdateView()
             }
-            UpdateView()
         }
 
 
@@ -172,6 +172,8 @@
             savedStreaks.forEach((currentValue) => {
                 ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`
             })
+            $('.green-bar').css({'width': `${greenBP}%`})
+            $('.gray-bar').css({'width': `${grayBP}%`})
         }
 
         function InitView() {
