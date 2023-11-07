@@ -94,7 +94,7 @@
     <script src="../lib/jquery-3.6.2.min.js"></script>
     <script>
         const today = new Date().toLocaleDateString()
-        var savedDate = localStorage.getItem('savedDate');
+        var savedDate
         var savedStreaks = [];
         var ctnDates =  document.getElementById('ctn-streak-dates');
         LoadData();
@@ -118,8 +118,6 @@
         greenBP = (gBar / savedStreaks.length) * 100
         grayBP = 100 - greenBP
 
-        var d1 = new Date('11/1/2023')
-        var d2 = new Date('11/4/2023')
         function Showrr() {
             console.log(savedDate)
             console.log(getDifferenceInDays(d1, d2))
@@ -178,9 +176,11 @@
 
         function LoadData() {
             var svd = localStorage.getItem('savedStreaks').split(',')
-            if (svd[0] != "") 
-            savedStreaks = svd
-            console.log(savedStreaks)
+            if (svd[0] != "")  {
+                savedStreaks = svd
+                savedDate = localStorage.getItem('savedDate', savedDate)
+                console.log(savedStreaks)
+            }
         }
 
         const ClearData = () => {
