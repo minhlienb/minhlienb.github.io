@@ -104,7 +104,6 @@
             today = new Date().toLocaleDateString()
         }, 10000);
 
-
         ///////////////////////////
         var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
         if (diffBetweenTwoDay > 1) {
@@ -113,7 +112,6 @@
             }
         }
 
-        
         let gBar = 0
         savedStreaks.forEach((currentValue) => {
             if (currentValue == 'green' || currentValue == 'wgreen') {
@@ -124,9 +122,6 @@
         greenBP = (gBar / savedStreaks.length) * 100
         grayBP = 100 - greenBP
 
-
-        
-        
         var d1 = new Date('11/1/2023')
         var d2 = new Date('11/4/2023')
         function Showrr() {
@@ -164,26 +159,21 @@
                 UpdateView()
             }
         }
-
-
-
         function UpdateView() {
             SaveData()
             ctnDates.innerHTML = ""
             savedStreaks.forEach((currentValue) => {
                 ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`
             })
+            
             $('.green-bar').css({'width': `${greenBP}%`})
             $('.gray-bar').css({'width': `${grayBP}%`})
         }
-
         function InitView() {
             savedStreaks.forEach((currentValue) => {
                 ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`;
             })
         }
-        
-
 
         function SaveData() {
             localStorage.setItem('savedStreaks', savedStreaks);
