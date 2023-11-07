@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Thói quen mới được hình thành</title>
+</head>
+<body>
+    <div id="ctn-streak-dates"></div>
+    <div class="ctn center">
+        <button onclick="YesConfirm()">YesConfirm</button>
+        <button onclick="NoConfirm()">NoConfirm</button>
+        <button onclick="ClearData()">ClearData</button> <!-- for development only -->
+    </div>
+
+    <div class="center">
+        <div id="progress-bar">
+            <div class="green-bar"></div>
+            <div class="gray-bar"></div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes Revealing {
+            from {opacity: 0.000001;}
+            to {opacity: 1;}
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        .box-date {
+            width: 1.8rem;
+            aspect-ratio: 1;
+            background-color: black;
+            margin: 4px;
+        }
+
+        .box-date:last-child {
+            animation: Revealing 0.7s linear;
+        }
+
+        .green {
+            background-color: rgb(0, 220, 0);
+        }
+
+        .wgreen {
+            background-color: rgb(0, 53, 0);
+        }
+
+        .gray {
+            background-color: rgb(151, 151, 151);
+        }
+
+        #ctn-streak-dates {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #535353;
+            border-radius: 6px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    
+        #progress-bar {
+            margin: 20px;
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            border-radius: 8px;   
+            overflow: hidden;     
+        }
+        
+        .green-bar {
+            background-color: #3da63d;
+            width: 0%;
+        }
+
+        .gray-bar {
+            background-color: #bababa;
+            width: 100%;
+            height: 16px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+
+    <script src="lib/jquery-3.6.2.min.js"></script>
+    <script>
+        const today = new Date().toLocaleDateString()
+        var savedDate
+        var savedStreaks = []
+        var ctnDates = document.getElementById('ctn-streak-dates')
+        LoadData()
+
+        function getDifferenceInDays(date1, date2) {
+            const diffInMs = Math.abs(date2 - date1)
+            return diffInMs / (1000 * 60 * 60 * 24)
+        }
+        (function UnconfimedDates() {
+            var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
+            if (diffBetweenTwoDay > 1) {
+                for (var i = 0; i < diffBetweenTwoDay - 1; i++) {
+                    savedStreaks.push('gray')
+                    UpdateView()
+                }
+            }
+        })()
+
+        function NoConfirm() {
+            if (savedDate == today) {
+                alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
+            } else {
+                for (var i = 0; i < savedStreaks.length; i++) {
+                    if (savedStreaks[i] === "green") {
+                        savedStreaks[i] = "wgreen"
+                    }}
+                    savedStreaks.push("gray")
+                    savedDate = today
+                    UpdateView()
+                }
+        }
+
+        function YesConfirm() {
+            if (savedDate == today) {
+                alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
+            } else {
+                savedStreaks.push("green")
+                savedDate = today
+                UpdateView()
+            }
+        }
+        function UpdateView() {
+            SaveData()
+            ctnDates.innerHTML = ""
+            savedStreaks.forEach((currentValue) => {
+                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`
+            })
+
+            let gBar = 0
+            savedStreaks.forEach((currentValue) => {
+                if (currentValue == 'green' || currentValue == 'wgreen') {
+                    gBar += 1
+                }
+            })
+            var greenBP = (gBar / savedStreaks.length) * 100
+            var grayBP = 100 - greenBP
+            $('.green-bar').css({'width': `${greenBP}%`})
+            $('.gray-bar').css({'width': `${grayBP}%`})
+        }
+        function InitView() {
+            savedStreaks.forEach((currentValue) => {
+                ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`
+            })
+        }
+
+        function SaveData() {
+            localStorage.setItem('savedStreaks', savedStreaks);
+            localStorage.setItem('savedDate', savedDate)
+        }
+
+        function LoadData() {
+            var svd = localStorage.getItem('savedStreaks').split(',')
+            if (svd[0] != "")  {
+                savedStreaks = svd
+                savedDate = localStorage.getItem('savedDate', savedDate)
+                console.log(savedStreaks)
+            }
+        }
+
+        const ClearData = () => {
+            var answer = window.confirm("Confirm??")
+            if (answer) {
+                savedStreaks = []
+                UpdateView()
+                savedDate = ""
+                SaveData()
+                UpdateView()
+            } 
+        }
+        InitView()
+        UpdateView()
+        SaveData()
+    </script>
+</body>
+</html>
