@@ -113,12 +113,6 @@
             console.log('It just running!')
         })()
 
-
-
-
-
-
-
         function NoConfirm() {
             if (savedDate == today) {
                 alert('Hôm nay đã check rồi, hãy quay lại vào ngày mai')
@@ -184,9 +178,10 @@
             var answer = window.confirm("Confirm??")
             if (answer) {
                 savedStreaks = []
-                SaveData()
                 UpdateView()
                 savedDate = ""
+                SaveData()
+                UpdateView()
             } 
         }
         InitView()
