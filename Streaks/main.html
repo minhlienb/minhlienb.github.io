@@ -106,22 +106,16 @@
         (function UnconfimedDates() {
             var diffBetweenTwoDay = (getDifferenceInDays(new Date(savedDate), new Date(today)));
             if (diffBetweenTwoDay > 1) {
-                for (var i = 0; i < c - 1; i++) {
+                for (var i = 0; i < diffBetweenTwoDay - 1; i++) {
                     savedStreaks.push('gray')
                 }
             }
             console.log('It just running!')
         })()
 
-        let gBar = 0
-        savedStreaks.forEach((currentValue) => {
-            if (currentValue == 'green' || currentValue == 'wgreen') {
-                gBar += 1
-            }
-        })
 
-        greenBP = (gBar / savedStreaks.length) * 100
-        grayBP = 100 - greenBP
+
+
 
 
 
@@ -154,7 +148,15 @@
             savedStreaks.forEach((currentValue) => {
                 ctnDates.innerHTML += `<div class="box-date ${currentValue}"></div>`
             })
-            
+
+            let gBar = 0
+            savedStreaks.forEach((currentValue) => {
+                if (currentValue == 'green' || currentValue == 'wgreen') {
+                    gBar += 1
+                }
+            })
+            var greenBP = (gBar / savedStreaks.length) * 100
+            var grayBP = 100 - greenBP
             $('.green-bar').css({'width': `${greenBP}%`})
             $('.gray-bar').css({'width': `${grayBP}%`})
         }
@@ -188,9 +190,8 @@
             } 
         }
         InitView()
+        UpdateView()
         SaveData()
-        $('.green-bar').css({'width': `${greenBP}%`})
-        $('.gray-bar').css({'width': `${grayBP}%`})
     </script>
 </body>
 </html>
