@@ -1,0 +1,514 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tách từng thuật ngữ trong khái niệm ra để giải thích trước
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	I. Mạng Internet hoạt động như thế nào?
+mạng lưới cáp vật lý toàn cầu kết nối các máy chủ
+chia sẻ thông tin qua giao thức truyền tải dữ liệu chuẩn,
+ chẳng hạn như TCP/IP
+máy tính của bạn sẽ gửi một yêu cầu
+Máy chủ là nơi lưu trữ các trang web
+phản hồi lại dữ liệu chính xác trở lại máy tính của bạn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	II. HTTP: Hyper Text Transfer Protocol
+cho trình duyệt web và web app.
+gửi dữ liệu cho front-end:
+	- Nội dung này có thể bao gồm văn bản, hình ảnh, video, 
+hoặc các loại dữ liệu khác.
+	front-end sẽ gửi các yêu cầu HTTP đến backend. 
+Backend sau đó sẽ xử lý các yêu cầu này và trả về 
+phản hồi cho front-end.
+	III. DNS
+	- Domain Name System (hệ thống phân giải tên miền)
+	- chuyển đổi các tên miền ở dạng 
+	www.tenmien.com sang một địa chỉ IP dạng số tương ứng 
+	với tên miền đó và ngược lại.
+	Các DNS Server bao gồm:
+		Root Name Server
+		Local Name Server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	IV. Domain: tên miền
+	- là địa chỉ trang web trên Internet.
+	- sử dụng để search trên trình duyệt để truy cập 
+	vào một website
+	- dể dùng nhớ hơn địa chỉ ipv4
+	V. Hosting
+	- là máy chủ lưu trữ và xử lý trang web
+	bao gồm cả web tĩnh và web động
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OS AND GENERAL OS:
+	HỆ ĐIỀU HÀNH:
+	I. Terminal Usage
+	Là việc sử dụng các dòng lệnh dùng để điều khiển 
+	hệ điều hành như:
+		ls, cd, mkdir, touch, rm, ... (trên linux)
+	II. How Operating Systems Work in General
+		Quản lý tài nguyên
+		Cung cấp giao diện người dùng
+		Cung cấp các dịch vụ cho ứng dụng: quản lý tập tin, 
+		xử lý lỗi và bảo mật.
+	III. Process Management
+		Tạo các process mới
+		Quản lý bộ nhớ cho các process
+		Sắp xếp các process
+		Loại bỏ các process
+	IV. Thread and Concurrency
+		Thread: Luồng chương trình
+		Concurency: cho phép chạy đồng thời các thread
+		để tối ưu Hiệu suất
+	V. Memory Management
+		Segmentation
+		Paging
+		Swapping
+	VI. Basic Networking Concepts
+		Có nhiều loại mạng khác nhau, 
+		nhưng hai loại phổ biến nhất là mạng LAN và mạng WAN.
+	VII. VERSION CONTROL SYSTEMS
+		Đặc điểm:
+	Theo dõi lịch sử thay đổi của các phiên bản
+	Collaboration
+	Kiểm soát chất lượng đối với mã nguồn
+		Một số VCS phổ biến bao gồm:
+Git: một VCS phân tán phổ biến được sử dụng bởi các lập trình viên trên toàn thế giới.
+Subversion: một VCS tập trung phổ biến được sử dụng bởi các dự án phần mềm lớn.
+Mercurial: một VCS phân tán khác tương tự như Git.
+Dưới đây là một số thuật ngữ cơ bản liên quan đến VCS:
+
+Commit: một thay đổi đối với mã nguồn được lưu trữ trong VCS.
+Branch: một nhánh của lịch sử phiên bản.
+Tag: một dấu hiệu trong lịch sử phiên bản để đánh dấu một phiên bản quan trọng.
+Merge: quá trình kết hợp các thay đổi từ hai nhánh hoặc tag khác nhau.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a.	Diễn giải các bước hoạt động từ 1>4
+1.	Khi người dùng nhập địa chỉ trang web vào thanh địa chỉ và nhấn enter thì trình duyệt gửi một yêu cầu HTTP đến Web Server với các nội dung:
++ Phương thức HTTP:GET
++ URL: hello.php
++ Host: example.com
+2.	Khi Web Server nhận được yêu cầu từ Web Browser thì thực thi đoạn mã PHP thành HTML
+3.	Sau khi thực thi thành mã HTML thì Web Server sẽ gửi đoạn mã đó cho Web Browser
+4.	Web Browser nhận được đoạn mã sẽ biên dịch lại và hiện thị nội dung lên trình duyệt.
+b.	Là một lập trình viên bạn cần phải cài đặt, hay cấu hình những nội dung gì để có một hệ thống chạy được như vậy.
+Cần cài đặt một máy chủ web và một hệ điều hành tương thích, cơ sở dữ liệu, cài đặt IDE (môi trường phát triển tích hợp)
+c.	Bạn biết gì về server-side rendering và client-side rendering, liên hệ thực tế
+-	server-side rendering: 
++ là phương pháp mà tất cả nội dung của trang web được tạo ra trên máy chủ và trả về cho trình duyệt người dùng.
++ được dùng trong các trang web có nội dung tĩnh.
++ ví dụ: Thegioididong, Vnexpress…
+-	client-side rendering
++ là phương pháp mà chỉ phần khung xương của trang web được tạo ra  trên máy chủ, còn nội dung động được tạo ra trên trình duyệt của người dùng.
++ được dùng trong những trang web có nội dung động
++ ví dụ: Facebook, Instagram
+
+
+
+
+
+
+Cần cấu hình những gì để có được hệ thống get và response?
+để đảm bảo hệ thống hoạt động hiệu quả, cần phải cấu hình những thứ sau đây một cách hiệu quả và tối ưu đối với từng yêu cầu cụ thể đối với ứng dụng web đó.
+	Hệ điều hành: Linux, windows, macOS
+	Máy chủ web: apache, nginx, NodeJS Cấu hình cho phép lắng nghe port 80, 8080, hoặc 443
+	Ngôn ngữ lập trình: Php, Javascript, c# (Asp.net),...
+	Cơ sở dữ liệu: Mysql, MongoDB, ...
+
+
+
+Client Side Rendering và Server Side Rendering:
+	Đặc điểm:
+		+ Địa điểm render trang web:
+			*CSR: Trình duyệt của người dùng
+			*SSR: Máy chủ
+		+ Dữ liệu render:
+			*CSR: Dữ liệu tĩnh và động
+			*SSR: Dữ liệu tĩnh
+		+ Tốc độ tải trang:
+			*CSR: Chậm hơn
+			*SSR: Nhanh hơn
+		+ SEO
+			*CSR: Khó tối ưu hóa SEO
+			*SSR: Tốt hơn cho SEO
+		+ Tương tác người dùng	
+			*CSR:Nhanh hơn khi có tương tác người dùng	
+			*SSR:Chậm hơn khi có tương tác người dùng
+		+ Độ phức tạp khi phát triển:
+			*CSR:Dễ dàng hơn	
+			*SSR:Khó khăn hơn
+		+ Chi phí: 
+			*CSR:Thấp hơn	
+			*SSR:Cao hơn
+
+Một số ví dụ về ứng dụng của CSR và SSR:
+
+CSR: Các trang web tĩnh, các trang web tin tức, các trang web thương mại điện tử.
+SSR: Các trang web có nhiều nội dung động, các trang web có yêu cầu về SEO cao, các trang web cần được tối ưu hóa cho người dùng di động.
+
+Ví dụ cụ thể: Shopee:
+SSR (Server-Side Rendering):
+
+Trang chủ và các trang tĩnh: Các trang chủ hoặc các trang tĩnh mà không có nhiều thay đổi thường sử dụng SSR để cung cấp nhanh chóng nội dung đã được render từ máy chủ.
+CSR (Client-Side Rendering):
+
+Các trang và phần tương tác người dùng mạnh mẽ: Các phần của trang web mà yêu cầu tương tác người dùng cao, chẳng hạn như giỏ hàng, trang thanh toán, hay các tính năng đặc biệt của ứng dụng thương mại điện tử có thể sử dụng CSR. Điều này giúp tối ưu hóa trải nghiệm người dùng và giảm thời gian tải lại trang.
+
+
+
+
+
+
+
