@@ -10,6 +10,7 @@
 
 <body>
     <Button onclick="Confirm()">Calculate</Button>
+    <h2 id="RecentDurration"></h2>
     <p id="data"></p>
 </body>
 <style>
@@ -19,6 +20,7 @@
 <script src="lib/jquery-3.6.2.min.js"></script>
 <script>
     const dataView = document.querySelector("#data");
+    const recentDurr = document.querySelector("#RecentDurration");
     const dt = new Date();
     var savedTime = dt.toString();
     var savedDurationList = []; // ["0:11", "24:19"];
@@ -29,7 +31,7 @@
         let timeD2 = new Date();
         let timeDiffInMS = Math.abs(timeD2 - timeD1);
         let timeDiffInHM = Number((timeDiffInMS / 3600000).toFixed(4));
-        alert("Khoảng thời gian vừa rồi là" + " " + timeDiffInHM);
+        recentDurr.innerHTML =  timeDiffInHM;
         savedDurationList.push(timeDiffInHM);
         savedTime = timeD2.toString();
         dataView.innerHTML = savedDurationList;
