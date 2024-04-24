@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="assets/MyTracker.ico">
 </head>
 <body>
-    <button onclick="InnitStorage()">Innit Date</button>
     <Button onclick="Confirm()">Calculate</Button>
     <h2 id="RecentDurration"></h2>
     <p id="data"></p>
@@ -18,10 +17,6 @@
 
 <script src="lib/jquery-3.6.2.min.js"></script>
 <script>
-    function InnitStorage() {
-        localStorage.setItem('savedTime', 'Tue Apr 23 2024 13:57:25 GMT+0700 (Indochina Time)');
-        alert("Done!" + localStorage.getItem('savedTime'));
-    }
     const dataView = document.querySelector("#data");
     const recentDurr = document.querySelector("#RecentDurration");
     const dt = new Date();
