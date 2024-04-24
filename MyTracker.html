@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Data collector</title>
+</head>
+
+<body>
+    <Button onclick="Confirm()">Calculate</Button>
+    <p id="data"></p>
+</body>
+<style>
+
+</style>
+
+<script src="lib/jquery-3.6.2.min.js"></script>
+<script>
+    const dataView = document.querySelector("#data");
+    const dt = new Date();
+    var savedTime = dt.toString();
+    var savedDurationList = []; // ["0:11", "24:19"];
+    LoadData();
+
+    function Calculate() {
+        let timeD1 = new Date(savedTime);
+        let timeD2 = new Date();
+        let timeDiffInMS = Math.abs(timeD2 - timeD1);
+        let timeDiffInHM = Number((timeDiffInMS / 3600000).toFixed(4));
+        alert("Khoảng thời gian vừa rồi là" + " " + timeDiffInHM);
+        savedDurationList.push(timeDiffInHM);
+        savedTime = timeD2.toString();
+        dataView.innerHTML = savedDurationList;
+        SaveData();
+    }
+
+    function SaveData() {
+        localStorage.setItem('savedTime', dt.toString());
+        localStorage.setItem('savedDurationList', JSON.stringify(savedDurationList));
+        return "done!"
+    };
+
+    function LoadData() {
+        var keysavedTime = localStorage.getItem('savedTime');
+        var keysavedDurationList = localStorage.getItem('savedDurationList');
+        if (keysavedTime === null || keysavedTime === '' || keysavedTime === undefined) {
+            alert("Không có giá trị cũ, tự lấy giá trị là thời gian hiện tại")
+        } else {
+            savedTime = keysavedTime;
+        }
+
+        if (keysavedDurationList === null || keysavedDurationList === '' || keysavedDurationList === undefined) {
+            alert("Không có giá trị cũ danh sách hiện tại trống")
+        } else {
+            savedDurationList = JSON.parse(keysavedDurationList);
+            dataView.innerHTML = savedDurationList;
+        }
+    };
+
+    function Confirm() {
+        if (confirm("Xác nhận?")) {
+            Calculate();
+        } else {
+            // Do nothing
+        }
+    }
+</script>
+
+</html>
