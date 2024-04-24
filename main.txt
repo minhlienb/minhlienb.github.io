@@ -171,7 +171,8 @@ Thay đổi đường dẫn của Home thành Posts
     //
 Một số code razer
     //
-
+Một số annotation
+    //
 @using (Html.BeginForm("SayHi", "Posts", FormMethod.Post))
 {
     <select id="myDropdown" name="dropdown">
