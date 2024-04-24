@@ -1,0 +1,113 @@
+     private DammioEntities db = new DammioEntities();
+
+var results = _db.Mains
+.OrderByDescending(a => a.Created_Date)
+.ToList().ToPagedList(page ?? 1,5);
+
+- file để các câu mình làm ở đâu
+- Các bước làm theo những yêu cầu lấy các bước được hướng dẫn theo slide
+- Data annotation Unit test  làm với bài mới:
+- Các bước tạo Data annotation:
+	+ gieo model từ db trước (mục đầu tiên có icon adapter nối tới db)
+	+ Chọn ok 2 lần
+	+ mở file <Field>.cs để vào chú thích
+	+ thêm 2 dòng	using System.ComponentModel.DataAnnotations;
+				using System.ComponentModel;
+	+ thêm [DisplayName("Chú thích")]
+	+ thêm [Require]
+	+ Build Project trước khi tạo view
+	+ Tạo controller với template mvc5 with views, using entity framework
+
+
+- tự tăng giá trị cho id
+
+
+Phân trang:
+- 	PagedList.Mvc ở NuGet.
+-	Thêm thư viện trong Controller của Posts (đã được gen từ annotation trước đó)
+-	Thêm thư viện trong View
+<!-- Thêm thư viện -->
+@model PagedList.IPagedList<DammioMVC1.Models.Link>
+@using PagedList.Mvc;
+<!-- Kết thúc-->
+ 
+@{
+    ViewBag.Title = "Index";
+}
+ 
+<h2>Index</h2>
+ 
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+ 
+ 
+ 
+<table class="table">
+    <tr>
+        <th>
+            LinkID
+        </th>
+        <th>
+           LinkName
+        </th>
+        <th>
+            LinkDescription
+        </th>
+        <th>
+           LinkURL
+        </th>
+        <th>
+           CategoryName
+        </th>
+    </tr>
+ 
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkDescription)
+        </td> 
+        <td> 
+            @Html.DisplayFor(modelItem => item.LinkURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.CategoryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LinkID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LinkID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LinkID })
+        </td>
+    </tr>
+}
+ 
+</table>
+ 
+<!-- Thêm mã phân trang -->
+<br />
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+ 
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page }))
+<!-- Kết thúc -->
+
+
+
+
+
+
+
+
+
+
+
+linq:
+var BlogIdEqualTo2 = from p in db.Posts
+                //                     where p.BlogId == targetBlogId
+                //                     select p;
