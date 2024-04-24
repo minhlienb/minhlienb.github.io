@@ -158,3 +158,8 @@ linq:
 var BlogIdEqualTo2 = from p in db.Posts
                 //                     where p.BlogId == targetBlogId
                 //                     select p;
+
+
+
+Thêm dữ liệu vào db bằng linq
+    // code here
