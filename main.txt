@@ -33,7 +33,7 @@
 
 
 
-
+    (localdb)\MSSQLLocalDB
      private DammioEntities db = new DammioEntities();
 
 var results = _db.Mains
