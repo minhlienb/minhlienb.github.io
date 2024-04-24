@@ -65,7 +65,7 @@ Phân trang:
 -	Thêm thư viện trong Controller của Posts (đã được gen từ annotation trước đó)
 -	Thêm thư viện trong View
 <!-- Thêm thư viện -->
-@model PagedList.IPagedList<DammioMVC1.Models.Link>
+@model PagedList.IPagedList<Project.Models.ATTRIBUTE>
 @using PagedList.Mvc;
 <!-- Kết thúc-->
  
