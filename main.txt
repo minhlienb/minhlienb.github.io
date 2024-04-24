@@ -53,7 +53,9 @@ var results = _db.Mains
 	+ thêm [Require]
 	+ Build Project trước khi tạo view
 	+ Tạo controller với template mvc5 with views, using entity framework
-
+[Required(ErrorMessage = "Phải đặt tên")]
+[MaxLength(10, ErrorMessage = "Tối đa mười ký tự")]
+[DisplayName("Tên")]
 
 - tự tăng giá trị cho id
 
