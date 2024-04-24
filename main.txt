@@ -56,7 +56,7 @@ var results = _db.Mains
 [Required(ErrorMessage = "Phải đặt tên")]
 [MaxLength(10, ErrorMessage = "Tối đa mười ký tự")]
 [DisplayName("Tên")]
-
+[DataType(DataType.Date)]
 - tự tăng giá trị cho id
 
 
