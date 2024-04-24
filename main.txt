@@ -32,7 +32,6 @@
 
 
 
-
     (localdb)\MSSQLLocalDB
      private DammioEntities db = new DammioEntities();
 
@@ -67,76 +66,88 @@ Phân trang:
 @using PagedList.Mvc;
 <!-- Kết thúc-->
  
+private BloggingContextEntities db = new BloggingContextEntities();
+
+// GET: Posts
+// 4. Tạo kích thước trang (pageSize) hay là số Link hiển thị trên 1 trang
+public ActionResult Index(int? page)
+{
+    // 1. Tham số int? dùng để thể hiện null và kiểu int
+    // page có thể có giá trị là null và kiểu int.
+    int pageSize = 4;
+
+    // 2. Nếu page = null thì đặt lại là 1.
+    if (page == null) page = 1;
+
+    // 3. Tạo truy vấn, lưu ý phải sắp xếp theo trường nào đó, ví dụ OrderBy
+    // theo LinkID mới có thể phân trang.
+    var posts = (from l in db.Posts
+                 select l).OrderBy(x => x.PostId);
+
+
+
+    // 4.1 Toán tử ?? trong C# mô tả nếu page khác null thì lấy giá trị page, còn
+    // nếu page = null thì lấy giá trị 1 cho biến pageNumber.
+    int pageNumber = (page ?? 1);
+
+    // 5. Trả về các Link được phân trang theo kích thước và số trang.
+    return View(posts.ToPagedList(pageNumber, pageSize));
+}
+
+
+
+cshtml
+@model PagedList.IPagedList<Ôn_thi.Models.Post>
+@using PagedList.Mvc;
+
 @{
     ViewBag.Title = "Index";
 }
- 
+
 <h2>Index</h2>
- 
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
- 
- 
- 
 <table class="table">
     <tr>
         <th>
-            LinkID
+            @Html.DisplayNameFor(model => model.First().Title)
         </th>
         <th>
-           LinkName
+            @Html.DisplayNameFor(model => model.First().Date)
         </th>
         <th>
-            LinkDescription
+            @Html.DisplayNameFor(model => model.First().ImageURL)
         </th>
         <th>
-           LinkURL
+            @Html.DisplayNameFor(model => model.First().Type)
         </th>
         <th>
-           CategoryName
+            @Html.DisplayNameFor(model => model.First().Content)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Blog.Name)
+        </th>
+        <th></th>
     </tr>
- 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.LinkID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LinkName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LinkDescription)
-        </td> 
-        <td> 
-            @Html.DisplayFor(modelItem => item.LinkURL)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.CategoryName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.LinkID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.LinkID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.LinkID })
-        </td>
-    </tr>
-}
- 
-</table>
- 
-<!-- Thêm mã phân trang -->
+
 <br />
-Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
- 
-@Html.PagedListPager(Model, page => Url.Action("Index",
-    new { page }))
-<!-- Kết thúc -->
+<div class="row">
+    <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+        @using (Html.BeginForm("Index", "Link", FormMethod.Get))
+        {
+            @*<p>
+                Kích thước trang: @Html.DropDownList("size", (List<SelectListItem>)ViewBag.size, new { @onchange = "this.form.submit();" })
+            </p>*@
+        }
+    </div>
+    <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6 text-right">
+        Trang: @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+    </div>
+</div>
 
-
-
-
-
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, size = ViewBag.currentSize }))
 
 
 
