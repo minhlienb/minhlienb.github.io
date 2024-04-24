@@ -34,6 +34,7 @@
 
     (localdb)\MSSQLLocalDB
      private DammioEntities db = new DammioEntities();
+    Cài system.linq.dynamic;
 
 var results = _db.Mains
 .OrderByDescending(a => a.Created_Date)
@@ -163,3 +164,8 @@ var BlogIdEqualTo2 = from p in db.Posts
 
 Thêm dữ liệu vào db bằng linq
     // code here
+
+Thay đổi đường dẫn của Home thành Posts
+    //
+Một số code razer
+    //
