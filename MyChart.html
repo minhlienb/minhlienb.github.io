@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biểu đồ số giờ</title>
+    <link rel="icon" type="image/x-icon" href="assets/MyTracker.ico">
     <!-- Thư viện Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -13,11 +14,12 @@
     </div>
     
     <script>
+        var hours = JSON.parse(`[${prompt("Nhập dữ liệu")}]`);
         // Lấy thẻ canvas
         var ctx = document.getElementById('myChart').getContext('2d');
 
         // Dữ liệu số giờ
-        var hours = [0.0015,0.0014,0.0027,0.0119,0.021,0.044,0.0008,0.0008,0.0008,0.0007];
+        //var hours = [0.0015,0.0014,0.0027,0.0119,0.021,0.044,0.0008,0.0008,0.0008,0.0007];
         // Các chỉ số của dữ liệu
         var indices = Array.from({length: hours.length}, (_, i) => i + 1);
 
