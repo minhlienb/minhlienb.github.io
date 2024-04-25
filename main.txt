@@ -198,3 +198,7 @@ For Each author In result
 Next
 
 
+var authorizedReviews = from review in myEntities.Reviews
+                            where review.Authorized == true
+                            orderby review.CreateDateTime descending
+                            select review;
