@@ -181,3 +181,20 @@ Một số annotation
     </select>
     <button type="submit">Submit</button>
 }
+
+
+Dim result = From author In authors
+ 
+             Where author.Contains("S")
+ 
+             Order By author
+ 
+             Select author
+ 
+For Each author In result
+ 
+     Label1.Text += author + "<br />"
+ 
+Next
+
+
