@@ -30,6 +30,7 @@
         <label for="input">Nhập thông tin:</label>
         <input type="text" id="input">
         <button onclick="addCheckbox()">Submit</button>
+        <button onclick="clearAll()">Clear All</button>
     </div>
 
     <div id="checkboxes"></div>
@@ -41,15 +42,25 @@
     <script>
         function addCheckbox() {
             var inputText = document.getElementById('input').value;
+            if(inputText.trim() === "") {
+                alert("Vui lòng nhập thông tin trước khi nhấn Submit!");
+                return;
+            }
+            
             var checkboxes = document.getElementById('checkboxes');
             var checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.value = inputText;
-            checkbox.onclick = updateProgressBar;
+            checkbox.onchange = updateProgressBar; // Change 'onclick' to 'onchange'
             var label = document.createElement('label');
             label.appendChild(document.createTextNode(inputText));
             label.appendChild(checkbox);
             checkboxes.appendChild(label);
+
+            // Save to local storage
+            saveToLocalStorage();
+
+            document.getElementById('input').value = ""; // Reset input field
         }
 
         function updateProgressBar() {
@@ -63,7 +74,44 @@
             var progress = document.getElementById('progress');
             var progressBarWidth = (checkedCount / checkboxes.length) * 100;
             progress.style.width = progressBarWidth + '%';
+
+            if (progressBarWidth >= 100) {
+                alert("Công việc đã hoàn thành và giờ bạn có thể nghỉ ngơi!");
+            }
         }
+
+        function clearAll() {
+            var confirmation = confirm("Bạn có chắc chắn muốn xóa tất cả các checkbox?");
+            if (confirmation) {
+                localStorage.removeItem('checkboxes');
+                var checkboxes = document.getElementById('checkboxes');
+                checkboxes.innerHTML = '';
+
+                // Reset progress bar
+                var progress = document.getElementById('progress');
+                progress.style.width = '0%';
+            }
+        }
+
+        function saveToLocalStorage() {
+            var checkboxes = document.getElementById('checkboxes').innerHTML;
+            localStorage.setItem('checkboxes', checkboxes);
+        }
+
+        // Load checkboxes from local storage when the page loads
+        window.onload = function() {
+            var savedCheckboxes = localStorage.getItem('checkboxes');
+            if (savedCheckboxes) {
+                document.getElementById('checkboxes').innerHTML = savedCheckboxes;
+                updateProgressBar();
+
+                // Add onchange event listener to existing checkboxes
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                checkboxes.forEach(function(checkbox) {
+                    checkbox.onchange = updateProgressBar;
+                });
+            }
+        };
     </script>
 </body>
 </html>
