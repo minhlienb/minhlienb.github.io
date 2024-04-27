@@ -8,7 +8,7 @@
 </head>
 <body>
     <Button onclick="Confirm()">Calculate</Button>
-    <button onclick="alert(CalculateDurration() + ' tiếng' + '\n\n' + savedTime)">Show recent</button>
+    <button onclick="alert(CalculateDurration(1) + ' tiếng' + '\n\n' + savedTime)">Show recent</button>
     <h2 id="RecentDurration"></h2>
     <p id="data"></p>
 </body>
@@ -25,11 +25,11 @@
     var savedDurationList = []; // ["0:11", "24:19"];
     LoadData();
 
-    function CalculateDurration() {
+    function CalculateDurration(floatingPoint) {
         let timeD1 = new Date(savedTime);
         let timeD2 = new Date();
         let timeDiffInMS = Math.abs(timeD2 - timeD1);
-        let timeDiffInHM = Number((timeDiffInMS / 3600000).toFixed(4));
+        let timeDiffInHM = Number((timeDiffInMS / 3600000).toFixed(floatingPoint));
         return timeDiffInHM;
     }
 
