@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Data collector</title>
     <link rel="icon" type="image/x-icon" href="assets/MyTracker.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <Button onclick="Confirm()">Calculate</Button>
@@ -12,6 +13,9 @@
     <p id="avgView">nuts/Day: </p>
     <h2 id="RecentDurration"></h2>
     <p id="data"></p>
+    <div style="width: 20cm; height: 20cm;" class="ctn">
+        <canvas id="myChart"></canvas>
+    </div>
 </body>
 <style>
 
@@ -19,11 +23,11 @@
 
 <script src="lib/jquery-3.6.2.min.js"></script>
 <script>
-    // (function () {
-    //     localStorage.setItem('originDate', 'Fri Apr 19 2024 07:21:00 GMT+0700 (Indochina Time)')
-    //     localStorage.setItem('savedDurationList', '[3.667,20.55,23.367,6.367,17.617,23.983,7.217,45.4338,12.8897,7.8739,3.6086,19.4675,13.8939]');
-    //     alert('Done!' + localStorage.getItem('originDate'));
-    // })()
+    (function () {
+        localStorage.setItem('originDate', 'Fri Apr 19 2024 07:21:00 GMT+0700 (Indochina Time)')
+        localStorage.setItem('savedDurationList', '[3.667,20.55,23.367,6.367,17.617,23.983,7.217,45.4338,12.8897,7.8739,3.6086,19.4675,13.8939]');
+        alert('Done!' + localStorage.getItem('originDate'));
+    })()
     const avgView = document.querySelector("#avgView");
     const dataView = document.querySelector("#data");
     const recentDurr = document.querySelector("#RecentDurration");
@@ -31,7 +35,7 @@
     var savedTime = dt.toString();
     var savedDurationList = []; // ["0:11", "24:19"];
     LoadData();
-    avgView.innerHTML += savedDurationList.length / (TimeBetweenTwoDates(dt, new Date(localStorage.getItem('originDate'))) + 1);
+    avgView.innerHTML += savedDurationList.length / (1 + TimeBetweenTwoDates(dt, new Date(localStorage.getItem('originDate'))));
 
     function TimeBetweenTwoDates(date1, date2) {
         let timeDiffInMS = Math.abs(date2 - date1);
@@ -88,6 +92,38 @@
             // Do nothing
         }
     }
+
+    (function VeBieuDo() {
+        // Lấy thẻ canvas
+        var ctx = document.getElementById('myChart').getContext('2d');
+
+        // Dữ liệu số giờ
+        //var hours = [0.0015,0.0014,0.0027,0.0119,0.021,0.044,0.0008,0.0008,0.0008,0.0007];
+        // Các chỉ số của dữ liệu
+        var indices = Array.from({length: savedDurationList.length}, (_, i) => i + 1);
+
+        // Tạo biểu đồ
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: indices,
+                datasets: [{
+                    label: 'Số giờ',
+                    data: savedDurationList,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    })()
 </script>
 
 </html>
