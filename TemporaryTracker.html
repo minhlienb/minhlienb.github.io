@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        #progress-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #f0f0f0;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        #progress {
+            width: 0%;
+            height: 100%;
+            background-color: green;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="input">Nhập thông tin:</label>
+        <input type="text" id="input">
+        <button onclick="addCheckbox()">Submit</button>
+    </div>
+
+    <div id="checkboxes"></div>
+
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <script>
+        function addCheckbox() {
+            var inputText = document.getElementById('input').value;
+            var checkboxes = document.getElementById('checkboxes');
+            var checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = inputText;
+            checkbox.onclick = updateProgressBar;
+            var label = document.createElement('label');
+            label.appendChild(document.createTextNode(inputText));
+            label.appendChild(checkbox);
+            checkboxes.appendChild(label);
+        }
+
+        function updateProgressBar() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCount = 0;
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    checkedCount++;
+                }
+            });
+            var progress = document.getElementById('progress');
+            var progressBarWidth = (checkedCount / checkboxes.length) * 100;
+            progress.style.width = progressBarWidth + '%';
+        }
+    </script>
+</body>
+</html>
