@@ -9,6 +9,7 @@
 <body>
     <Button onclick="Confirm()">Calculate</Button>
     <button onclick="alert(CalculateDurration(1) + ' tiếng' + '\n\n' + savedTime)">Show recent</button>
+    <p id="avgView">nuts/Day: </p>
     <h2 id="RecentDurration"></h2>
     <p id="data"></p>
 </body>
@@ -18,13 +19,25 @@
 
 <script src="lib/jquery-3.6.2.min.js"></script>
 <script>
+    // (function () {
+    //     localStorage.setItem('originDate', 'Fri Apr 19 2024 07:21:00 GMT+0700 (Indochina Time)')
+    //     localStorage.setItem('savedDurationList', '[3.667,20.55,23.367,6.367,17.617,23.983,7.217,45.4338,12.8897,7.8739,3.6086,19.4675,13.8939]');
+    //     alert('Done!' + localStorage.getItem('originDate'));
+    // })()
+    const avgView = document.querySelector("#avgView");
     const dataView = document.querySelector("#data");
     const recentDurr = document.querySelector("#RecentDurration");
     const dt = new Date();
     var savedTime = dt.toString();
     var savedDurationList = []; // ["0:11", "24:19"];
     LoadData();
+    avgView.innerHTML += savedDurationList.length / (TimeBetweenTwoDates(dt, new Date(localStorage.getItem('originDate'))) + 1);
 
+    function TimeBetweenTwoDates(date1, date2) {
+        let timeDiffInMS = Math.abs(date2 - date1);
+        return Math.floor(timeDiffInMS / (1000 * 60 * 60 * 24));  
+    }
+    
     function CalculateDurration(floatingPoint) {
         let timeD1 = new Date(savedTime);
         let timeD2 = new Date();
