@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress Bar</title>
+    <title>Task Breaker</title>
     <style>
         #progress-bar {
             width: 300px;
@@ -22,6 +22,11 @@
         label {
             display: block;
             margin-bottom: 10px;
+        }
+
+        .delete-btn {
+            margin-left: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -51,10 +56,25 @@
             var checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.value = inputText;
-            checkbox.onchange = updateProgressBar; // Change 'onclick' to 'onchange'
+            checkbox.onchange = updateProgressBar;
             var label = document.createElement('label');
             label.appendChild(document.createTextNode(inputText));
             label.appendChild(checkbox);
+
+            // Add delete button
+            var deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.innerHTML = 'Delete';
+            deleteBtn.onclick = function() {
+                var confirmation = confirm("Bạn có chắc chắn muốn xóa công việc này?");
+                if (confirmation) {
+                    checkboxes.removeChild(label);
+                    updateProgressBar();
+                    saveToLocalStorage();
+                }
+            };
+            label.appendChild(deleteBtn);
+
             checkboxes.appendChild(label);
 
             // Save to local storage
@@ -81,9 +101,9 @@
         }
 
         function clearAll() {
-            var confirmation = confirm("Bạn có chắc chắn muốn xóa tất cả các checkbox?");
+            var confirmation = confirm("Bạn có chắc chắn muốn xóa tất cả các công việc?");
             if (confirmation) {
-                localStorage.removeItem('checkboxes');
+                localStorage.removeItem('tasks');
                 var checkboxes = document.getElementById('checkboxes');
                 checkboxes.innerHTML = '';
 
@@ -94,22 +114,51 @@
         }
 
         function saveToLocalStorage() {
-            var checkboxes = document.getElementById('checkboxes').innerHTML;
-            localStorage.setItem('checkboxes', checkboxes);
+            var tasks = [];
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                tasks.push({
+                    value: checkbox.value,
+                    checked: checkbox.checked
+                });
+            });
+            localStorage.setItem('tasks', JSON.stringify(tasks));
         }
 
         // Load checkboxes from local storage when the page loads
         window.onload = function() {
-            var savedCheckboxes = localStorage.getItem('checkboxes');
-            if (savedCheckboxes) {
-                document.getElementById('checkboxes').innerHTML = savedCheckboxes;
-                updateProgressBar();
-
-                // Add onchange event listener to existing checkboxes
-                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                checkboxes.forEach(function(checkbox) {
+            var savedTasks = localStorage.getItem('tasks');
+            if (savedTasks) {
+                var tasks = JSON.parse(savedTasks);
+                var checkboxes = document.getElementById('checkboxes');
+                tasks.forEach(function(task) {
+                    var checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = task.value;
+                    checkbox.checked = task.checked;
                     checkbox.onchange = updateProgressBar;
+                    var label = document.createElement('label');
+                    label.appendChild(document.createTextNode(task.value));
+                    label.appendChild(checkbox);
+
+                    // Add delete button
+                    var deleteBtn = document.createElement('button');
+                    deleteBtn.className = 'delete-btn';
+                    deleteBtn.innerHTML = 'Delete';
+                    deleteBtn.onclick = function() {
+                        var confirmation = confirm("Bạn có chắc chắn muốn xóa công việc này?");
+                        if (confirmation) {
+                            checkboxes.removeChild(label);
+                            updateProgressBar();
+                            saveToLocalStorage();
+                        }
+                    };
+                    label.appendChild(deleteBtn);
+
+                    checkboxes.appendChild(label);
                 });
+
+                updateProgressBar();
             }
         };
     </script>
