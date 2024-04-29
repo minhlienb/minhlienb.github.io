@@ -43,7 +43,7 @@
 
     function TimeBetweenTwoDates(date1, date2) {
         let timeDiffInMS = Math.abs(date2 - date1);
-        return Math.floor(timeDiffInMS / (1000 * 60 * 60 * 24));  
+        return timeDiffInMS / (1000 * 60 * 60 * 24);  
     }
     
     function CalculateDurration(floatingPoint) {
