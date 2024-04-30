@@ -62,7 +62,7 @@
         recentDurr.innerHTML =  timeDiffInHM;
         savedDurationList.push(timeDiffInHM);
         savedTime = timeD2.toString();
-        // dataView.innerHTML = savedDurationList;
+        dataView.innerHTML = savedDurationList;
         SaveData();
     }
 
@@ -85,7 +85,7 @@
             alert("Không có giá trị cũ danh sách hiện tại trống")
         } else {
             savedDurationList = JSON.parse(keysavedDurationList);
-            // dataView.innerHTML = savedDurationList;
+            dataView.innerHTML = savedDurationList;
         }
     };
 
