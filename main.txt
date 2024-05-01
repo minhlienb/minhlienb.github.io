@@ -195,3 +195,4 @@ if(collision.gameObject.name == "MatPhang") Debug.Log("Có va chạm");
 }
 
 isTrigger là va chạm xuyên tâm
+
