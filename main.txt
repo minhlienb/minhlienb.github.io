@@ -1,0 +1,197 @@
+Khái niệm cơ bản về trò chơi
+	Mục tiêu:
+	Luật lệ
+	Player
+	Enemy
+	Đối tượng môi trường
+	Hệ thống phản hồi
+	Sự yêu thích của người chơi
+	Hệ thống thiết kế màn chơi
+
+Các vai trò chính trong quy trình sản xuất game
+	Dev
+	Game Designers
+	Artists
+	Programmers
+	Animators
+	Sound Designers
+	Producers
+	Quality Assurance - QA
+	Publishers
+	Writers
+
+Các yếu tố trong lập trình game
+	Đồ họa
+	Sound
+	Input and Interaction
+	Physics
+	Cơ chế trò chơi 
+
+Unity là một trong những công cụ phát triển game phổ biến nhất và mạnh mẽ
+	Đa nền tảng
+	Ngôn ngữ lập trình
+	Thư viện và Asset Store
+	Môi trường phát triển tích hợp (IDE)
+	Đồ họa và âm thanh
+	Hỗ trợ thực tế ảo và thực tế ảo tăng cường
+	Cộng đồng và tài liệu
+
+Cài đặt Unity
+	Tải Unity Hub
+	
+
+Một số thuộc tính chính của Audio Source
+	Audio Clip Tham chiếu tới tập tin âm thanh cần chạy
+	Output Mặc định âm thanh sẽ được xuất trực tiếp lên Audio Listener của Scense
+	Mute Nếu được chọn, âm thanh sẽ bị tắt
+	Play On Awake Nếu được chọn, âm thanh sẽ tự động chơi ngay khi Scense được khởi chạy
+	Loop Lặp lại bài hát hoặc âm thanh đã phát
+	Volume Tinh chỉnh âm lượng của âm thanh
+	Pitch Tinh chỉnh cao độ của âm nhạc, giúp nhạc chạy nhanh hoặc chậm
+	3D Sound
+	Settings
+	Tùy chỉnh âm thanh trong không gian, giúp nghe được âm thanh khi đến
+	gần vật thể hoặc không nghe âm thanh khi ở xa vật thể
+	Rolloff Mode Xác định các thể loại biến mất của âm thanh
+
+Các thuộc tính chung của Joint 2D
+	Thuộc tính Chức năng
+	Enable Collision Thuộc tính này nếu được kích hoạt, sẽ cho phép xử lý va chạm giữa 2
+	vật
+	Connected Rigid
+	Body
+	Đây chính là đối tượng sẽ dùng để kết nối tới, lưu ý đối tượng này
+	phải chứa Rigid Body 2D. Và trong thuộc tính này, phải thiết lập Body
+	Type về Kinematic.
+	Auto Configure
+	Connected Anchor
+	Tự tìm điểm neo của đối tượng được kết nối tới. Nếu được bật, bạn
+	không cần nhập tọa độ trong phần Connected Anchor.
+	Anchor Là tọa độ dùng để neo, mặc định là 0,0 nghĩa là ở tâm của đối tượng
+	Connected Anchor Là tọa độ neo trên vật thể kết nối tới, mặc định là 0,0 nghĩa là ở tâm
+	đối tượng
+	Break Force Lực để bẻ gãy kết nối. Nếu để Infinity là không bao giờ bị bẻ gãy
+	Break Action Hành động để bẽ gãy nối kết, mặc định là Destroy
+
+ 	Distance Joint 2D: Thành phần này giúp gắn kết 2 vật theo một khoảng cách
+nhất định. Thuộc tính Distance quy định khoảng cách giữa 2 vật thể, thuộc tính Max Distance
+Only quy định khoảng cách tối đa của hai vật thể đó 
+ 	Fixed Joint 2D giúp gắn một vật vào một vật khác, thành phần này có thêm
+thuộc tính Damping Ratio là mức độ giao động nhanh hoặc chậm và Frequency là tần số dao
+động
+ 	Friction Joint 2D cho phép mô
+phỏng hiệu ứng ma sát giữa hai vật thể, kiểm
+soát sự trượt của các đối tượng trong không gian
+2D, giúp chúng tương tác với nhau theo cách
+thực tế hơn. Loại kết nối này thường dùng để
+minh họa quá trìn một vật thể bị ảnh hưởng mởi
+ma sát không khí hoặc ma sát với một vật thể
+khác.
+	Hinge Joint 2D cho phép mô phỏng gắn bản lề giữa 2 đối tượng. Khi hai đối
+tượng gắn với nhau bằng Hinge Joint 2D, vật thể có thể rơi xuống nhưng sẽ bị xoay tròn theo
+điểm đã gắn, việc này giống như hai vật gắn vào nhau bởi bản lề. Hinge Joint 2D có một số
+thuộc tính quan trọng như Motor là thiết lập động cơ cho phép quay, Angle là góc quay tối đa
+của vật
+	Spring Joint 2D cũng giống như Hinge Joint 2D, Spring Joint 2D cho phép gắn
+vật này vào vật khác nhưng bằng dây cao su, khi đó sức nặng của vật sẽ làm cho vật rơi xuống
+nhưn sẽ bị níu lại bằng một dây cao su vô hình (Hình 3.28). Thành phần này có thêm một số
+thuộc tính liên quan như Distance là khoảng cách lò xo, Damping Ratio là tỉ lệ co dãn của lò xo,
+Frequency là tần số giao động của lò xo.
+
+
+	Khởi tạo đối tượng Prefab: Instantiate(gameObject,new Vector3(100,100,0), Quaternion.identity);
+
+Particle System được thêm vào bằng cách trên Hierachy, chọn Game Object, chọn Effects,
+chọn Particle System
+Emission: Thuộc tính này quản lý chế độ phát ra của hạt. Các thuộc tính đi kèm như
+Rate over Time: cho phép quản lý tỉ lệ phát hạt trong một khoảng thời gian nhất định;
+Rate over Distance: cho phép quản lý tỉ lệ phát hạt trong một khoảng cách nhất định;
+Sự phát hạt còn được quản lý bởi một mảng các đối tượng Bursts(được quản lý bởi
+thời gian, số lượng, số vòng quay, thời gian sống và xác suất).
+• Shape: Quản lý hình dạng của hạt phát ra. Có thể chọn các loại hình dạng trong tham
+số Shape như Cone, Sphere, Donut, Box, Sprite… Tùy vào hình dạng do người dùng
+chọn mà sẽ có các thông số đi kèm như bán kính, chiều cao, tọa độ…
+• Renderer: Thuộc tính này cho phép quản lý sự hiển thị của hạt khi phát ra, một số tham
+số đi kèm như Material hoặc Mesh cho phép quản lý sự hiển thị của hạt khi phát ra
+được hiệu quả hơn.
+• Texture Sheet Animation: Cho phép xây dựng các hạt phát ra là các hình ảnh.
+• Sub Emiters: Quản lý hạt con, là loại hạt phát ra từ hạt gốc, kiểu như pháo hoa khi nổ
+hoặc sự bắn của nước khi rơi xuống
+Và một số thuộc tính khác.
+
+Xây dựng thế giới nhân vật
+	Sprite trong Unity
+	Sprite Editor
+	Animation với Sprites
+	Sprite Creator
+	Xây dựng bản đồ bằng Tilemaps và Tile Palettes
+
+Google Admob vào Unity
+	Banner
+	Interstial
+	Rewarded video
+	Native
+
+	Tải thư viện Mobile Ads và Mobile Native Ads từ trang Google Admod
+	Thiết lập Keystore: Vào Edit, chọn Project Settings, chọn mục Player, chọn phần
+Publishing Settings, chọn Keystore Manager…
+
+
+Edit -> Preferences -> External Tools -> Visual Studio 2022
+
+[SerializeField]
+private List<int> List;
+GetComponent<>
+public Rigidbody2D rb;
+public bool isPlayer1;
+
+private void Update()
+{
+    if (isPlayer1)
+    {
+        Vector2 movement = Vector2.zero;
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
+        //Debug.Log(movement.x + ", " + movement.y);
+        rb.velocity = movement.normalized * moveSpeed;
+    }
+    else
+    {
+            // Lấy hướng di chuyển từ phím được nhấn
+            Vector2 direction = Vector2.zero;
+
+            // Kiểm tra các phím được nhấn và cập nhật hướng di chuyển
+            if (Input.GetKey(KeyCode.J))
+            {
+                direction += Vector2.left;
+            }
+            if (Input.GetKey(KeyCode.L))
+            {
+                direction += Vector2.right;
+            }
+            if (Input.GetKey(KeyCode.I))
+            {
+                direction += Vector2.up;
+            }
+            if (Input.GetKey(KeyCode.K))
+            {
+                direction += Vector2.down;
+            }
+
+            // Chuẩn hóa vector hướng di chuyển để giữ cho vận tốc đồng đều khi di chuyển đường chéo
+            direction = direction.normalized;
+
+            // Di chuyển player
+            MovePlayer(direction);
+    }
+}
+
+
+audioSource.Play();
+
+private void OnCollisionEnter2D (Collision2D collision)
+{
+if(collision.gameObject.name == "MatPhang") Debug.Log("Có va chạm");
+}
+
+isTrigger là va chạm xuyên tâm
