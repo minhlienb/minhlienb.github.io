@@ -1,5 +1,5 @@
 Khái niệm cơ bản về trò chơi
-	Mục tiêu:
+	Mục tiêu
 	Luật lệ
 	Player
 	Enemy
@@ -38,7 +38,29 @@ Unity là một trong những công cụ phát triển game phổ biến nhất 
 
 Cài đặt Unity
 	Tải Unity Hub
-	
+	Tải Unity Editor
+    Đăng nhập vào tài khoản Unity
+    Cài đặt giấy phép
+
+Cửa sổ Scense và Game: Sửa sổ Scense dùng để thiết kế các màn chơi, mỗi màn chơi sẽ
+bao gồm một Scense. Cửa sổ này mặc định có một Camera được tạo sẵn. Khi thiết kế, Unity
+không tự lưu mà người dùng cần lưu lại bằng cách nhấn Ctrl + S hoặc vào File, chọn Save. Cửa
+sổ Game dùng để hiển thị kết quả biểu diễn (khi người dùng nhấn nút Play).
+
+Một vài thao tác cơ bản
+    Thêm 1 hoặc nhiều đối tượng: Click chuột phải lên khung nhìn Hierarchy, chọn New, chọn
+2D Objects, chọn Sprites, chọn các đối tượng như Triangle, Square, Circle, Capsule… Các đối
+tượng này sẽ nằm trên Scense và trên Hierarchy.
+    Thay đổi tên, màu sắc của đối tượng: Chọn từng đối tượng, vào khung nhìn Inspector,
+thiết lập các thông số mới cho X, Y, Z trong phần Transform. Chọn màu sắc trong phần Color
+của Sprite Renderer và đặt lại tên trong phần đầu của Inpector.
+
+Player Settings: Hộp thoại này giúp thiết lập một số tính năng người dùng khi thực thi
+như tên sản phẩm, bản quyền sản phẩm, phiên bản, Icon, chuột, hoặc độ phân giải màn hình…
+Chức năng Player Settings là một phần con của Project Setting… sẽ được giới thiệu kỹ hơn
+trong menu Edit.
+
+
 
 Một số thuộc tính chính của Audio Source
 	Audio Clip Tham chiếu tới tập tin âm thanh cần chạy
@@ -98,8 +120,46 @@ nhưn sẽ bị níu lại bằng một dây cao su vô hình (Hình 3.28). Thà
 thuộc tính liên quan như Distance là khoảng cách lò xo, Damping Ratio là tỉ lệ co dãn của lò xo,
 Frequency là tần số giao động của lò xo.
 
+Tạo chuyển động bằng thẻ Animation
+    Bước 1: Tạo đối tượng cần thực hiện hiệu ứng, là một hình chữ nhật màu đỏ đặt tên là
+Player tại vị trí mặc định, thiết lập thuộc tính Scale
+    Bước 2: Tạo thư mục Animations trong Project để lưu trữ bộ điều khiển hiệu ứng
+(Animation Controller) và các hiệu ứng (Animation).
+    Bước 3: Click phải lên thư mục Animations, chọn Create, chọn Animation Controller, đặt
+tên là PlayerAnim, sau đó kéo vào đối tượng Game vừa tạo. Lúc này đối tượng Game sẽ tự
+động thêm vào một thành phần là Animator, thành phần này chứa thuộc tính Controller là
+PlayerAnim vừa tạo
+    Bước 4: Trên thanh Menu, vào Window, chọn Animation, Animation ,
+thẻ Animation xuất hiện, kéo và đặt nó để nằm cùng thẻ Console
+    Bước 5: Tạo chuyển động
+Để tạo chuyển động, trước tiên cần chọn đối tượng Game sau
+đó nhấn nút Create (trong thẻ Animation), đặt tên là Idle.anim và lưu vào một thư mục
+Animations 
+    Bước 6: Để thêm loại hiệu ứng cho chuyển động Idle, click vào nút Add Property, có hai
+loại chuyển động là Transform và Sprite Renderer. Transform cho phép thực hiện
+các chuyển động dựa trên vị trí, quay và co dãn, trong khi đó Sprite Renderer cho phép thực
+hiện các chuyển động trên giao diện như lật ngược, đổi màu thay đổi chất liệu, vô hiệu hóa…
+    Bước 7: Tạo các clip khác
+Trong khu vực bên trái, Animation cho phép tạo ra các Clip Animation khác bằng cách chọn
+Create New Clip
 
-	Khởi tạo đối tượng Prefab: Instantiate(gameObject,new Vector3(100,100,0), Quaternion.identity);
+Quản lý chuyển động
+    Controller Bộ điều khiển chứa các Clip được gắn cho đối tượng
+    Avatar Là Avatar của nhân vật, chức năng này chỉ áp dụng cho nhân vật dạng
+    hình người 3D
+    Apply Root
+    Motion
+    Chức năng này nếu được chọn sẽ giúp điều khiển nhân vật xoay xung
+    quanh vị trí của nó bằng mã lệnh
+    Animate Physics Chức năng này giúp kích hoạt chế độ vật lý của chuyển động
+    Update Mode Chức năng này cho phép chọn lựa cách thức cập nhật chuyển động, có
+    2 cách thức bao gồm cập nhật theo vật lý (Animate Physics) và cập nhật
+    theo thời gian (Unscaled Time)
+    Culling Mode Chức năng này cho phép vô hiệu hóa việc chọn các ảnh động
+Quản lý các trạng thái
+    Chuyển trạng thái bằng mã lệnh
+    Action = 0 thì đứng
+yên, Action = 1 thì quay trái, Action = 2
 
 Particle System được thêm vào bằng cách trên Hierachy, chọn Game Object, chọn Effects,
 chọn Particle System
@@ -108,16 +168,52 @@ Rate over Time: cho phép quản lý tỉ lệ phát hạt trong một khoảng 
 Rate over Distance: cho phép quản lý tỉ lệ phát hạt trong một khoảng cách nhất định;
 Sự phát hạt còn được quản lý bởi một mảng các đối tượng Bursts(được quản lý bởi
 thời gian, số lượng, số vòng quay, thời gian sống và xác suất).
-• Shape: Quản lý hình dạng của hạt phát ra. Có thể chọn các loại hình dạng trong tham
+    Shape: Quản lý hình dạng của hạt phát ra. Có thể chọn các loại hình dạng trong tham
 số Shape như Cone, Sphere, Donut, Box, Sprite… Tùy vào hình dạng do người dùng
 chọn mà sẽ có các thông số đi kèm như bán kính, chiều cao, tọa độ…
-• Renderer: Thuộc tính này cho phép quản lý sự hiển thị của hạt khi phát ra, một số tham
+    Renderer: Thuộc tính này cho phép quản lý sự hiển thị của hạt khi phát ra, một số tham
 số đi kèm như Material hoặc Mesh cho phép quản lý sự hiển thị của hạt khi phát ra
 được hiệu quả hơn.
-• Texture Sheet Animation: Cho phép xây dựng các hạt phát ra là các hình ảnh.
-• Sub Emiters: Quản lý hạt con, là loại hạt phát ra từ hạt gốc, kiểu như pháo hoa khi nổ
+    Texture Sheet Animation: Cho phép xây dựng các hạt phát ra là các hình ảnh.
+    Sub Emiters: Quản lý hạt con, là loại hạt phát ra từ hạt gốc, kiểu như pháo hoa khi nổ
 hoặc sự bắn của nước khi rơi xuống
 Và một số thuộc tính khác.
+Duration Thời gian chạy hiệu ứng, tính bằng giây, nếu không thiết lập chế độ lặp lại
+thì sau khoảng thời gian này, hiệu ứng sẽ tắt
+Looping Cho phép hiệu ứng lặp lại hoặc không
+Start Delay Thời gian trễ, thời gian bị trễ khi bắt đầu hiệu ứng
+Start Lifetime Thời gian để bắt đầu lại vòng đời của hạt
+Start Speed Tốc độ ban đầu của hạt
+3D Start Size,
+3D Start Rotation,
+Start Rotation,
+Flip Rotation
+Kích thước của hạt, nếu được chọn sẽ cho thiết lập kích thước của hạt theo
+x, y,z. Tương tự vớp phép quay và phép lật cho hạt
+Start Color Màu ban đầu của hạt. Lưu ý, Unity cho phép thiết lập màu Gradient để pha
+trộn các màu giúp hiệu ứng đẹp hơn
+Gravity Source,
+Gravity Modifier
+Cho phép thiết lập trọng lực cho hạt, nếu được thiết lập hạt khi bay ra khỏi
+hệ thống sẽ rơi xuống.
+Simulation Space,
+Simulation Speed
+Giúp hệ thống minh họa không gian cho hạt, không gian dựa trên trục tọa
+độ, còn tốc độ thì giúp hạt bay nhanh hoặc chậm tùy vào tham số thiết lập
+Delta Time,
+Scale Mode
+Chế độ của Time khi hiệu ứng ở trạng thái tạm dừng (Pause)
+Play on Awake Cho phép hiệu ứng hoạt động ngay khi Game bắt đầu
+Emitter Velocity
+Mode
+Chế độ vận tốc của các hạt khi phát ra
+Max Particles Số lượng hạt tối đa
+Auto Random
+Seed
+Chế độ cho phép thực hiện ngẫu nhiên sự phát hạt
+Stop Action Chế độ khi hiệu ứng ngưng hoạt động
+Culling Mode Chế độ chọn lọc
+Ring Buffer Mode Chế độ quản lý bộ đệm trong sự phát hạt
 
 Xây dựng thế giới nhân vật
 	Sprite trong Unity
@@ -152,40 +248,21 @@ private void Update()
         Vector2 movement = Vector2.zero;
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
-        //Debug.Log(movement.x + ", " + movement.y);
         rb.velocity = movement.normalized * moveSpeed;
     }
     else
     {
-            // Lấy hướng di chuyển từ phím được nhấn
             Vector2 direction = Vector2.zero;
-
-            // Kiểm tra các phím được nhấn và cập nhật hướng di chuyển
-            if (Input.GetKey(KeyCode.J))
-            {
-                direction += Vector2.left;
-            }
-            if (Input.GetKey(KeyCode.L))
-            {
-                direction += Vector2.right;
-            }
-            if (Input.GetKey(KeyCode.I))
-            {
-                direction += Vector2.up;
-            }
             if (Input.GetKey(KeyCode.K))
             {
                 direction += Vector2.down;
             }
-
-            // Chuẩn hóa vector hướng di chuyển để giữ cho vận tốc đồng đều khi di chuyển đường chéo
             direction = direction.normalized;
-
-            // Di chuyển player
             MovePlayer(direction);
     }
 }
 
+Khởi tạo đối tượng Prefab: Instantiate(gameObject,new Vector3(100,100,0), Quaternion.identity);
 
 audioSource.Play();
 
