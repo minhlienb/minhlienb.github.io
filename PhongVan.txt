@@ -1,0 +1,28 @@
+Deploy react app trên netlify với firebase hoặc mongodb
+mảng mà mình muốn apply: Fullstack - UI - UX Design
+Kiến thức về UI/UX
+Kiến thức Pattern, Nodejs
+Câu hỏi interviewee phổ biến và cách trả lời: 
+	Tell about yourself
+		Em là Bùi Minh Liên, sinh viên năm 3; <theo hướng web>, 
+		<kinh nghiệm đi làm hồi năm 2  (remote) <mô tả công việc> dưới sự quản lý trực tiếp của anh Kỳ, nhận được kinh nghiệm làm việc hoàn thành được dự án nào, làm những công việc gì sử dụng các công cụ nào>
+		<  quảng bá và tổ chức sự kiện cho Công ty ABC. Với các trải nghiệm này, em thu thập thêm được cho mình kinh nghiệm trong việc làm việc nhóm, lập kế hoạch truyền thông sự kiện, kỹ năng viết lách và phỏng vấn nhân vật">
+		<Điểm mạnh UI/UX front end>
+		<định hướng, mục tiêu nghề nghiệp của bản thân.>
+		<tìm hiểu kỹ về vị trí công việc và môi trường làm việc bên m>
+		Xu hướng AI: Promt engineering: chatgpt tạo app TaskBreaker
+		<nhóm tính cách>
+	
+
+Kể về kinh nghiệm làm việc ở chỗ khác(Du an vin home - Photoshop...) làm việc dưới quản lý trực tiếp của anh Kỳ
+Thử làm một trang web bán điện thoại gồm landing page và products page và deploy với netlify (Thêm hiệu ứng What to watch)
+Kiến thức về SEO?
+
+
+
+Tập nói với gpt3
+nói chậm khi cần thiết 
+tốc độ nói phải tương ứng với tốc độ suy nghĩ
+
+ux: kể tới đâu diễn tả bằng hình ảnh tới đó
+AI: Promt engineering: chatgpt tạo app TaskBreaker
