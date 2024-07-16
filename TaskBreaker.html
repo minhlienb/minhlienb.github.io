@@ -163,6 +163,12 @@
                 updateProgressBar();
             }
         };
+
+        document.getElementById("input").addEventListener("keypress", function(event) {
+              if (event.key === "Enter") {
+                  event.preventDefault();
+                      document.getElementById("btnsubmit").click();
+                    }});
     </script>
 </body>
 </html>
