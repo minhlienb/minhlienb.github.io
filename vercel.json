@@ -3,8 +3,7 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/$1",
-            "caseSensitive": false
+            "destination": "/$1"
         }
     ]
 }
