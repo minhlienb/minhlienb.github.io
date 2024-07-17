@@ -1,4 +1,11 @@
 {
     "cleanUrls": true,
-    "caseSensitive": false
-}
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/$1",
+        "caseSensitive": false
+      }
+    ]
+  }
+  
