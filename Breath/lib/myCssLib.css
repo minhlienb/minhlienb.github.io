@@ -1,0 +1,21 @@
+.linear-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.fl-dr-row {
+    flex-direction: row;
+}
+
+.fl-dr-col {
+    flex-direction: column;
+}
+
+.pos-rl {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+}
