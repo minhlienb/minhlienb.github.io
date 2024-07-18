@@ -1,13 +1,24 @@
 <head>
     <link rel="stylesheet" href="Breathe.css">
     <link rel="stylesheet" href="myCssLib.css">
+    <meta name="theme-color" content="#0f63ff" />
+
+    <!-- Đặt tên ứng dụng khi thêm vào màn hình chính -->
+    <meta name="apple-mobile-web-app-title" content="Your App Name">
+    <!-- Đặt biểu tượng ứng dụng cho iOS -->
+    <link rel="apple-touch-icon" href="path/to/icon.png">
+    <!-- Bật chế độ ứng dụng web toàn màn hình cho iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Đặt màu thanh trạng thái cho iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="/manifest.json">
 </head>
 
 
 
 
 
-<button onclick="toggleFullscreen()">Toggle Fullscreen</button>
+<button class="btnToggleFullscreen" onclick="toggleFullscreen()">Toggle Fullscreen</button>
 
 <div class="linear-layout .fl-dr-row">
     <div class="beater pos-rl">
@@ -23,6 +34,8 @@
 
 <script src="lib/gsap.min.js"></script>
 <script src="fullscreen.js"></script>
+<script src="sw.js"></script>
+<script src="installPageAsApp.js"></script>
 <script>
     gsap.to(".breath-anim", {
         width: "50vw",
