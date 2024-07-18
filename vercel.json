@@ -1,13 +1,3 @@
 {
-    "routes": [
-      {
-        "src": "/TaskBreaker/(.*)",
-        "dest": "/TaskBreaker/$1"
-      },
-      {
-        "src": "/Breath/(.*)",
-        "dest": "/Breath/$1"
-      }
-    ]
-  }
-  
+    "trailingSlash": true
+}
