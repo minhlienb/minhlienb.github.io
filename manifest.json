@@ -1,18 +1,18 @@
 {
     "name": "Your App Name",
     "short_name": "App",
-    "start_url": "/Breathe.html",
+    "start_url": "/Breath.html",
     "display": "standalone",
     "background_color": "#0f63ff",
     "theme_color": "#0f63ff",
     "icons": [
       {
-        "src": "/assets/MyTracker.ico",
+        "src": "/assets/Breath.ico",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/assets/MyTracker.ico",
+        "src": "/assets/Breath.ico",
         "sizes": "512x512",
         "type": "image/png"
       }
