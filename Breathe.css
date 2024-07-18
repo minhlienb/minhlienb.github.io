@@ -14,8 +14,9 @@
 }
 
 .outer-round {
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50vw;
     aspect-ratio: 1;
     background-color: transparent;
