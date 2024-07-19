@@ -1,3 +1,7 @@
+body {
+    background-color: #f5f5f5;
+}
+
 .beater {
     width: 50vw;  /*can't use fit-content or 100% here */
     aspect-ratio: 1;
@@ -21,5 +25,5 @@
     aspect-ratio: 1;
     background-color: transparent;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 2px solid #999999;
 }
