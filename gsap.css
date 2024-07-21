@@ -33,6 +33,7 @@
     overflow: hidden;
     overscroll-behavior: none;
     touch-action: none;
+    pointer-events: none;
     overflow-clip-margin: content-box;
     box-sizing: border-box;
 }
