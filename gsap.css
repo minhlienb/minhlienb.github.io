@@ -16,6 +16,27 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
+#canvas {
+    width: 390px;
+    height: 844px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+    overflow-clip-margin: content-box;
+    box-sizing: border-box;
+}
+
 body {
     /* width: 100vw; */
     overflow-x: hidden;
