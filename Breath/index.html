@@ -17,10 +17,38 @@
     <link rel="manifest" href="manifest.json">
 </head>
 
+<!-- <script>
+    // Function to open the popup
+    function openPopup() {
+        document.getElementById("popup").style.visibility = "visible";
+    }
 
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("popup").style.visibility = "hidden";
+    }
 
-
-<button class="btnToggleFullscreen" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    // Automatically open the popup when the page loads
+    window.onload = function() {
+        openPopup();
+    }
+</script> -->
+<div class="">wizard hướng dẫn sử dụng app (ấn giữ để dừng)</div>
+<div class="mở nhạc và dùng hỉnh tròn ở trung tâm thay cho spectrum"></div>
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h1>Breath - Luyện tập Hơi Thở</h1>
+        <h2>1. Sức khỏe và cuộc sống</h2>
+        <p>Cuộc sống hiện đại khiến ta thường bỏ quên sức khỏe.</p>
+        <h2>2. Kỹ thuật thở và lợi ích</h2>
+        <p>Các kỹ thuật thở giúp điều chỉnh cảm xúc, thư giãn, dễ ngủ, tập trung và giảm suy nghĩ tiêu cực.</p>
+        <h2>3. Hướng dẫn luyện tập</h2>
+        <p>Ứng dụng hướng dẫn bạn luyện tập thở, biến thở thành một hoạt động thiền hoặc yoga bổ ích.</p>
+        <button class="close-btn" onclick="closePopup()">Đóng</button>
+        <button class="close-btn" onclick="closePopup(); /*StopRemind()*/">Đừng nói nữaaaaaaa</button>
+    </div>
+</div>
+<!-- <button class="btnToggleFullscreen" onclick="toggleFullscreen()">Toggle Fullscreen</button> -->
 
 <div class="linear-layout .fl-dr-row">
     <div class="beater pos-rl">
