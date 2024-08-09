@@ -1,3 +1,8 @@
+::root {
+    --lightInner:
+    --fullInner: #67dbff
+}
+
 body {
     background-color: #f5f5f5;
 }
