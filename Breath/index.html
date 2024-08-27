@@ -37,6 +37,7 @@
 <div class="mở nhạc và dùng hỉnh tròn ở trung tâm thay cho spectrum"></div>
 <div class="popup" id="popup">
     <div class="popup-content">
+        <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/j8fDJ04ipOw?t=54" title="Chúng ta thở như thế nào?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h1>Breath - Luyện tập Hơi Thở</h1>
         <h2>1. Sức khỏe và cuộc sống</h2>
         <p>Cuộc sống hiện đại khiến ta thường bỏ quên sức khỏe.</p>
@@ -50,12 +51,17 @@
 </div>
 <!-- <button class="btnToggleFullscreen" onclick="toggleFullscreen()">Toggle Fullscreen</button> -->
 
-<div class="linear-layout .fl-dr-row">
+<div class="linear-layout fl-dr-col">
     <div class="beater pos-rl">
         <div class="breath-anim inner-round pos-ab"></div>
         <div class="outer-round pos-ab"></div>
     </div>
+    <div id="txtIndicator" style="margin: 2%; font-size: large; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 600; color: #606060;">
+        Drink some water and stay focus
+    </div>
 </div>
+
+
 
 <div class="drawer">
     <div class="back-icon"></div>
@@ -67,16 +73,30 @@
 
 
 <script src="lib/gsap.min.js"></script>
-<script src="fullscreen.js"></script>
-<script src="sw.js"></script>
-<script src="installPageAsApp.js"></script>
+<!-- <script src="fullscreen.js"></script> -->
+<!-- <script src="sw.js"></script> -->
+<!-- <script src="installPageAsApp.js"></script> -->
 <script>
+    let lightColor = '#57d8ff';
+    let duration = 3.5;
+    let txtIndicator = document.getElementById('txtIndicator');
+    let repeat = 15;
+
+    let presetBoxBreathing = ["Breath in","Hold", "Breathe Out", "Hold"];
+
+
     gsap.to(".breath-anim", {
-    'background-color': '#8fe3ff', 
+    'background-color': lightColor, 
         width: "50vw",
         ease: "power1.inOut",
         yoyo: true,
-        repeat: -1, // repeat: 4;sẽ lặp 5 lần (1 lần đầu và 4 lần lặp lại
-        duration: "3.5"
+        repeat: repeat, // repeat: 4;sẽ lặp 5 lần (1 lần đầu và 4 lần lặp lại
+        duration: duration,
+        onRepeat: () => {
+            txtIndicator.innerHTML !== "Breath out"? txtIndicator.innerHTML = "Breath out" : txtIndicator.innerHTML = "Breath in";
+        },
+        onComplete: () => {
+            txtIndicator.innerHTML = "Well done";
+        }
     })
 </script>
