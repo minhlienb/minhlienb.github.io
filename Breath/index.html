@@ -159,7 +159,55 @@
         })
     }
 
-    Breath2(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3], 3)
+    function Excercise(breathIn, Hold, breathOut, Hold2, repeat) {
+        let tl = gsap.timeline({ repeat: repeat });
+        ease = "power2.inOut";
+        // txtIndicator.innerHTML = ""
+        tl.to(".breath-anim", {
+            duration: 0,
+            onComplete: () => {
+                txtIndicator.innerHTML = "Breath in";
+            }
+        })
+        .to(".breath-anim", {
+            width: "50vw",
+            ease: ease,
+            // yoyo: true,
+            duration: breathIn,
+            onComplete: () => {
+            }
+        })
+        .to(".breath-anim", {
+            'background-color': strenghColor,
+            ease: ease,
+            // yoyo: true,
+            duration: Hold,
+            onComplete: () => {
+                txtIndicator.innerHTML = "Breath Out"
+            }
+        })
+        .to(".breath-anim", {
+            width: "20vw",
+            ease: ease,
+            // yoyo: true,
+            duration: breathOut,
+            onComplete: () => {
+                txtIndicator.innerHTML = "Hold"
+            }
+        })
+        .to(".breath-anim", {
+            'background-color': lightColor,
+            ease: ease,
+            yoyo: true,
+            duration: Hold2,
+            onComplete: () => {
+                txtIndicator.innerHTML = "Well Done"
+            }
+        })
+    }
+
+
+    Excercise(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3], 3)
     
     // Breath(5, 3.5)
 </script>
