@@ -66,8 +66,8 @@
     </div>
 </div>
 
-<button onclick="ResetState()">Strengh Excercise</button>
-<button>Box Breathing</button>
+<button onclick="Breath2()">Strengh Excercise</button>
+<button onclick="Excercise()">Box Breathing</button>
 
 <div class="drawer">
     <div class="back-icon"></div>
@@ -90,6 +90,7 @@
     let presetBoxBreathing = ["Breath in", "Hold", "Breathe Out", "Hold"];
     let presetExcercise = ["Breath in", "Breathe Out", "Hold", "Hold", "Hold", "Hold"]; //tập cơ hoành 
     let numbericPreset = [3, 0.4, 3, 600];
+    let boxBreathingPreset = [3,3,3,3];
     let durationReset = 0.2;
 
     let tl;
@@ -114,6 +115,7 @@
     }
 
     function Breath2(breathIn, Hold, breathOut, Hold2, repeat) {
+        ResetState();
         tl = gsap.timeline({ repeat: repeat });
         ease = "power2.inOut";
         tl.to(".breath-anim", {
@@ -161,6 +163,7 @@
     }
 
     function Excercise(breathIn, Hold, breathOut, Hold2, repeat) {
+        ResetState();
         tl = gsap.timeline({ repeat: repeat });
         ease = "power2.inOut";
         tl.to(".breath-anim", {
@@ -223,7 +226,7 @@
         })
     }
 
-    Breath2(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3],3)
+    Breath2(boxBreathingPreset[0], boxBreathingPreset[1], boxBreathingPreset[2], boxBreathingPreset[3],3)
 
 
 
@@ -242,5 +245,5 @@
 
 
 
-    
+
 </script>
