@@ -81,6 +81,7 @@
 <!-- <script src="sw.js"></script> -->
 <!-- <script src="installPageAsApp.js"></script> -->
 <script>
+    // let language = json.Stringify
     let lightColor = '#57d8ff';
     let strenghColor = "#ff8457"
     //let duration = 3.5;
@@ -89,13 +90,30 @@
 
     let presetBoxBreathing = ["Breath in", "Hold", "Breathe Out", "Hold"];
     let presetExcercise = ["Breath in", "Breathe Out", "Hold", "Hold", "Hold", "Hold"]; //tập cơ hoành 
-    let numbericPreset = [3, 0.4, 3, 600];
+    let numbericPreset = [3-0.4, 0.4, 3, 600];
     let boxBreathingPreset = [3,3,3,3];
     let durationReset = 0.2;
 
-    let tl;
+    let tl = gsap.timeline();
+
+    let interval;
 
     // count > 7? alert("Your lung capacity is improved!"): alert("Keep it up!")
+
+    function ResetState() {
+        clearInterval(interval);
+        tl.kill();
+        gsap.to(".breath-anim", {
+            width: "50vw",
+            'background-color': lightColor,
+            ease: "power.inOut",
+            duration: durationReset,
+            onComplete: () => {
+                // txtIndicator.innerHTML = "Reset test"
+            }
+        })
+    }
+
 
     function Breath(repeat, duration) {
         gsap.to(".breath-anim", {
@@ -115,6 +133,7 @@
     }
 
     function Breath2(breathIn, Hold, breathOut, Hold2, repeat) {
+        ResetState();
         tl = gsap.timeline({ repeat: repeat });
         ease = "power2.inOut";
         tl.to(".breath-anim", {
@@ -162,6 +181,7 @@
     }
 
     function Excercise(breathIn, Hold, breathOut, Hold2, repeat) {
+        ResetState();
         tl = gsap.timeline({ repeat: repeat });
         ease = "power2.inOut";
         tl.to(".breath-anim", {
@@ -193,7 +213,11 @@
             // yoyo: true,
             duration: breathOut,
             onComplete: () => {
-                txtIndicator.innerHTML = "Hold"
+                let count = 0;
+                interval = setInterval(() => {
+                    txtIndicator.innerHTML = `Hold ${count += 1}s`
+                }, 1000);
+                txtIndicator.innerHTML = "Hold";
             }
         })
         .to(".breath-anim", {
@@ -210,37 +234,6 @@
 
     // 
     
-
-    function ResetState() {
-        tl.kill();
-        gsap.to(".breath-anim", {
-            width: "50vw",
-            'background-color': lightColor,
-            ease: "Out",
-            duration: durationReset,
-            onComplete: () => {
-                txtIndicator.innerHTML = "Reset test"
-            }
-        })
-    }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
