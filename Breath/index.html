@@ -66,7 +66,8 @@
     </div>
 </div>
 
-
+<button onclick="ResetState()">Strengh Excercise</button>
+<button>Box Breathing</button>
 
 <div class="drawer">
     <div class="back-icon"></div>
@@ -89,6 +90,9 @@
     let presetBoxBreathing = ["Breath in", "Hold", "Breathe Out", "Hold"];
     let presetExcercise = ["Breath in", "Breathe Out", "Hold", "Hold", "Hold", "Hold"]; //tập cơ hoành 
     let numbericPreset = [3, 0.4, 3, 600];
+    let durationReset = 0.2;
+
+    let tl;
 
     // count > 7? alert("Your lung capacity is improved!"): alert("Keep it up!")
 
@@ -109,12 +113,9 @@
         })
     }
 
-
-
     function Breath2(breathIn, Hold, breathOut, Hold2, repeat) {
-        let tl = gsap.timeline({ repeat: repeat });
+        tl = gsap.timeline({ repeat: repeat });
         ease = "power2.inOut";
-        // txtIndicator.innerHTML = ""
         tl.to(".breath-anim", {
             duration: 0,
             onComplete: () => {
@@ -160,9 +161,8 @@
     }
 
     function Excercise(breathIn, Hold, breathOut, Hold2, repeat) {
-        let tl = gsap.timeline({ repeat: repeat });
+        tl = gsap.timeline({ repeat: repeat });
         ease = "power2.inOut";
-        // txtIndicator.innerHTML = ""
         tl.to(".breath-anim", {
             duration: 0,
             onComplete: () => {
@@ -207,7 +207,40 @@
     }
 
 
-    Excercise(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3], 3)
+    // Excercise(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3], 3)
     
-    // Breath(5, 3.5)
+
+    function ResetState() {
+        tl.kill();
+        gsap.to(".breath-anim", {
+            width: "50vw",
+            'background-color': lightColor,
+            ease: "Out",
+            duration: durationReset,
+            onComplete: () => {
+                txtIndicator.innerHTML = "Reset test"
+            }
+        })
+    }
+
+    Breath2(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3],3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </script>
