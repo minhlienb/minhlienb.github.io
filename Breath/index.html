@@ -54,6 +54,7 @@
     </div>
 </div>
 <!-- <button class="btnToggleFullscreen" onclick="toggleFullscreen()">Toggle Fullscreen</button> -->
+<button onclick="ResetState()"> <- </button>
 
 <div class="linear-layout fl-dr-col">
     <div class="beater pos-rl">
@@ -68,6 +69,7 @@
 
 <button onclick="Breath2(boxBreathingPreset[0], boxBreathingPreset[1], boxBreathingPreset[2], boxBreathingPreset[3],3)">Box Breathing</button>
 <button onclick="Excercise(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3])">Strengh Excercise</button>
+<button onclick="ResetState()">Strength Stop</button>
 
 <div class="drawer">
     <div class="back-icon"></div>
@@ -90,9 +92,13 @@
 
     let presetBoxBreathing = ["Breath in", "Hold", "Breathe Out", "Hold"];
     let presetExcercise = ["Breath in", "Breathe Out", "Hold", "Hold", "Hold", "Hold"]; //tập cơ hoành 
+    let strength;
     let numbericPreset = [3-0.4, 0.4, 3, 600];
-    let boxBreathingPreset = [3,3,3,3];
-    let durationReset = 0.2;
+    let boxBreathingPreset = [3,3,3,3,5];
+    let ease = "power2.inOut";
+    let defaultAnimWidth = "20vw";
+    let fullAnimWidth = "50vw";
+    let animHeight = "20vh";
 
     let tl = gsap.timeline();
 
@@ -101,16 +107,18 @@
     // count > 7? alert("Your lung capacity is improved!"): alert("Keep it up!")
 
     function ResetState() {
-        clearInterval(interval);
+        if (interval) {
+            clearInterval(interval);
+        }
+
         tl.kill();
+        // gsap.set(".breath-anim", {clearProps: true})
+
         gsap.to(".breath-anim", {
-            width: "50vw",
+            width: defaultAnimWidth,
             'background-color': lightColor,
-            ease: "power.inOut",
-            duration: durationReset,
-            onComplete: () => {
-                // txtIndicator.innerHTML = "Reset test"
-            }
+            ease: "power.Out",
+            duration: 0.7
         })
     }
 
@@ -118,7 +126,7 @@
     function Breath(repeat, duration) {
         gsap.to(".breath-anim", {
             'background-color': lightColor,
-            width: "50vw",
+            width: fullAnimWidth,
             ease: "power1.inOut",
             yoyo: true,
             repeat: repeat, // repeat: 4;sẽ lặp 5 lần (1 lần đầu và 4 lần lặp lại
@@ -133,9 +141,7 @@
     }
 
     function Breath2(breathIn, Hold, breathOut, Hold2, repeat) {
-        ResetState();
         tl = gsap.timeline({ repeat: repeat });
-        ease = "power2.inOut";
         tl.to(".breath-anim", {
             duration: 0,
             onComplete: () => {
@@ -143,9 +149,8 @@
             }
         })
         .to(".breath-anim", {
-            width: "50vw",
+            width: fullAnimWidth,
             ease: ease,
-            // yoyo: true,
             duration: breathIn,
             onComplete: () => {
                 txtIndicator.innerHTML = "Hold";
@@ -154,19 +159,17 @@
         .to(".breath-anim", {
             'background-color': strenghColor,
             ease: ease,
-            // yoyo: true,
             duration: Hold,
             onComplete: () => {
-                txtIndicator.innerHTML = "Breath Out"
+                txtIndicator.innerHTML = "Breath Out";
             }
         })
         .to(".breath-anim", {
-            width: "20vw",
+            width: defaultAnimWidth,
             ease: ease,
-            // yoyo: true,
             duration: breathOut,
             onComplete: () => {
-                txtIndicator.innerHTML = "Hold"
+                txtIndicator.innerHTML = "Hold";
             }
         })
         .to(".breath-anim", {
@@ -175,13 +178,12 @@
             yoyo: true,
             duration: Hold2,
             onComplete: () => {
-                txtIndicator.innerHTML = "Well Done"
+                txtIndicator.innerHTML = "Well Done";
             }
         })
     }
 
     function Excercise(breathIn, Hold, breathOut, Hold2, repeat) {
-        ResetState();
         tl = gsap.timeline({ repeat: repeat });
         ease = "power2.inOut";
         tl.to(".breath-anim", {
@@ -191,9 +193,8 @@
             }
         })
         .to(".breath-anim", {
-            width: "50vw",
+            width: fullAnimWidth,
             ease: ease,
-            // yoyo: true,
             duration: breathIn,
             onComplete: () => {
             }
@@ -201,21 +202,24 @@
         .to(".breath-anim", {
             'background-color': strenghColor,
             ease: ease,
-            // yoyo: true,
             duration: Hold,
             onComplete: () => {
                 txtIndicator.innerHTML = "Breath Out"
             }
         })
         .to(".breath-anim", {
-            width: "20vw",
+            width: defaultAnimWidth,
             ease: ease,
-            // yoyo: true,
             duration: breathOut,
             onComplete: () => {
                 let count = 0;
                 interval = setInterval(() => {
-                    txtIndicator.innerHTML = `Hold ${count += 1}s`
+                    txtIndicator.innerHTML = `Hold ${count += 1}s`;
+                    strength = count;
+                    boxBreathingPreset[0] = ((strength / 17) * 3);
+                    boxBreathingPreset[1] = ((strength / 17) * 3);
+                    boxBreathingPreset[2] = ((strength / 17) * 3);
+                    boxBreathingPreset[3] = ((strength / 17) * 3);
                 }, 1000);
                 txtIndicator.innerHTML = "Hold";
             }
