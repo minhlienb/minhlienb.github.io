@@ -23,3 +23,7 @@ html {
 .pos-ab {
     position: absolute;
 }
+
+.inside-margin-h > * {
+    margin: 10px;
+}
