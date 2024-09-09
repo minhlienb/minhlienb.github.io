@@ -48,7 +48,7 @@
         <h2>2. Kỹ thuật thở và lợi ích</h2>
         <p>Các kỹ thuật thở giúp điều chỉnh cảm xúc, thư giãn, dễ ngủ, tập trung và giảm suy nghĩ tiêu cực.</p>
         <h2>3. Hướng dẫn luyện tập</h2>
-        <p>Ứng dụng hướng dẫn bạn luyện tập thở, biến thở thành một hoạt động thiền hoặc yoga bổ ích.</p>
+        <p>Ứng dụng hướng dẫn bạn luyện tập thở, biến thở thành một <b>hoạt động thiền</b> hoặc yoga bổ ích.</p>
         <button class="close-btn" onclick="closePopup()">Đóng</button>
         <button class="close-btn" onclick="closePopup(); /*StopRemind()*/">Đừng nói nữaaaaaaa</button>
     </div>
@@ -68,13 +68,14 @@
 </div>
 
 <button onclick="Breath2(boxBreathingPreset[0], boxBreathingPreset[1], boxBreathingPreset[2], boxBreathingPreset[3],3)">Box Breathing</button>
+<button onclick="EqualBreath(equalDuration, equalDuration, parseInt(prompt('Enter number of repeation', 5)))">Equal Breathing</button>
 <button onclick="Excercise(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3])">Strengh Excercise</button>
 
-<div class="drawer">
+<!-- <div class="drawer">
     <div class="back-icon"></div>
     <div id="settings"></div>
     #
-</div>
+</div> -->
 
 
 <script src="lib/gsap.min.js"></script>
@@ -85,7 +86,7 @@
     // let language = json.Stringify
     let lightColor = '#57d8ff';
     let strenghColor = "#ff8457"
-    //let duration = 3.5;
+    let equalDuration = 2.7;
     let txtIndicator = document.getElementById('txtIndicator');
     //let repeat = 15;
 
@@ -119,22 +120,50 @@
             ease: "power.Out",
             duration: 0.7
         })
+        txtIndicator.innerHTML = "Well done!"
     }
 
 
-    function Breath(repeat, duration) {
-        gsap.to(".breath-anim", {
-            'background-color': lightColor,
-            width: fullAnimWidth,
-            ease: "power1.inOut",
-            yoyo: true,
-            repeat: repeat, // repeat: 4;sẽ lặp 5 lần (1 lần đầu và 4 lần lặp lại
-            duration: duration,
-            onRepeat: () => {
-                txtIndicator.innerHTML !== "Breath out" ? txtIndicator.innerHTML = "Breath out" : txtIndicator.innerHTML = "Breath in";
-            },
+    // function Breath(repeat, duration) {
+    //     tl = gsap.timeline({ repeat: repeat });
+    //     tl.to(".breath-anim", {
+    //         'background-color': lightColor,
+    //         width: fullAnimWidth,
+    //         ease: "power1.inOut",
+    //         yoyo: true,
+    //         repeat: repeat, // repeat: 4;sẽ lặp 5 lần (1 lần đầu và 4 lần lặp lại
+    //         duration: duration,
+    //         onRepeat: () => {
+    //             txtIndicator.innerHTML !== "Breath out" ? txtIndicator.innerHTML = "Breath out" : txtIndicator.innerHTML = "Breath in";
+    //         },
+    //         onComplete: () => {
+    //             txtIndicator.innerHTML = "Well done";
+    //         }
+    //     })
+    // }
+
+    function EqualBreath(breathIn, breathOut, repeat) {
+        tl = gsap.timeline({ repeat: repeat });
+        tl.to(".breath-anim", {
+            duration: 0,
             onComplete: () => {
-                txtIndicator.innerHTML = "Well done";
+                txtIndicator.innerHTML = "Breath in";
+            }
+        })
+        .to(".breath-anim", {
+            width: fullAnimWidth,
+            ease: ease,
+            duration: breathIn,
+            onComplete: () => {
+                txtIndicator.innerHTML = "Breath Out";
+            }
+        })
+        .to(".breath-anim", {
+            width: defaultAnimWidth,
+            ease: ease,
+            duration: breathOut,
+            onComplete: () => {
+                txtIndicator.innerHTML = "Well Done";
             }
         })
     }
@@ -219,6 +248,7 @@
                     boxBreathingPreset[1] = ((strength / 17) * 3);
                     boxBreathingPreset[2] = ((strength / 17) * 3);
                     boxBreathingPreset[3] = ((strength / 17) * 3);
+                    equalDuration = ((strength / 17) * 3);
                 }, 1000);
                 txtIndicator.innerHTML = "Hold";
             }
