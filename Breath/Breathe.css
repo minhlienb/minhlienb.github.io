@@ -1,5 +1,12 @@
+@media only screen and (max-aspect-ratio: 1/1) {
+    .beater {
+        min-width: 80vw;
+        aspect-ratio: 1;
+    }
+}
+
 ::root {
-    --lightInner:#c5f1ff;
+    --lightInner: #c5f1ff;
     --fullInner: #57d8ff;
 }
 
@@ -8,7 +15,8 @@ body {
 }
 
 .beater {
-    width: 50vw;  /*can't use fit-content or 100% here */
+    width: 60vh;
+    /*can't use fit-content or 100% here */
     aspect-ratio: 1;
 }
 
@@ -16,7 +24,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20vw;
+    /* width: 20vw; */
+    width: 30%;
     aspect-ratio: 1;
     background-color: #57d8ff;
     border-radius: 50%;
@@ -26,7 +35,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
+    /* width: 50vw; */
+    width: 100%;
     aspect-ratio: 1;
     background-color: transparent;
     border-radius: 50%;
