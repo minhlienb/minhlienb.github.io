@@ -1,6 +1,7 @@
 @media only screen and (max-aspect-ratio: 1/1) {
     .beater {
-        min-width: 80vw;
+        max-width: 90vw;
+        min-width: 70vw;
         aspect-ratio: 1;
     }
 }
