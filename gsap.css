@@ -20,6 +20,14 @@
     box-sizing: border-box;
 }
 
+
+/* mobile */
+@media only screen and (max-aspect-ratio: 1/1) {
+    .imgParallax1 {
+        height: 50vw;
+    }
+}
+
 /* #canvas {
     width: 390px;
     height: 844px;

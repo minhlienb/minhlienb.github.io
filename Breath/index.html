@@ -51,6 +51,7 @@
         <p>Các kỹ thuật thở giúp điều chỉnh cảm xúc, thư giãn, dễ ngủ, tập trung và giảm suy nghĩ tiêu cực.</p>
         <h2>3. Hướng dẫn luyện tập</h2>
         <p>Ứng dụng hướng dẫn bạn luyện tập thở, biến thở thành một <b>hoạt động thiền</b> hoặc yoga bổ ích.</p>
+        <p>Cuối cùng nếu gặp vấn khó khăn trong việc thở thì hãy kết hợp với miệng nữa nhé 😮‍💨</p>
         <button class="close-btn" onclick="closePopup()">Đóng</button>
         <button class="close-btn" onclick="closePopup(); /*StopRemind()*/">Đừng nói nữaaaaaaa</button>
     </div>
@@ -285,7 +286,7 @@
                                 boxBreathingPreset[1] = ((strength / 16) * 3.34);
                                 boxBreathingPreset[2] = ((strength / 16) * 3.34);
                                 boxBreathingPreset[3] = ((strength / 16) * 3.34);
-                                equalDuration = ((strength / 16) * 3.34);
+                                strength > 30? equalDuration = 5: equalDuration = ((strength / 16) * 3.34);
                             }, 1000);
                             txtIndicator.innerHTML = "Hold";
                         }
