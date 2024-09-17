@@ -6,6 +6,13 @@
     }
 }
 
+button {
+    color: #363636;
+    border-radius: 6px;
+    border: #666666 solid 2px;
+    padding: 10px;
+}
+
 ::root {
     --lightInner: #c5f1ff;
     --fullInner: #57d8ff;
