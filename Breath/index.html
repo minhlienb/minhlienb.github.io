@@ -73,16 +73,15 @@
         <div id="buttons" class="linear-layout fl-dr-col inside-margin-h">
             <div class="linear-layout fl-dr-row">
                 <button
-                onclick="Breath2(boxBreathingPreset[0], boxBreathingPreset[1], boxBreathingPreset[2], boxBreathingPreset[3],3)">Box
-                Breathing</button>
-            <button
-                onclick="EqualBreath(equalDuration, equalDuration, parseInt(prompt('Enter number of repeation', 5)))">Equal
-                Breathing</button>
+                    onclick="Breath2(boxBreathingPreset[0], boxBreathingPreset[1], boxBreathingPreset[2], boxBreathingPreset[3],3)">Box
+                    Breathing</button>
+                <button
+                    onclick="EqualBreath(equalDuration, equalDuration, parseInt(prompt('Enter number of repeation', 5)))">Equal
+                    Breathing</button>
             </div>
             <br>
             <div class="linear-layout fl-dr-row">
-                <button
-                    onclick="EqualBreath(2.5, 5.5, 5)">Pursed lip breathing</button>
+                <button onclick="EqualBreath(2.5, 5.5, 5)">Pursed lip breathing</button>
                 <button
                     onclick="Excercise(numbericPreset[0], numbericPreset[1], numbericPreset[2], numbericPreset[3])">Strengh
                     Excercise</button>
@@ -92,7 +91,7 @@
 
         </div>
         <button style="padding: 8px; margin: auto;display: block; " onclick="ResetState()"> > Stop </button>
-
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQ56xXEcYwEXjgNs6ni0vrvGApQlvXMZV1CuSqjcxCAkKGrA/viewform?embedded=true" width="640" height="418" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         <!-- <div>✨Changelog</div> -->
 
         <!-- <div class="drawer">
@@ -296,7 +295,7 @@
                                 boxBreathingPreset[1] = ((strength / 16) * 3.34);
                                 boxBreathingPreset[2] = ((strength / 16) * 3.34);
                                 boxBreathingPreset[3] = ((strength / 16) * 3.34);
-                                strength > 30? equalDuration = 5: equalDuration = ((strength / 16) * 3.34);
+                                strength > 30 ? equalDuration = 5 : equalDuration = ((strength / 16) * 3.34);
                             }, 1000);
                             txtIndicator.innerHTML = "Hold";
                         }
