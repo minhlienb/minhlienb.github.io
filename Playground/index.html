@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Responsive Layout with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .content-red {
+            width: 25%;
+            writing-mode: vertical-lr;
+            background-color: #ff6b6b;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-red p {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-red p {
+                font-size: 1.5rem;
+            }
+
+            /* Mobile: Red part takes 50% height */
+            .content-red {
+                writing-mode: unset;
+                width: unset;
+                height: 50vh;
+            }
+
+            /* Mobile: White part takes 50% height */
+            .content-white {
+                height: 50vh;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <!-- Desktop Layout: Full height, half width -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center content-red">
+                <p style="font-weight: 900;font-size: 80px;">이걸 왜번역하나요<span style="font-weight: 700;">?</span></p>
+            </div>
+            <!-- White space -->
+            <div class="col-md-6 bg-white d-none d-md-block">
+            </div>
+        </div>
+
+        <!-- Mobile Layout: White section visible and below red section -->
+        <div class="row d-md-none">
+            <div class="col-12 content-white">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
