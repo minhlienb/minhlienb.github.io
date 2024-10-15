@@ -1,14 +1,18 @@
+:root {
+    --transition: 0.27s;
+}
+
 * {
     box-sizing: border-box;
 }
 
-body {
-    cursor: url('../assets/Korean\ Reaction\ Happy\ Cat\ Meme--cursor--SweezyCursors.cur'), auto;
+/* body {
+    cursor: url('../assets/Korean\ Reaction\ Happy\ Cat\ Meme--cursor--SweezyCursors.cur') 8 8, auto;;
 }
 
 #nav:hover {
-    cursor: url('../assets/Korean\ Reaction\ Happy\ Cat\ Meme--pointer--SweezyCursors.cur'), auto;
-}
+    cursor: url('../assets/Korean\ Reaction\ Happy\ Cat\ Meme--pointer--SweezyCursors.cur') 8 8, auto;;
+} */
 
 html {
     background-repeat: no-repeat;
@@ -17,35 +21,41 @@ html {
 }
 
 h1 {
-    height: 100%;
+    padding: 24px;
     --basewidth: 200px;
-    --transition: 0.27s;
+    display: block;
+    /* height: 100%; */
     border: #121212 solid 1px;
-    height: ;
+    margin: 0;
     width: var(--basewidth);
     text-align: center;
-    display: block;
     transition: var(--transition);
 }
 
 h1:hover {
+    padding: 40px;
     width: calc(var(--basewidth) + 80px);
     transition: var(--transition);
     background-color: antiquewhite;
 }
 
 #nav {
-display: flex;
-width: 100%;
-justify-content: center;
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition: var(--transition);
 }
+
+/* #nav:hover {
+    height: 120px;
+    transition: var(--transition);
+} */
 
 
 /* nếu là class thì lồng selector */
 #nav .flex-ctn {
-    margin: 20px;
     width: fit-content;
-    height: 100%;
     display: flex;
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.2);
