@@ -3,9 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta property="og:image:alt" content="Lusion - Realise Your Creative Ideas">
-    <meta property="og:image" content="https://lusion.co/assets/meta/social_sharing.jpg">
-    <meta property="og:description" content="We help brands create digital experiences that connect with their audience"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>GSAP PLAYGROUND</title>
     <meta name="theme-color" content="#0f63ff" />
@@ -13,16 +10,171 @@
     <!-- <link rel="stylesheet" href="/lib/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="gsap.css">
-</head>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            body {
+                height: 500vh;
+            }
+    
+            img {
+                width: 100%;
+                height: 20vw;
+                object-fit: cover;
+                /* object-position: center center; */
+                transform: translate(0, 100px);
+            }
+    
+            section div {
+                height: auto;
+                width: 20vw;
+                /* overflow: hidden; */
+            }
+        </style>
+    </head>
 
 <body>
-    
+    <section style="height: 100vh"></section>
+
+    <section id="herosection" style="display: flex; flex-direction: row; height: 100vh; width: 400vw; justify-content: flex-start;">
+        <div style="background-color: #ff6666; width: 50vw;">
+            <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/01/eventualresult1.jpg">
+        </div>
+
+        <div class="ctn" style="background-color: #ff9daf;">
+            <img style="transform: translate(0, 100px);" class="img" src="https://images.unsplash.com/photo-1619408506848-0122e6a8af04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww">
+        </div>
+
+        <div class="ctn1" style="background-color: #5a35ec;">
+            <img style="transform: translate(0, 150px);" class="img1" src="https://images.unsplash.com/photo-1661183977745-e71963f46e02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww">
+        </div>
+
+        <div class="ctn2" style="background-color: #a8dc46;">
+            <img style="transform: translate(0, 190px);" class="img2" src="https://plus.unsplash.com/premium_photo-1669750819346-810677df0567?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww">
+        </div>
+        
+        <div class="ctn3" style="background-color: #46dca3;">
+            <img style="transform: translate(0, 230px);" class="img3" src="https://plus.unsplash.com/premium_photo-1669750819346-810677df0567?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww">
+        </div>
+    </section>
+
+
+
+
+
+
     <!-- GSAP Library -->
+<!-- GSAP Library -->
     <script src="/lib/gsap.min.js"></script>
     <script src="/lib/ScrollTrigger.min.js"></script>
     <script src="/lib/lenis.min.js"></script>
-    <script src="gsapmain.js"></script>
-</body>
 
-</html>
+
+    <script>
+        // Readme: Ảnh phải có độ phân giải thấp
+
+
+
+        // Tracker: ("*").onClick("writeLog("this.ele.name")")
+        // alert("Your screen is: " + window.innerWidth + "x" + window.innerHeight);
+        // Initialize Lenis smooth scroll
+        const lenis = new Lenis({
+            duration: 1.8,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing function
+            smooth: true
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        // Register the ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Update ScrollTrigger with Lenis scroll position
+        lenis.on('scroll', ScrollTrigger.update);
+
+
+    </script>
+    
+
+
+    <script>
+        // Register the ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+
+        const tl1 = gsap.timeline({
+            scrollTrigger: {
+                pin: true,
+                markers: true,
+                trigger: "#herosection",
+                start: "top 20%",
+                end: "+=1500px",
+                scrub: true, // Kết nối với cuộn
+            }
+        });
+
+        const tl2 = gsap.timeline({
+            scrollTrigger: {
+                pin: true,
+                markers: true,
+                trigger: "#herosection",
+                start: "top 20%",
+                end: "+=1000px",
+                scrub: true, // Kết nối với cuộn
+            }
+        });
+
+        const tl3 = gsap.timeline({
+            scrollTrigger: {
+                pin: true,
+                markers: true,
+                trigger: "#herosection",
+                start: "top 20%",
+                end: "+=1000px",
+                scrub: true, // Kết nối với cuộn
+            }
+        });
+
+        tl1
+            .to(".ctn", {
+                "width": "50vw"
+            })
+            .to(".ctn1", {
+                "width": "50vw"
+            })
+            .to(".ctn2", {
+                "width": "50vw"
+            })
+            .to(".ctn3", {
+                "width": "50vw"
+            })
+
+        tl2
+            .to(".img", {
+                transform: 'translate(0, 0px)',
+            })
+            .to(".img1", {
+                transform: 'translate(0, 0px)',
+            })
+            .to(".img2", {
+                transform: 'translate(0, 0px)',
+            })
+            .to(".img3", {
+                transform: 'translate(0, 0px)',
+            })
+
+        tl3
+            .to('#herosection', {
+                transform: 'translate(-180vw, 0)',
+            })
+    </script>
+
+</body>

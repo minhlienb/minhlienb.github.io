@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicator Bar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>
+        /* styles.css */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .indicator-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #333;
+            color: white;
+            z-index: 1000;
+        }
+
+        .indicator-bar ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .indicator-bar li {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .indicator-bar li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .indicator {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            background: yellow;
+            transition: left 0.3s ease, width 0.3s ease;
+        }
+
+        section {
+            height: 100vh;
+            /* Chiều cao đầy đủ cho mỗi section */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            background: #f4f4f4;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+    <nav class="indicator-bar">
+        <ul id="indicator-list">
+            <li data-target="#section1">Section 1</li>
+            <li data-target="#section2">Section 2</li>
+            <li data-target="#section3">Section 3</li>
+            <li data-target="#section4">Section 4</li>
+        </ul>
+        <div class="indicator" id="indicator"></div>
+    </nav>
+
+    <section id="section1">Content for Section 1</section>
+    <section id="section2">Content for Section 2</section>
+    <section id="section3">Content for Section 3</section>
+    <section id="section4">Content for Section 4</section>
+
+    <script>
+        // script.js
+        const indicator = document.getElementById('indicator');
+        const items = document.querySelectorAll('#indicator-list li');
+        const sections = document.querySelectorAll('section');
+
+        // Đặt chiều rộng và vị trí của indicator
+        function setIndicatorPosition(index) {
+            const currentItem = items[index];
+            const itemRect = currentItem.getBoundingClientRect();
+            const indicatorWidth = itemRect.width;
+
+            indicator.style.width = `${indicatorWidth}px`;
+            indicator.style.left = `${itemRect.left}px`;
+        }
+
+        // Lắng nghe sự kiện cuộn
+        window.addEventListener('scroll', () => {
+            let index = 0;
+
+            sections.forEach((section, i) => {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop <= window.innerHeight / 2) {
+                    index = i;
+                }
+            });
+
+            setIndicatorPosition(index);
+        });
+
+        // Đặt vị trí indicator ban đầu
+        setIndicatorPosition(0);
+
+        // Thêm sự kiện click cho các item trong indicator
+        items.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                sections[index].scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

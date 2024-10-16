@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP ScrollTrigger Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 300vh; /* Đảm bảo trang đủ dài để có thể cuộn */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="counter">1</h1>
+
+    <!-- Bao gồm thư viện GSAP và ScrollTrigger từ CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        // Đăng ký plugin ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        let currentValue = 1; // Giá trị bắt đầu
+
+        // Tạo hiệu ứng cuộn cho h1
+        gsap.to("#counter", {
+            scrollTrigger: {
+                pin: true,
+                markers: true,
+                trigger: "#counter",  // Kích hoạt khi h1 xuất hiện trên màn hình
+                start: "center center",     // Bắt đầu khi cuộn tới phần này
+                end: "bottom top",    // Kết thúc khi cuộn qua phần này
+                scrub: true,          // Làm giá trị thay đổi mượt mà khi cuộn
+                onUpdate: (self) => {
+                    const newValue = Math.floor(self.progress * 100); // Giá trị tăng từ 1 tới 100
+                    document.getElementById("counter").textContent = newValue;
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
