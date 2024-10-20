@@ -11,30 +11,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
         body {
             height: 300vh;
             overflow-x: hidden;
         }
+
+        p {
+            z-index: 1000;
+            position: relative;
+        }
     </style>
-    </head>
+</head>
 
 <body>
     <section style="height: 100vh; background-color: #ff6666;"></section>
-    <section id="horizon" style="height: 100vh; width: fit-content; overflow-x: hidden; flex-wrap: nowrap; background-color: #9bf0a6;">
+    <section id="horizon"
+        style="position: relative;left: 10vw; height: 100vh; width: 190vw; overflow-x: hidden; flex-wrap: nowrap; background-color: #9bf0a6; box-shadow:0px 0px 0px 20px black inset;">
         <p style="font-size: 9em; white-space: nowrap;"> 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한 너무 좋아! The END!</p>
     </section>
-    <p style="writing-mode: vertical-lr; font-size: 6em; white-space: nowrap;"> 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아!</p>
+    <p class="pin">Muốn có công việc lương cao ổn định mua nhà lấy vợ</p>
+    <p class="pin2" style="writing-mode: vertical-lr; font-size: 6em; white-space: nowrap;"> 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한
+        나라가 너무 좋아! 나는따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아!</p>
+    <p class="pi" style="writing-mode: vertical-lr; font-size: 6em; white-space: nowrap;">BRUH 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한
+        나라가 너무 좋아! 나는따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아!</p>
+    <p class="pi" style="writing-mode: vertical-lr; font-size: 6em; white-space: nowrap;">breathOut 나는 따뜻한 나라가 너무 좋아! 나는
+        따뜻한
+        나라가 너무 좋아! 나는따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아!</p>
     <!-- GSAP Library -->
     <script src="/lib/gsap.min.js"></script>
     <script src="/lib/ScrollTrigger.min.js"></script>
+    <script src="lib/gsap-public/minified/PixiPlugin.min.js"></script>
+    <script src="lib/gsap-public/minified/PixiPlugin.min.js.map"></script>
     <script src="/lib/lenis.min.js"></script>
-
-
     <script>
         // Readme: Ảnh phải có độ phân giải thấp
-
-
-
         // Tracker: ("*").onClick("writeLog("this.ele.name")")
         // alert("Your screen is: " + window.innerWidth + "x" + window.innerHeight);
         // Initialize Lenis smooth scroll
@@ -52,27 +69,58 @@
         requestAnimationFrame(raf);
 
         // Register the ScrollTrigger plugin
-        gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger, PixiPlugin);
 
         // Update ScrollTrigger with Lenis scroll position
         lenis.on('scroll', ScrollTrigger.update);
     </script>
 
     <script>
-         const tl = gsap.timeline({
+
+        let viewportWidth = window.innerWidth; // cố định
+        let horizonSectionWidth = document.querySelector("#horizon").offsetWidth; // cố định
+
+        window.addEventListener('resize', () => {
+            viewportWidth = window.innerWidth;
+            horizonSectionWidth = document.querySelector("#horizon").offsetWidth;
+            // You can add any GSAP-related animations or logic here if necessary
+            // console.log(viewportWidth); // Just to confirm the width is being updated on resize
+        });
+
+
+        let pin2 = document.querySelector(".pin2");
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: "#horizon",
                 start: "top",
-                end: "+=1900px",
+                end: "+=4000px",
                 pin: true,
-                markers: true,
+                pinSpacing: false,
+                // markers: true,
                 scrub: true, // Kết nối với cuộn
             }
         });
 
-        tl.to('#horizon', {
-            'transform' : 'translateX(-90%)'
-        })
+
+
+        tl
+            .to('#horizon', {
+                'transform': `translateX(calc(-${horizonSectionWidth}px + ${viewportWidth}px))`,
+                ease: "power1.inOut",
+            });
+
+        // gsap.to('.pin', {
+        //     scrollTrigger: {
+        //         trigger: '.pin',
+        //         start: "top",
+        //         end: `${pin2.offsetHeight}px`, // Mỗi lần sử dụng là bắt buộc phải lấy giá trị mới
+        //         pin: true,
+        //         pinSpacing: false,
+        //         markers: true,
+        //     }
+        // })
+
+
     </script>
 </body>
 

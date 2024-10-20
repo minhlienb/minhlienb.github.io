@@ -1,0 +1,72 @@
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            width: 100%;
+            /* overflow: hidden; */
+        }
+
+        .ctn {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            --transition: .365s;
+            border: 4px transparent solid;
+            display: block;
+            position: relative;
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        img:hover {
+            width: 280px;
+            transition: var(--transition);
+        }
+    </style>
+    <section class="ctn">
+        <img src="https://images.unsplash.com/photo-1523207911345-32501502db22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdmllfGVufDB8fDB8fHww"
+            alt="">
+        <img src="https://media.istockphoto.com/id/2137164490/photo/tv-online-television-streaming-video-male-hand-holding-tv-remote-control-multimedia-streaming.webp?a=1&b=1&s=612x612&w=0&k=20&c=wTqBOv0lM5reoQgdRh_vRNbrHmMzxWmshSOAnwPq6Qw="
+            alt="">
+        <img src="https://images.unsplash.com/photo-1523207911345-32501502db22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdmllfGVufDB8fDB8fHww"
+            alt="">
+        <img src="https://media.istockphoto.com/id/2137164490/photo/tv-online-television-streaming-video-male-hand-holding-tv-remote-control-multimedia-streaming.webp?a=1&b=1&s=612x612&w=0&k=20&c=wTqBOv0lM5reoQgdRh_vRNbrHmMzxWmshSOAnwPq6Qw="
+            alt="">
+        <img src="https://images.unsplash.com/photo-1523207911345-32501502db22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdmllfGVufDB8fDB8fHww"
+            alt="">
+        <img src="https://media.istockphoto.com/id/2137164490/photo/tv-online-television-streaming-video-male-hand-holding-tv-remote-control-multimedia-streaming.webp?a=1&b=1&s=612x612&w=0&k=20&c=wTqBOv0lM5reoQgdRh_vRNbrHmMzxWmshSOAnwPq6Qw="
+            alt="">
+        <img src="https://media.istockphoto.com/id/2137164490/photo/tv-online-television-streaming-video-male-hand-holding-tv-remote-control-multimedia-streaming.webp?a=1&b=1&s=612x612&w=0&k=20&c=wTqBOv0lM5reoQgdRh_vRNbrHmMzxWmshSOAnwPq6Qw="
+            alt="">
+    </section>
+    <script src="lib/gsap-public/minified/gsap.min.js"></script>
+    <script src="lib/gsap-public/minified/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+        const scrollerSmoother = ScrollSmoother.create({
+            smooth: true,
+            effects: false,
+            normalizeScroll: true
+        })
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                start: "top",
+            end: "+=600px",
+            scrub: true,
+            // markers: true,
+            pin: true,
+            pinSpacing: true,
+            }
+        })
+    </script>
+</head>
