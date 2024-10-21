@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Basic Example</title>
+    <style>
+        body {
+            height: 300vh;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            overflow: hidden;
+            width: fit-content;
+        }
+
+        .cover {
+            background-color: rgb(45, 101, 255);
+            width: 100%;
+            height: 100px;
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+
+    <div style="position: relative;" class="box">
+        <div style="position: absolute; z-index: 2;" class="cover"></div>
+        <p style="opacity: 0.0000000000000000000000001; font-size: 40px;">Lorem ipsum asklasdlklas</p>
+    </div>
+
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+
+    <div style="position: relative;" class="box">
+        <div style="position: absolute; z-index: 2;" class="cover"></div>
+        <p style="opacity: 0.0000000000000000000000001;font-size: 40px;">Lorem ipsum asklasdlklas</p>
+    </div>
+
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+    <img src="https://via.placeholder.com/400" alt="">
+
+    <!-- Include GSAP from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        // Đảm bảo bạn đã thêm GSAP và ScrollTrigger vào dự án của mình
+        gsap.registerPlugin(ScrollTrigger);
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".box", // Phần tử kích hoạt animation
+                start: "top 20%", // Bắt đầu animation khi đầu trang cuộn đến đầu của viewport
+                end: "bottom top", // Kết thúc animation khi đáy của phần tử "cover" đến đầu của viewport
+                markers: true
+            }
+        });
+
+        // Thêm các animation vào timeline
+        tl
+            .to(".cover", {
+                x: '+=100%', // Dịch chuyển 100% sang bên phải
+                duration: 2, // Thời gian kéo dài của animation (2 giây)
+                ease: "power1.inOut", // Hiệu ứng easing
+                onComplete: () => {
+                    document.querySelector('p').style.opacity = '1'; // Hiển thị đoạn văn bản khi animation hoàn tất
+                }
+            })
+            .to(".cover", {
+                x: '+=102%', // Dịch chuyển 102% sang bên phải
+                duration: 2, // Thời gian kéo dài của animation (2 giây)
+                ease: "power1.inOut", // Hiệu ứng easing
+                onComplete: () => {
+                    // Bạn có thể thêm mã để thực hiện các hành động khác khi animation này hoàn tất
+                }
+            });
+
+    </script>
+
+</body>
+
+</html>

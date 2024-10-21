@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollTrigger Slide-in Blurred Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">Slide-in Box 2</div>
+        <img src="https://via.placeholder.com/400" alt="">
+        <img src="https://via.placeholder.com/400" alt="">
+        <div class="box" style="width: 100%; height: 100vh;background-size: cover;background-image: url('https://images.squarespace-cdn.com/content/v1/54ee6b54e4b094722873774d/1651271676233-EJSOCKU9OE5ZKGALLAH4/232.jpg?format=2500w');">Slide-in Box 1</div>
+        <img src="https://via.placeholder.com/400" alt="">
+        <img src="https://via.placeholder.com/400" alt="">
+        <div class="box">Slide-in Box 3</div>
+        <img src="https://via.placeholder.com/400" alt="">
+        <img src="https://via.placeholder.com/400" alt="">
+        <div class="box">Slide-in Box 4</div>
+        <img src="https://via.placeholder.com/400" alt="">
+        <img src="https://via.placeholder.com/400" alt="">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* To create scroll space */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 20px;
+    filter: blur(10px); /* Initial blur effect */
+    opacity: 0; /* Hidden initially */
+    transform: translateY(50px); /* Start position */
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+</style>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+const boxes = document.querySelectorAll('.box');
+
+boxes.forEach(box => {
+    gsap.fromTo(box, 
+        {
+            'filter': 'blur(10px)',
+            opacity: 0,
+            y: 50,
+        }, 
+        {
+            filter: 'blur(0px)',
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+                trigger: box,
+                markers: true,
+                start: "top 80%", // Start the animation when the top of the box is at 80% of the viewport height
+                toggleActions: "play none none reverse", // Animation will play on enter and reverse on leave
+            }
+        }
+    );
+});
+
+</script>
