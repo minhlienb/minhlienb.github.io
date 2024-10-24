@@ -25,7 +25,7 @@
 
         p {
             z-index: 1000;
-            position: relative;
+            /* position: relative; */
         }
     </style>
 </head>
@@ -33,7 +33,7 @@
 <body>
     <section style="height: 100vh; background-color: #ff6666;"></section>
     <section id="horizon"
-        style="position: relative;left: 10vw; height: 100vh; width: 190vw; overflow-x: hidden; flex-wrap: nowrap; background-color: #9bf0a6; box-shadow:0px 0px 0px 20px black inset;">
+        style="position: relative; height: 100vh; width: 200vw; overflow-x: hidden; flex-wrap: nowrap; background-color: #9bf0a6; box-shadow:0px 0px 0px 20px black inset;">
         <p style="font-size: 9em; white-space: nowrap;"> 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한 나라가 너무 좋아! 나는 따뜻한 너무 좋아! The END!</p>
     </section>
     <p class="pin">Muốn có công việc lương cao ổn định mua nhà lấy vợ</p>
@@ -77,8 +77,8 @@
 
     <script>
 
-        let viewportWidth = window.innerWidth; // cố định
-        let horizonSectionWidth = document.querySelector("#horizon").offsetWidth; // cố định
+        let viewport = window; // cố định
+        let horizonSection = document.querySelector("#horizon"); // cố định
 
         window.addEventListener('resize', () => {
             viewportWidth = window.innerWidth;
@@ -105,7 +105,8 @@
 
         tl
             .to('#horizon', {
-                'transform': `translateX(calc(-${horizonSectionWidth}px + ${viewportWidth}px))`,
+                // 'transform': `translateX(calc(-${horizonSectionWidth}px + ${viewportWidth}px))`,
+                'transform': `translateX(calc(-${horizonSection.offsetWidth}px + ${window.innerWidth}px))`,
                 ease: "power1.inOut",
             });
 
