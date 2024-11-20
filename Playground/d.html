@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Example</title>
+    <style>
+        /* Style cho đoạn text */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        /* Style cho tooltip */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 220px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            /* Đặt vị trí của tooltip */
+            left: 50%;
+            margin-left: -110px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Hiển thị tooltip khi hover vào dòng text */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="step1" src="https://placehold.co/400" alt="">
+    <br>
+    <div class="tooltip" style="text-decoration: underline; text-underline-offset: 8px; color: rgb(0, 104, 189);">Công
+        ty MindX
+        <span class="tooltiptext step2">MindX là công ty cung cấp giáo dục về lập trình và công nghệ, giúp phát triển kỹ
+            năng
+            cho thế hệ trẻ.</span>
+    </div>
+</body>
+
+</html>
+<script>
+    let starttour = () => {
+        const driverObj = driver({
+            showProgress: true,
+            steps: [
+                { element: '.page-header', popover: { title: 'Title', description: 'Description' } },
+                { element: '.top-nav', popover: { title: 'Title', description: 'Description' } },
+            ]
+        });
+
+        driverObj.drive();
+    }
+
+    starttour();    
+</script>

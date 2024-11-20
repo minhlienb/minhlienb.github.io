@@ -1,0 +1,35 @@
+Hàm Huấn luyệnCâyQuyếtĐịnh(Dữ liệuHuấnLuyện, CácBiếnĐầuVào, BiếnMụcTiêu):
+    Nếu tất cả các điểm dữ liệu trong Dữ liệuHuấnLuyện thuộc cùng một lớp:
+        Trả về NútLá với lớp đó
+
+    Nếu không còn BiếnĐầuVào nào để phân chia:
+        Trả về NútLá với lớp phổ biến nhất trong Dữ liệuHuấnLuyện
+
+    Chọn BiếnTốtNhất dựa trên chỉ số Gini impurity hoặc Entropy:
+        Với mỗi biến trong CácBiếnĐầuVào:
+            Tính Gini impurity hoặc Entropy khi phân chia dữ liệu theo biến đó
+        Chọn biến có chỉ số tốt nhất làm BiếnTốtNhất
+
+    Tạo NútGốc với BiếnTốtNhất
+
+    Với mỗi giá trị hoặc khoảng giá trị của BiếnTốtNhất:
+        Chia Dữ liệuHuấnLuyện thành các tập con theo giá trị của BiếnTốtNhất
+        Nếu tập con không rỗng:
+            Thêm nhánh vào NútGốc với kết quả của Hàm Huấn luyệnCâyQuyếtĐịnh(TậpCon, CácBiếnĐầuVào còn lại, BiếnMụcTiêu)
+
+    Trả về NútGốc
+
+Hàm Dự đoán(NútGốc, ĐiểmDữLiệuMới):
+    Nếu NútGốc là NútLá:
+        Trả về LớpDựĐoán tại NútLá
+    Ngược lại:
+        Xác định nhánh con dựa trên giá trị của ĐiểmDữLiệuMới tại Biến của NútGốc
+        Dự đoán bằng cách gọi Đệ quy: Dự đoán(NhánhCon, ĐiểmDữLiệuMới)
+
+Hàm TínhGiniImpurity(Nút):
+    Gini = 1 - Tổng(p_i^2 cho tất cả các lớp i trong Nút)
+    Trả về Gini
+
+Hàm TínhEntropy(Nút):
+    Entropy = -Tổng(p_i * log2(p_i) cho tất cả các lớp i trong Nút)
+    Trả về Entropy

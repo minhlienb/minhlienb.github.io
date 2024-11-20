@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver.js Working Example</title>
+  <!-- Include Driver.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@0.9.8/dist/driver.min.css">
+  <style>
+    /* Style for our elements */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .section {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #startTourBtn {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    Looking for english? <a href="">here you go!</a>
+  <h1>Driver.js Guided Tour Example</h1>
+  <button id="startTourBtn">Start Tour</button>
+
+  <div id="section1" class="section">
+    <h2>Section 1</h2>
+    <p>This is the first section. The tour will start here.</p>
+  </div>
+
+  <div id="section2" class="section">
+    <h2>Section 2</h2>
+    <p>This is the second section. This will be highlighted next in the tour.</p>
+  </div>
+
+  <div id="section3" class="section">
+    <h2>Section 3</h2>
+    <p>This is the final section in the tour.</p>
+  </div>
+
+  <!-- Include Driver.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/driver.js@0.9.8/dist/driver.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Check if Driver.js has loaded
+      if (typeof Driver === 'undefined') {
+        alert("Driver.js failed to load. Check your internet connection or CDN link.");
+        return;
+      }
+
+      // Initialize Driver.js
+      const driver = new Driver();
+
+      // Define the tour steps
+      const tourSteps = [
+        {
+          element: '#section1',
+          popover: {
+            title: 'Welcome to Section 1',
+            description: 'This is where the tour begins. Here, you can learn more about this section.',
+            position: 'bottom'
+          }
+        },
+        {
+          element: '#section2',
+          popover: {
+            title: 'This is Section 2',
+            description: 'This section will give you further insights as part of the guided tour.',
+            position: 'bottom'
+          }
+        },
+        {
+          element: '#section3',
+          popover: {
+            title: 'Final Stop: Section 3',
+            description: 'This is the last section of our tour. Thank you for joining!',
+            position: 'bottom'
+          }
+        }
+      ];
+
+      // Start the tour when the button is clicked
+      document.getElementById('startTourBtn').addEventListener('click', function() {
+        driver.defineSteps(tourSteps);
+        driver.start();
+      });
+    });
+  </script>
+</body>
+</html>

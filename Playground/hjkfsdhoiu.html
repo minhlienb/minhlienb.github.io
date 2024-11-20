@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desaturated to Color Animation</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+  }
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    width: 500px; /* Adjust as needed */
+  }
+
+  .image {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.5s linear;
+  }
+
+  .color-reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(to right, transparent, white 50%);
+    width: 0%;
+  }
+</style>
+</head>
+<body>
+
+<div class="image-container">
+  <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW92aWV8ZW58MHx8MHx8fDA%3D" alt="Desaturated to Color" class="image">
+  <div class="color-reveal"></div>
+</div>
+
+<script>
+  const reveal = document.querySelector('.color-reveal');
+  const image = document.querySelector('.image');
+
+  reveal.animate(
+    [{ width: '0%' }, { width: '100%' }],
+    {
+      duration: 2000,
+      easing: 'ease-out',
+      fill: 'forwards',
+    }
+  );
+
+  reveal.addEventListener('animationend', () => {
+    image.style.filter = 'none';
+    reveal.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
