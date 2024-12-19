@@ -17,3 +17,8 @@
     font-family: Poppins-Black;
     src: url(Poppins-Black.ttf);
 }
+
+@font-face {
+    font-family: PoiretOne;
+    src: url(PoiretOne-Regular.ttf);
+}
