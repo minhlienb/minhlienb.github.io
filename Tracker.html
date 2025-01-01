@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .date-section {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .boxes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+        .button-container {
+            margin-top: 40px;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- Initially empty -->
+    </div>
+    <div class="button-container">
+        <button class="button" onclick="handleButtonClick()">+1</button>
+    </div>
+
+    <script>
+        // Load data from local storage
+        function loadData() {
+            const dates = JSON.parse(localStorage.getItem('dates')) || [];
+            const app = document.getElementById('app');
+
+            app.innerHTML = '';
+            dates.forEach((date) => {
+                const dateSection = document.createElement('div');
+                dateSection.className = 'date-section';
+
+                const dateTitle = document.createElement('div');
+                dateTitle.textContent = date.name;
+                dateSection.appendChild(dateTitle);
+
+                const boxesContainer = document.createElement('div');
+                boxesContainer.className = 'boxes';
+
+                for (let i = 0; i < date.count; i++) {
+                    const box = document.createElement('div');
+                    box.className = 'box';
+                    boxesContainer.appendChild(box);
+                }
+
+                dateSection.appendChild(boxesContainer);
+                app.appendChild(dateSection);
+            });
+        }
+
+        // Save data to local storage
+        function saveData(dates) {
+            localStorage.setItem('dates', JSON.stringify(dates));
+        }
+
+        // Handle button click
+        function handleButtonClick() {
+            const confirmation = confirm("Bạn có chắc muốn thêm một mục?");
+            if (confirmation) {
+                let dates = JSON.parse(localStorage.getItem('dates')) || [];
+
+                if (dates.length === 0) {
+                    const newDate = { name: `Ngày 1/1/2025`, count: 1 };
+                    dates.push(newDate);
+                } else {
+                    let updated = false;
+                    for (const date of dates) {
+                        if (date.count < 5) { // Example limit per date
+                            date.count += 1;
+                            updated = true;
+                            break;
+                        }
+                    }
+
+                    if (!updated) {
+                        const newDate = { name: `Ngày ${dates.length + 1}/1/2025`, count: 1 };
+                        dates.push(newDate);
+                    }
+                }
+
+                saveData(dates);
+                loadData();
+                alert("Mục đã được thêm!");
+            } else {
+                alert("Hành động bị hủy.");
+            }
+        }
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+        });
+    </script>
+</body>
+</html>

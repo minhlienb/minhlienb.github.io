@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#319197">
@@ -95,10 +96,9 @@
 
 
 
-    #heroline div {
-        padding: 1rem;
-    }
-
+        #heroline div {
+            padding: 1rem;
+        }
     </style>
 </head>
 
@@ -106,10 +106,12 @@
     <div class="container">
         <!-- Hero Section -->
 
-        <img style="width: 100%; object-fit: cover; height: 22vh; min-height: 21rem;" src="assets/img/features-home.jpg" alt="mua nhà, bất động sản">
+        <img style="width: 100%; object-fit: cover; height: 22vh; min-height: 21rem;" src="assets/img/features-home.jpg"
+            alt="mua nhà, bất động sản">
         <div id="heroline" style="display: flex; border-top: 2px #8c8c8c solid; border-bottom: 2px #8c8c8c solid;">
             <div class="a" style="border-right: 2px #8c8c8c solid;">
-                <span style="font-size: 2em;color: #8c8c8c;"><span style="font-weight: 900;">01</span><span class="text-muted">/04</span></span>
+                <span style="font-size: 2em;color: #8c8c8c;"><span style="font-weight: 900;">01</span><span
+                        class="text-muted">/04</span></span>
                 <br>
                 <span style="font-weight: 900;">Location</span>
                 <br>
@@ -130,66 +132,7 @@
 
         <!-- Features section -->
         <section id="features-sections">
-            <div class="accordion" id="accordionFeatures">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
-                            01 Reliable
-                        </button>
-                    </h2>
-                    <div id="collapse01" class="accordion-collapse collapse" data-bs-parent="#accordionFeatures">
-                        <div class="accordion-body">
-                            <p>Our house selling service is built on reliability and trust, ensuring a smooth and stress-free
-                                experience for every client. From the initial consultation to the final sale, we prioritize
-                                transparency, communication, and professionalism at every step. Our experienced team understands
-                                the local market and offers expert advice, helping you make informed decisions. We take the time
-                                to understand your unique needs and work tirelessly to achieve the best possible outcome. With a
-                                proven track record of successful transactions and satisfied clients, you can count on us to
-                                handle the sale of your home with the utmost care and dedication.</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
-                            02 Easy to Access
-                        </button>
-                    </h2>
-                    <div id="collapse02" class="accordion-collapse collapse" data-bs-parent="#accordionFeatures">
-                        <div class="accordion-body">
-                            <strong>Our service is designed to be easy to access,</strong>  ensuring convenience for every user.
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse03" aria-expanded="false" aria-controls="collapse03">
-                            03 Convenient
-                        </button>
-                    </h2>
-                    <div id="collapse03" class="accordion-collapse collapse" data-bs-parent="#accordionFeatures">
-                        <div class="accordion-body">
-                            <p>Explore various living options in various cities with a comfortable environment and free consultation
-                                services for 2 years.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse04" aria-expanded="false" aria-controls="collapse04">
-                            04 Projects ✨
-                        </button>
-                    </h2>
-                    <div id="collapse04" class="accordion-collapse collapse" data-bs-parent="#accordionFeatures">
-                        <div class="accordion-body">
-                            <p>Explore various living options in various cities with a comfortable environment and free consultation
-                                services for 2 years.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="accordion" id="accordionFeatures"></div>
         </section>
 
         <!-- Stats Section -->
@@ -234,3 +177,43 @@ Chú ý:
 
 
 
+
+
+<script>
+const accordionFeatures = document.getElementById("accordionFeatures");
+let contents = [
+    { title: "Reliable", content: "Our house selling service is built on reliability and trust, ensuring a smooth and stress-free experience for every client. From the initial consultation to the final sale, we prioritize transparency, communication, and professionalism at every step. Our experienced team understands the local market and offers expert advice, helping you make informed decisions. We take the time to understand your unique needs and work tirelessly to achieve the best possible outcome. With a proven track record of successful transactions and satisfied clients, you can count on us to handle the sale of your home with the utmost care and dedication." },
+    { title: "Easy to Access", content: "<strong>Our service is designed to be easy to access,</strong> ensuring convenience for every user." },
+    { title: "Convenient", content: "Explore various living options in various cities with a comfortable environment and free consultation services for 2 years." },
+    { title: "Projects ✨", content: "different content" },
+    { title: "e title", content: "additional content" },
+    { title: "f title", content: "extra content" },
+    { title: "g title", content: "unique content" },
+];
+
+// Function to generate accordion items
+function accordionStaticTemplate() {
+    let html = ""; // Temporary string to store HTML content
+    for (let i = 0; i < contents.length; i++) {
+        html += `
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}">
+                ${i + 1} ${contents[i].title}
+            </button>
+        </h2>
+        <div id="collapse${i}" class="accordion-collapse collapse" data-bs-parent="#accordionFeatures">
+            <div class="accordion-body">
+                <p>${contents[i].content}</p>
+            </div>
+        </div>
+    </div>`;
+    }
+    // Add all generated HTML to the accordion
+    accordionFeatures.innerHTML += html;
+}
+
+// Call the function to populate the accordion
+accordionStaticTemplate();
+
+</script>
