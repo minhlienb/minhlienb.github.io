@@ -1,0 +1,27 @@
+.neonText {
+    background: linear-gradient(to left,
+            rgb(228, 121, 255),
+            rgb(183, 141, 255),
+            rgb(255, 105, 157),
+            rgb(198, 165, 255),
+            rgb(255, 234, 188),
+            rgb(194, 159, 255)
+            );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: rainbow 4.5s linear infinite;
+    font-size: 3em;
+    /* -webkit-text-stroke: 1px rgb(255, 0, 21); */
+    transition: 0.3s;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
