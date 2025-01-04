@@ -1,0 +1,167 @@
+@media (max-width: 768px) {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+    .list-container span {
+        text-align: unset;
+        display: unset;
+        padding: unset;
+        transition: unset;
+    }
+
+    .list-container span:hover {
+        border-radius: unset;
+        color: unset;
+        background-color: unset;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+
+    .list-container {
+        position: unset;
+        width: unset;
+        transition: unset;
+    }
+
+    .list-container:hover {
+        width: unset;
+    }
+
+    .drop-down {
+        margin-top: unset;
+        border-top: unset;
+        border-radius: unset;
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+        position: unset;
+        display: unset;
+        width: unset;
+        background-color: unset;
+        transition: unset;
+    }
+
+    .list-container:hover .drop-down {
+        display: unset;
+    }
+
+    .drop-down a li {
+        padding: unset;
+        list-style: unset;
+        text-align: unset;
+        color: unset;
+    }
+
+    .drop-down a {
+        text-decoration: unset;
+    }
+
+    .list-container li {
+        overflow: unset;
+        white-space: unset;
+        transition: unset;
+    }
+
+    .list-container li:hover {
+        color: unset;
+        background-color: unset;
+    }
+
+    .invisible-border {
+        border-radius: unset;
+        border: unset;
+    }
+}
+
+#top-nav {
+    max-width: 900px;
+    height: auto;
+    /* background-color: rgba(127, 255, 212, 0.029); */
+    border-radius: 10px;
+    margin: auto;
+    z-index: 1;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px 0px rgb(0 0 0 / 20%), 0 13px 24px -11px rgba(178, 89, 255, 0.6);
+}
+
+.list {
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.45);
+    border-radius: 7px;
+}
+
+.list-container span {
+    text-align: center;
+    display: block;
+    padding: 15px 10px 15px 10px;
+    /* background-color: aliceblue; */
+    transition: 0.02s;
+}
+
+.list-container span:hover {
+    border-radius: 7px;
+    color: bisque;
+    background-color: rgba(29, 142, 255, 0.736);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.list-container {
+    position: relative;
+    width: 150px;
+    transition: 0.23s;
+}
+
+.list-container:hover {
+    width: 300px;
+}
+
+.drop-down {
+    margin-top: -7px;
+    border-top: 7px solid rgba(12, 104, 41, 0.38);
+    border-radius: 7px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: bisque;
+    transition: 0.35s;
+}
+
+
+.list-container:hover .drop-down {
+    display: block;
+}
+
+.drop-down a li {
+    padding: 15px 0 15px 0;
+    /* background-color: blueviolet; */
+    list-style: none;
+    text-align: center;
+    color: black;
+}
+
+.drop-down a {
+    text-decoration: none;
+}
+
+.list-container li {
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.25s;
+}
+
+.list-container li:hover {
+    color: bisque;
+    background-color: rgba(0, 94, 189, 0.613);
+}
+
+.invisible-border {
+    border-radius: 20px;
+    border: 10px solid transparent;
+}

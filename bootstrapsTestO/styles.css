@@ -22,11 +22,11 @@
 
 
 /* mobile */
-@media only screen and (max-aspect-ratio: 1/1) {
+/* @media only screen and (max-aspect-ratio: 1/1) {
     .imgParallax1 {
         height: 50vw;
     }
-}
+} */
 
 body {
     font-family: Poiret One, Arial, sans-serif;

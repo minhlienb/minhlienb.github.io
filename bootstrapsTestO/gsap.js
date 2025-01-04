@@ -13,10 +13,6 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-
-
-
-
 // Đăng ký ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
@@ -138,11 +134,6 @@ timeline
 
         //height: +=100px;
     });
-
-
-
-
-
 
 themeAnim
     .to("body", {

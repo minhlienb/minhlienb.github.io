@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="drop-down-nav.css">
 
     <style>
         :root {
@@ -35,6 +36,38 @@
 </head>
 
 <body>
+    <div id="top-nav">
+        <div class="list">
+            <div class="list-container">
+                <span>Our Products</span>
+                <div class="drop-down">
+                    <a href="/web-goi-mon/Web_Goi_Mon.html"><li>Web gọi món ăn cho di động</li></a>
+                    <a href="../New folder/box-animation.html"><li>Web Xem Phim</li></a>
+                    <a href="#"><li>Travel Web (Quảng bá du lịch)</li></a>
+                    <a href="#"><li>Web bán giày</li></a>
+                </div>
+            </div>
+            <div class="list-container">
+                <span>Pricing</span>
+                <div class="drop-down">
+                    <a href="#"><li>Web gọi món ăn cho di động</li></a>
+                </div>
+            </div>
+            <div class="list-container">
+                <span>About</span>
+                <div class="drop-down">
+                    <a href="#"><li>Web gọi món ăn cho di động</li></a>
+                </div>
+            </div>
+            <div class="list-container">
+                <span>Portfolios</span>
+                <div class="drop-down">
+                    <a href="#"><li>Portfolios ideas</li></a>
+                    <a href="#"><li>Minh Liên's Portfolios</li></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div style="font-size: 6rem; font-weight: 900;">Start scrolling <br>to explore >></div>
     <!-- Hero Section -->
     <div style="display: flex; position: relative; width: 100vw; height: 100vh; z-index: 20;" class="immersiveBG">
@@ -46,7 +79,7 @@
 
 
         <img style="width: 100%; object-fit: cover; height: 22vh; min-height: 21rem;"
-            src="https://static.wixstatic.com/media/baac51_5c3e5cebcc4241c39262f8bcc8ef670f~mv2.jpeg/v1/crop/x_0,y_0,w_3000,h_1872/fill/w_980,h_612,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Urban%20Architecture.jpeg"
+            src="/assets/img/features-home.webp"
             alt="mua nhà, bất động sản">
         <div id="heroline" style="display: flex; border-top: 2px #8c8c8c solid; border-bottom: 2px #8c8c8c solid;">
             <div class="a" style="border-right: 2px #8c8c8c solid;">
@@ -119,26 +152,35 @@
 
 
         <footer class="footer">
-            <div>
-                <img src="https://www.haus.de/sites/default/files/styles/original_content_full/public/2020-10/glastreppe_11016315_living4media.jpg?itok=EVYPBeFL" alt="Office">
-            </div>
-            <div class="footer-links">
-                <a href="#">How it works ↗</a>
-                <a href="#">Services ↗</a>
-                <a href="#">Partners ↗</a>
-                <div class="footer-social">
-
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Image -->
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <img src="/assets/img/hero.webp" alt="Office" class="img-fluid">
+                    </div>
+        
+                    <!-- Footer Links -->
+                    <div class="col-12 col-md-4 mb-3 mb-md-0 footer-links">
+                        <a href="#">How it works ↗</a><br>
+                        <a href="#">Services ↗</a><br>
+                        <a href="#">Partners ↗</a>
+                        <div class="footer-social">
+                            <!-- Add social media links here -->
+                        </div>
+                    </div>
+        
+                    <!-- Footer Bottom -->
+                    <div class="col-12 col-md-4 footer-bottom">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <a href="#">Term of use</a>
+                            <a href="#">Privacy policy</a>
+                            <a href="#">Cookies setting</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div style="display: flex; flex-wrap: wrap;">
-                    <a href="#">Term of use</a>
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Cookies setting</a>
-                </div>
-
             </div>
         </footer>
+        
 
         
     </div>
@@ -153,7 +195,7 @@
     <!-- GSAP SCROLLTRIGGER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-        <script src="gsap.js"></script>
+    <script src="gsap.js"></script>
 </body>
 
 </html>
