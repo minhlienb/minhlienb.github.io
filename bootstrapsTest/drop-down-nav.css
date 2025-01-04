@@ -104,8 +104,8 @@
 
 .list-container span:hover {
     border-radius: 7px;
-    color: bisque;
-    background-color: rgba(29, 142, 255, 0.736);
+    color: #000;
+    background-color: hsl(252, 100%, 96%);
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
@@ -122,14 +122,14 @@
 
 .drop-down {
     margin-top: -7px;
-    border-top: 7px solid rgba(12, 104, 41, 0.38);
+    border-top: 7px solid hsl(252, 100%, 94.333%);
     border-radius: 7px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     position: absolute;
     display: none;
     width: 100%;
-    background-color: bisque;
+    background-color: #fff;
     transition: 0.35s;
 }
 
@@ -157,8 +157,8 @@
 }
 
 .list-container li:hover {
-    color: bisque;
-    background-color: rgba(0, 94, 189, 0.613);
+    color: #000;
+    background-color: hsl(252, 100%, 96%);
 }
 
 .invisible-border {
