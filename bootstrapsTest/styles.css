@@ -189,10 +189,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
-#introSection>* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 28px;
-    text-align: justify;
-    margin: 0px 40px;
-}
