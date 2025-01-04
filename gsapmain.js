@@ -108,7 +108,7 @@ timeline
             pin: true,
             pinSpacing: true,
             end: `+=${introTextHeight.offsetHeight - 600}px`,
-            markers: true,
+            // markers: true,
             scrub: true, // Smooth scrubbing
         },
         // width: "+=200px",
@@ -124,7 +124,7 @@ timeline
             pin: true,
             pinSpacing: true,
             end: `+=${introTextHeight.offsetHeight - 600}px`,
-            markers: true,
+            // markers: true,
             scrub: true, // Smooth scrubbing
         },
         // width: "+=200px",
