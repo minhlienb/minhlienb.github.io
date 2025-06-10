@@ -1,0 +1,232 @@
+[
+  {
+    "question": "Trong câu \"へやに ひとが います。\" (Trong phòng CÓ một người.), từ nào diễn tả sự tồn tại của người và động vật?",
+    "options": ["あります", "います", "いろいろ[な]", "物"],
+    "answer": "います"
+  },
+  {
+    "question": "Để diễn tả sự tồn tại của đồ vật, ví dụ: \"かばんに 本が あります。\" (Trong túi CÓ một quyển sách.), ta dùng từ nào?",
+    "options": ["います", "あります", "男の人", "女の人"],
+    "answer": "あります"
+  },
+  {
+    "question": "Từ nào diễn tả ý \"Nhiều, đa dạng\"?",
+    "options": ["近く", "いろいろ[な]", "前", "後ろ"],
+    "answer": "いろいろ[な]"
+  },
+  {
+    "question": "Để chỉ \"người đàn ông\", ta dùng từ nào?",
+    "options": ["女の子", "男の子", "男の人", "女の人"],
+    "answer": "男の人"
+  },
+  {
+    "question": "Từ nào diễn tả ý \"giỏi, khéo\"?",
+    "options": ["悪い", "きれい[な]", "上手[な]", "難しい"],
+    "answer": "上手[な]"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"người đàn bà\"?",
+    "options": ["男の人", "女の人", "だれ", "先生"],
+    "answer": "女の人"
+  },
+  {
+    "question": "Để chỉ \"cậu con trai\", ta dùng từ nào?",
+    "options": ["女の子", "男の子", "子ども", "主婦"],
+    "answer": "男の子"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"cô con gái\"?",
+    "options": ["男の子", "女の子", "兄弟", "友達"],
+    "answer": "女の子"
+  },
+  {
+    "question": "Để chỉ con vật nuôi phổ biến \"chó\", ta dùng từ nào?",
+    "options": ["猫", "犬", "鳥", "魚"],
+    "answer": "犬"
+  },
+  {
+    "question": "Con vật nào được gọi là 「ねこ」?",
+    "options": ["chó", "mèo", "chim", "cá"],
+    "answer": "mèo"
+  },
+  {
+    "question": "Để nói về \"cây cối\" hoặc \"gỗ\", ta dùng từ nào?",
+    "options": ["ドア", "窓", "木", "ビル"],
+    "answer": "木"
+  },
+  {
+    "question": "Từ chung để chỉ \"vật, đồ vật\" là gì?",
+    "options": ["人", "物", "場所", "時間"],
+    "answer": "物"
+  },
+  {
+    "question": "Loại vật phẩm nào được gọi là 「フィルム」?",
+    "options": ["ảnh", "phim", "bút", "sách"],
+    "answer": "phim"
+  },
+  {
+    "question": "Để chỉ nguồn điện cho các thiết bị di động, ta dùng từ nào?",
+    "options": ["スイッチ", "電池", "電気", "電話"],
+    "answer": "電池"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"hộp\"?",
+    "options": ["ドア", "窓", "箱", "棚"],
+    "answer": "箱"
+  },
+  {
+    "question": "Để bật/tắt thiết bị điện, ta dùng \"công tắc\" hay từ nào?",
+    "options": ["電池", "冷蔵庫", "スイッチ", "フィルム"],
+    "answer": "スイッチ"
+  },
+  {
+    "question": "Thiết bị nào trong nhà dùng để giữ lạnh thức ăn, đồ uống?",
+    "options": ["テーブル", "ベッド", "冷蔵庫", "棚"],
+    "answer": "冷蔵庫"
+  },
+  {
+    "question": "Nội thất nào dùng để ăn uống hoặc làm việc?",
+    "options": ["ベッド", "棚", "テーブル", "ドア"],
+    "answer": "テーブル"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"giường\"?",
+    "options": ["テーブル", "ベッド", "棚", "箱"],
+    "answer": "ベッド"
+  },
+  {
+    "question": "Nội thất nào dùng để đựng sách vở?",
+    "options": ["冷蔵庫", "テーブル", "ベッド", "棚"],
+    "answer": "棚"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"cửa\" (ra vào)?",
+    "options": ["窓", "ドア", "スイッチ", "ポスト"],
+    "answer": "ドア"
+  },
+  {
+    "question": "Bộ phận nào của căn phòng dùng để nhìn ra ngoài hoặc thông gió?",
+    "options": ["ドア", "窓", "棚", "ベッド"],
+    "answer": "窓"
+  },
+  {
+    "question": "Thiết bị công cộng nào dùng để gửi thư?",
+    "options": ["ビル", "公園", "ポスト", "喫茶店"],
+    "answer": "ポスト"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"toà nhà\" cao tầng?",
+    "options": ["公園", "喫茶店", "ビル", "本屋"],
+    "answer": "ビル"
+  },
+  {
+    "question": "Địa điểm công cộng nào có cây xanh, ghế đá để thư giãn?",
+    "options": ["喫茶店", "本屋", "公園", "乗り場"],
+    "answer": "公園"
+  },
+  {
+    "question": "Nơi nào thường bán cà phê và đồ uống giải khát?",
+    "options": ["本屋", "～屋", "喫茶店", "スーパー"],
+    "answer": "喫茶店"
+  },
+  {
+    "question": "Nếu muốn nói về \"hiệu sách\", ta dùng từ nào?",
+    "options": ["喫茶店", "～屋", "本屋", "スーパー"],
+    "answer": "本屋"
+  },
+  {
+    "question": "Tiếp vĩ ngữ nào đi sau danh từ để chỉ \"hiệu ~, cửa hàng ~\"?",
+    "options": ["～かん", "～えん", "～屋", "～こう"],
+    "answer": "～屋"
+  },
+  {
+    "question": "Điểm tập trung để lên hoặc xuống các phương tiện công cộng (xe buýt, tàu điện) là gì?",
+    "options": ["駅", "公園", "乗り場", "病院"],
+    "answer": "乗り場"
+  },
+  {
+    "question": "Đơn vị hành chính cấp địa phương, tương đương với \"tỉnh\" của Việt Nam là gì?",
+    "options": ["町", "村", "県", "国"],
+    "answer": "県"
+  },
+  {
+    "question": "Để chỉ vị trí \"trên\" hoặc \"phía trên\", ta dùng từ nào?",
+    "options": ["下", "前", "上", "後ろ"],
+    "answer": "上"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"dưới\" hoặc \"phía dưới\"?",
+    "options": ["上", "下", "中", "外"],
+    "answer": "下"
+  },
+  {
+    "question": "Để chỉ vị trí \"trước\" hoặc \"phía trước\", ta dùng từ nào?",
+    "options": ["後ろ", "前", "右", "左"],
+    "answer": "前"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"sau\" hoặc \"phía sau\"?",
+    "options": ["前", "後ろ", "近く", "隣"],
+    "answer": "後ろ"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"phải\" (hướng bên phải)?",
+    "options": ["左", "右", "上", "下"],
+    "answer": "右"
+  },
+  {
+    "question": "Để chỉ hướng \"trái\", ta dùng từ nào?",
+    "options": ["右", "左", "前", "後ろ"],
+    "answer": "左"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"trong, giữa\" (bên trong một không gian)?",
+    "options": ["外", "間", "中", "隣"],
+    "answer": "中"
+  },
+  {
+    "question": "Để chỉ vị trí \"ngoài\" hoặc \"bên ngoài\", ta dùng từ nào?",
+    "options": ["中", "外", "近く", "間"],
+    "answer": "外"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"bên cạnh\" (khi hai vật ở sát nhau)?",
+    "options": ["近く", "間", "隣", "前"],
+    "answer": "隣"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"gần\" (khoảng cách không xa)?",
+    "options": ["遠い", "間", "近く", "外"],
+    "answer": "近く"
+  },
+  {
+    "question": "Để chỉ vị trí \"giữa\" hai vật hoặc hai địa điểm, ta dùng từ nào?",
+    "options": ["隣", "近く", "間", "前"],
+    "answer": "間"
+  },
+  {
+    "question": "Khi liệt kê một vài ví dụ và ý muốn nói \"vân vân, và những thứ tương tự\", ta dùng cấu trúc nào?",
+    "options": ["～や～[など]", "～から～まで", "～も～も", "～だけ"],
+    "answer": "～や～[など]"
+  },
+  {
+    "question": "Để nói \"~ nhất\" (ví dụ: cao nhất, lớn nhất), ta dùng từ nào đi kèm?",
+    "options": ["ちょっと", "とても", "あまり", "いちばん～"],
+    "answer": "いちばん～"
+  },
+  {
+    "question": "Cấu trúc nào dùng để chỉ \"giá thứ -, tầng thứ -\" (như giá sách)?",
+    "options": ["～まいめ", "―段目", "～つめ", "～こめ"],
+    "answer": "―段目"
+  },
+  {
+    "question": "Khi muốn xin lỗi hoặc thu hút sự chú ý một cách lịch sự, ta dùng từ nào?",
+    "options": ["ありがとうございます", "すみません", "さようなら", "おはようございます"],
+    "answer": "すみません"
+  },
+  {
+    "question": "Tên một loại sốt cay phổ biến, được gọi là \"tương ớt\" trong tiếng Anh?",
+    "options": ["ケチャップ", "マヨネーズ", "チリソース", "しょうゆ"],
+    "answer": "チリソース"
+  }
+]

@@ -1,0 +1,62 @@
+﻿[
+  {
+    "question": "What comes next in the sequence? 2, 4, 8, 16, ?",
+    "options": ["18", "24", "32", "34"],
+    "answer": "32"
+  },
+  {
+    "question": "Mary’s father has 4 daughters: Nana, Nene, Nini, and __?",
+    "options": ["Nono", "Nunu", "Nana", "Mary"],
+    "answer": "Mary"
+  },
+  {
+    "question": "Which number is the odd one out? 3, 5, 7, 9, 11",
+    "options": ["5", "9", "7", "3"],
+    "answer": "9"
+  },
+  {
+    "question": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?",
+    "options": ["Yes", "No", "Only some", "Cannot be determined"],
+    "answer": "Yes"
+  },
+  {
+    "question": "Which word does not belong: Apple, Banana, Carrot, Grape",
+    "options": ["Apple", "Banana", "Carrot", "Grape"],
+    "answer": "Carrot"
+  },
+  {
+    "question": "A clock shows 3:15. What is the angle between the hour and the minute hand?",
+    "options": ["7.5 degrees", "0 degrees", "30 degrees", "45 degrees"],
+    "answer": "7.5 degrees"
+  },
+  {
+    "question": "Which 3-letter word can prefix the words: light, break, and ache?",
+    "options": ["Sun", "Day", "Head", "Heart"],
+    "answer": "Head"
+  },
+  {
+    "question": "If 5 cats can catch 5 mice in 5 minutes, how many cats are needed to catch 100 mice in 100 minutes?",
+    "options": ["5", "10", "50", "100"],
+    "answer": "5"
+  },
+  {
+    "question": "Which number completes the pattern? 1, 4, 9, 16, 25, ?",
+    "options": ["36", "30", "32", "40"],
+    "answer": "36"
+  },
+  {
+    "question": "What do you get when you rearrange the letters of 'LISTEN'?",
+    "options": ["SILENT", "ENLIST", "TINSEL", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "You see a boat filled with people. It hasn’t sunk, but when you look again you don’t see a single person. Why?",
+    "options": ["They jumped", "They are under deck", "They are all married", "They swam away"],
+    "answer": "They are all married"
+  },
+  {
+    "question": "Which letter comes next in the series: A, C, F, J, O, __?",
+    "options": ["Q", "R", "U", "V"],
+    "answer": "U"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Nếu tất cả hoa đều là cây, và một số cây là xanh. Vậy có đúng không khi nói: 'Một số hoa là xanh'?",
+    "options": ["Đúng", "Sai", "Không thể xác định", "Tùy trường hợp"],
+    "answer": "Không thể xác định"
+  },
+  {
+    "question": "Ba người chia đều 30 cái bánh, mỗi người 10 cái. Họ ăn hết 27 cái và bán lại 3 cái cho người thứ tư với giá 3 đồng. Mỗi người trong ba người đầu tiên nên được bao nhiêu tiền?",
+    "options": ["1 đồng", "2 đồng", "3 đồng", "0 đồng"],
+    "answer": "1 đồng"
+  },
+  {
+    "question": "Bạn có 2 dây thừng, mỗi dây cháy hết trong đúng 1 giờ, nhưng không cháy đều theo chiều dài. Làm sao để đo chính xác 45 phút?",
+    "options": ["Đốt 1 dây từ 2 đầu và dây kia từ 1 đầu", "Chia dây ra làm 3 phần", "Dùng đồng hồ", "Không thể đo"],
+    "answer": "Đốt 1 dây từ 2 đầu và dây kia từ 1 đầu"
+  },
+  {
+    "question": "Một người cha 36 tuổi, con trai ông ta 6 tuổi. Bao nhiêu năm nữa tuổi cha sẽ gấp đôi tuổi con?",
+    "options": ["6", "12", "18", "24"],
+    "answer": "6"
+  },
+  {
+    "question": "Cái gì nặng hơn: 1 kg sắt hay 1 kg bông?",
+    "options": ["Sắt", "Bông", "Bằng nhau", "Không thể xác định"],
+    "answer": "Bằng nhau"
+  },
+  {
+    "question": "Có 5 túi chứa bi giống hệt nhau, 1 túi chứa bi nhẹ hơn. Bạn có 1 cân bàn, làm sao để tìm túi nhẹ nhất với chỉ 1 lần cân?",
+    "options": ["Cân từng túi", "Cân hai lần", "Cân bi theo số khác nhau", "Không thể"],
+    "answer": "Cân bi theo số khác nhau"
+  },
+  {
+    "question": "Một người đi từ A đến B với tốc độ 60 km/h và quay lại với tốc độ 40 km/h. Tốc độ trung bình là bao nhiêu?",
+    "options": ["50 km/h", "48 km/h", "45 km/h", "44 km/h"],
+    "answer": "48 km/h"
+  },
+  {
+    "question": "Có 100 bóng đèn và 100 người. Mỗi người đổi trạng thái (tắt/mở) của đèn có số thứ tự là bội số của số thứ tự người đó. Sau 100 người đi qua, có bao nhiêu đèn sáng?",
+    "options": ["10", "50", "100", "20"],
+    "answer": "10"
+  },
+  {
+    "question": "Một cái hồ có bèo phủ. Mỗi ngày diện tích bèo tăng gấp đôi. Nếu sau 48 ngày hồ đầy, thì ngày nào hồ đầy 1 nửa?",
+    "options": ["24", "47", "46", "25"],
+    "answer": "47"
+  },
+  {
+    "question": "Một người có 2 đồng hồ luôn sai giờ. Người đó nên chọn cái nào?",
+    "options": ["Cái luôn chạy sai", "Cái đứng yên", "Không cái nào", "Tùy thời điểm"],
+    "answer": "Cái đứng yên"
+  },
+  {
+    "question": "Một hình vuông có cạnh là 10cm. Nếu gấp đôi cạnh, diện tích tăng bao nhiêu lần?",
+    "options": ["2 lần", "3 lần", "4 lần", "5 lần"],
+    "answer": "4 lần"
+  },
+  {
+    "question": "Trong một lớp học, mỗi người bắt tay với tất cả người còn lại. Có 10 người trong lớp. Có bao nhiêu cái bắt tay?",
+    "options": ["45", "90", "100", "20"],
+    "answer": "45"
+  },
+  {
+    "question": "Một người đi 2/3 quãng đường với vận tốc 60 km/h và 1/3 còn lại với vận tốc 30 km/h. Tốc độ trung bình là?",
+    "options": ["45 km/h", "40 km/h", "50 km/h", "35 km/h"],
+    "answer": "45 km/h"
+  },
+  {
+    "question": "Cái gì càng chia càng lớn?",
+    "options": ["Sự hiểu biết", "Tài sản", "Tình bạn", "Thời gian"],
+    "answer": "Sự hiểu biết"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Từ 'たべます' có nghĩa là gì?",
+    "options": ["Uống", "Ngủ", "Ăn", "Đi"],
+    "answer": "Ăn"
+  },
+  {
+    "question": "Từ 'みず' nghĩa là gì?",
+    "options": ["Lửa", "Nước", "Gió", "Đất"],
+    "answer": "Nước"
+  },
+  {
+    "question": "Từ 'せんせい' có nghĩa là?",
+    "options": ["Sinh viên", "Bác sĩ", "Thầy cô", "Cảnh sát"],
+    "answer": "Thầy cô"
+  },
+  {
+    "question": "Từ 'いぬ' là con gì?",
+    "options": ["Mèo", "Chó", "Chim", "Cá"],
+    "answer": "Chó"
+  },
+  {
+    "question": "Từ 'あかい' có nghĩa là gì?",
+    "options": ["Xanh", "Vàng", "Trắng", "Đỏ"],
+    "answer": "Đỏ"
+  }
+]

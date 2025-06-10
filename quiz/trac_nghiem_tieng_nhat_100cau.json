@@ -1,0 +1,1002 @@
+[
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (1/100)",
+    "options": [
+      "Tăng lên",
+      "Chia nhỏ",
+      "Giảm xuống",
+      "Kết thúc"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (2/100)",
+    "options": [
+      "Bắt đầu",
+      "Kết thúc",
+      "Chuẩn bị",
+      "Giải thích"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (3/100)",
+    "options": [
+      "Kế hoạch",
+      "Phương pháp",
+      "Bài học",
+      "Kỹ thuật"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (4/100)",
+    "options": [
+      "Tăng lên",
+      "Giảm xuống",
+      "Tiếp tục",
+      "Thêm vào"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (5/100)",
+    "options": [
+      "Quan hệ",
+      "Vấn đề",
+      "Kết quả",
+      "Kinh nghiệm"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (6/100)",
+    "options": [
+      "Giải thích",
+      "Bắt đầu",
+      "Chuẩn bị",
+      "Kết thúc"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (7/100)",
+    "options": [
+      "Tăng lên",
+      "Thêm vào",
+      "Tiếp tục",
+      "Giảm xuống"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (8/100)",
+    "options": [
+      "Giảm xuống",
+      "Chia nhỏ",
+      "Kết thúc",
+      "Tăng lên"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (9/100)",
+    "options": [
+      "Báo cáo",
+      "Thông báo",
+      "Tin tức",
+      "Giao tiếp"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (10/100)",
+    "options": [
+      "Lười biếng",
+      "Học tập",
+      "Nỗ lực",
+      "Giải thích"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (11/100)",
+    "options": [
+      "Kế hoạch",
+      "Phương pháp",
+      "Kỹ thuật",
+      "Bài học"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (12/100)",
+    "options": [
+      "Thông báo",
+      "Tin tức",
+      "Báo cáo",
+      "Giao tiếp"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (13/100)",
+    "options": [
+      "Quan hệ",
+      "Kinh nghiệm",
+      "Vấn đề",
+      "Kết quả"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "意味 của từ '解決（かいけつ）' là gì? (14/100)",
+    "options": [
+      "Thay đổi",
+      "Giải quyết",
+      "Giao tiếp",
+      "Phát triển"
+    ],
+    "answer": "Giải quyết"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (15/100)",
+    "options": [
+      "Chia nhỏ",
+      "Kết thúc",
+      "Tăng lên",
+      "Giảm xuống"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (16/100)",
+    "options": [
+      "Bắt đầu",
+      "Kết thúc",
+      "Chuẩn bị",
+      "Giải thích"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (17/100)",
+    "options": [
+      "Kết thúc",
+      "Chuẩn bị",
+      "Giải thích",
+      "Bắt đầu"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (18/100)",
+    "options": [
+      "Báo cáo",
+      "Thông báo",
+      "Tin tức",
+      "Giao tiếp"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (19/100)",
+    "options": [
+      "Giao tiếp",
+      "Báo cáo",
+      "Tin tức",
+      "Thông báo"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (20/100)",
+    "options": [
+      "Học tập",
+      "Nỗ lực",
+      "Giải thích",
+      "Lười biếng"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "意味 của từ '解決（かいけつ）' là gì? (21/100)",
+    "options": [
+      "Phát triển",
+      "Giao tiếp",
+      "Thay đổi",
+      "Giải quyết"
+    ],
+    "answer": "Giải quyết"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (22/100)",
+    "options": [
+      "Thông báo",
+      "Tin tức",
+      "Giao tiếp",
+      "Báo cáo"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (23/100)",
+    "options": [
+      "Nỗ lực",
+      "Lười biếng",
+      "Học tập",
+      "Giải thích"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "Từ '経済（けいざい）' nghĩa là gì? (24/100)",
+    "options": [
+      "Giáo dục",
+      "Kinh tế",
+      "Công nghệ",
+      "Chính trị"
+    ],
+    "answer": "Kinh tế"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (25/100)",
+    "options": [
+      "Giao tiếp",
+      "Thông báo",
+      "Báo cáo",
+      "Tin tức"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (26/100)",
+    "options": [
+      "Giảm xuống",
+      "Kết thúc",
+      "Tăng lên",
+      "Chia nhỏ"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (27/100)",
+    "options": [
+      "Giải thích",
+      "Chuẩn bị",
+      "Kết thúc",
+      "Bắt đầu"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (28/100)",
+    "options": [
+      "Kế hoạch",
+      "Kỹ thuật",
+      "Bài học",
+      "Phương pháp"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (29/100)",
+    "options": [
+      "Tin tức",
+      "Thông báo",
+      "Giao tiếp",
+      "Báo cáo"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (30/100)",
+    "options": [
+      "Vấn đề",
+      "Kinh nghiệm",
+      "Quan hệ",
+      "Kết quả"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (31/100)",
+    "options": [
+      "Chia nhỏ",
+      "Kết thúc",
+      "Tăng lên",
+      "Giảm xuống"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (32/100)",
+    "options": [
+      "Tin tức",
+      "Giao tiếp",
+      "Thông báo",
+      "Báo cáo"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (33/100)",
+    "options": [
+      "Kinh nghiệm",
+      "Kết quả",
+      "Vấn đề",
+      "Quan hệ"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (34/100)",
+    "options": [
+      "Thông báo",
+      "Tin tức",
+      "Báo cáo",
+      "Giao tiếp"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (35/100)",
+    "options": [
+      "Tăng lên",
+      "Giảm xuống",
+      "Thêm vào",
+      "Tiếp tục"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (36/100)",
+    "options": [
+      "Nỗ lực",
+      "Học tập",
+      "Lười biếng",
+      "Giải thích"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (37/100)",
+    "options": [
+      "Vấn đề",
+      "Kết quả",
+      "Kinh nghiệm",
+      "Quan hệ"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (38/100)",
+    "options": [
+      "Kết thúc",
+      "Chuẩn bị",
+      "Giải thích",
+      "Bắt đầu"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (39/100)",
+    "options": [
+      "Giải thích",
+      "Bắt đầu",
+      "Chuẩn bị",
+      "Kết thúc"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (40/100)",
+    "options": [
+      "Thông báo",
+      "Giao tiếp",
+      "Báo cáo",
+      "Tin tức"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "意味 của từ '解決（かいけつ）' là gì? (41/100)",
+    "options": [
+      "Phát triển",
+      "Giải quyết",
+      "Thay đổi",
+      "Giao tiếp"
+    ],
+    "answer": "Giải quyết"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (42/100)",
+    "options": [
+      "Cần thiết",
+      "Thừa thãi",
+      "Quan trọng",
+      "Không cần thiết"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (43/100)",
+    "options": [
+      "Không cần thiết",
+      "Thừa thãi",
+      "Cần thiết",
+      "Quan trọng"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (44/100)",
+    "options": [
+      "Quan hệ",
+      "Vấn đề",
+      "Kết quả",
+      "Kinh nghiệm"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (45/100)",
+    "options": [
+      "Thừa thãi",
+      "Không cần thiết",
+      "Quan trọng",
+      "Cần thiết"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (46/100)",
+    "options": [
+      "Thừa thãi",
+      "Cần thiết",
+      "Không cần thiết",
+      "Quan trọng"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (47/100)",
+    "options": [
+      "Báo cáo",
+      "Thông báo",
+      "Tin tức",
+      "Giao tiếp"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (48/100)",
+    "options": [
+      "Giảm xuống",
+      "Kết thúc",
+      "Tăng lên",
+      "Chia nhỏ"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (49/100)",
+    "options": [
+      "Kết thúc",
+      "Chia nhỏ",
+      "Tăng lên",
+      "Giảm xuống"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (50/100)",
+    "options": [
+      "Quan hệ",
+      "Vấn đề",
+      "Kinh nghiệm",
+      "Kết quả"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (51/100)",
+    "options": [
+      "Quan hệ",
+      "Kết quả",
+      "Kinh nghiệm",
+      "Vấn đề"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (52/100)",
+    "options": [
+      "Kỹ thuật",
+      "Phương pháp",
+      "Bài học",
+      "Kế hoạch"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (53/100)",
+    "options": [
+      "Quan trọng",
+      "Cần thiết",
+      "Thừa thãi",
+      "Không cần thiết"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (54/100)",
+    "options": [
+      "Giảm xuống",
+      "Tiếp tục",
+      "Thêm vào",
+      "Tăng lên"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (55/100)",
+    "options": [
+      "Tăng lên",
+      "Giảm xuống",
+      "Chia nhỏ",
+      "Kết thúc"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (56/100)",
+    "options": [
+      "Báo cáo",
+      "Giao tiếp",
+      "Thông báo",
+      "Tin tức"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (57/100)",
+    "options": [
+      "Kết quả",
+      "Kinh nghiệm",
+      "Vấn đề",
+      "Quan hệ"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (58/100)",
+    "options": [
+      "Học tập",
+      "Giải thích",
+      "Nỗ lực",
+      "Lười biếng"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (59/100)",
+    "options": [
+      "Tăng lên",
+      "Kết thúc",
+      "Giảm xuống",
+      "Chia nhỏ"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (60/100)",
+    "options": [
+      "Kinh nghiệm",
+      "Kết quả",
+      "Quan hệ",
+      "Vấn đề"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (61/100)",
+    "options": [
+      "Nỗ lực",
+      "Lười biếng",
+      "Học tập",
+      "Giải thích"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "意味 của từ '解決（かいけつ）' là gì? (62/100)",
+    "options": [
+      "Giải quyết",
+      "Giao tiếp",
+      "Thay đổi",
+      "Phát triển"
+    ],
+    "answer": "Giải quyết"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (63/100)",
+    "options": [
+      "Kỹ thuật",
+      "Kế hoạch",
+      "Phương pháp",
+      "Bài học"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (64/100)",
+    "options": [
+      "Không cần thiết",
+      "Cần thiết",
+      "Thừa thãi",
+      "Quan trọng"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (65/100)",
+    "options": [
+      "Kết thúc",
+      "Chuẩn bị",
+      "Giải thích",
+      "Bắt đầu"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (66/100)",
+    "options": [
+      "Kế hoạch",
+      "Bài học",
+      "Kỹ thuật",
+      "Phương pháp"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (67/100)",
+    "options": [
+      "Chia nhỏ",
+      "Tăng lên",
+      "Giảm xuống",
+      "Kết thúc"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (68/100)",
+    "options": [
+      "Học tập",
+      "Lười biếng",
+      "Nỗ lực",
+      "Giải thích"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (69/100)",
+    "options": [
+      "Tiếp tục",
+      "Tăng lên",
+      "Giảm xuống",
+      "Thêm vào"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "意味 của từ '解決（かいけつ）' là gì? (70/100)",
+    "options": [
+      "Giải quyết",
+      "Giao tiếp",
+      "Thay đổi",
+      "Phát triển"
+    ],
+    "answer": "Giải quyết"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (71/100)",
+    "options": [
+      "Kinh nghiệm",
+      "Kết quả",
+      "Vấn đề",
+      "Quan hệ"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (72/100)",
+    "options": [
+      "Quan trọng",
+      "Không cần thiết",
+      "Cần thiết",
+      "Thừa thãi"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "意味 của từ '努力（どりょく）' là gì? (73/100)",
+    "options": [
+      "Nỗ lực",
+      "Giải thích",
+      "Lười biếng",
+      "Học tập"
+    ],
+    "answer": "Nỗ lực"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (74/100)",
+    "options": [
+      "Giảm xuống",
+      "Tăng lên",
+      "Kết thúc",
+      "Chia nhỏ"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (75/100)",
+    "options": [
+      "Kỹ thuật",
+      "Kế hoạch",
+      "Bài học",
+      "Phương pháp"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (76/100)",
+    "options": [
+      "Kết quả",
+      "Vấn đề",
+      "Quan hệ",
+      "Kinh nghiệm"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "意味 của từ '解決（かいけつ）' là gì? (77/100)",
+    "options": [
+      "Giải quyết",
+      "Thay đổi",
+      "Phát triển",
+      "Giao tiếp"
+    ],
+    "answer": "Giải quyết"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (78/100)",
+    "options": [
+      "Phương pháp",
+      "Kỹ thuật",
+      "Bài học",
+      "Kế hoạch"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '増える（ふえる）' có nghĩa là gì? (79/100)",
+    "options": [
+      "Tăng lên",
+      "Giảm xuống",
+      "Kết thúc",
+      "Chia nhỏ"
+    ],
+    "answer": "Tăng lên"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (80/100)",
+    "options": [
+      "Tiếp tục",
+      "Tăng lên",
+      "Giảm xuống",
+      "Thêm vào"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (81/100)",
+    "options": [
+      "Phương pháp",
+      "Kế hoạch",
+      "Kỹ thuật",
+      "Bài học"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (82/100)",
+    "options": [
+      "Chuẩn bị",
+      "Giải thích",
+      "Kết thúc",
+      "Bắt đầu"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (83/100)",
+    "options": [
+      "Bắt đầu",
+      "Chuẩn bị",
+      "Giải thích",
+      "Kết thúc"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '経済（けいざい）' nghĩa là gì? (84/100)",
+    "options": [
+      "Chính trị",
+      "Công nghệ",
+      "Giáo dục",
+      "Kinh tế"
+    ],
+    "answer": "Kinh tế"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (85/100)",
+    "options": [
+      "Phương pháp",
+      "Kế hoạch",
+      "Bài học",
+      "Kỹ thuật"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (86/100)",
+    "options": [
+      "Kết thúc",
+      "Bắt đầu",
+      "Chuẩn bị",
+      "Giải thích"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (87/100)",
+    "options": [
+      "Cần thiết",
+      "Thừa thãi",
+      "Không cần thiết",
+      "Quan trọng"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '経済（けいざい）' nghĩa là gì? (88/100)",
+    "options": [
+      "Kinh tế",
+      "Giáo dục",
+      "Công nghệ",
+      "Chính trị"
+    ],
+    "answer": "Kinh tế"
+  },
+  {
+    "question": "Từ '技術（ぎじゅつ）' có nghĩa là gì? (89/100)",
+    "options": [
+      "Phương pháp",
+      "Bài học",
+      "Kế hoạch",
+      "Kỹ thuật"
+    ],
+    "answer": "Kỹ thuật"
+  },
+  {
+    "question": "意味 của từ '解決（かいけつ）' là gì? (90/100)",
+    "options": [
+      "Thay đổi",
+      "Giải quyết",
+      "Giao tiếp",
+      "Phát triển"
+    ],
+    "answer": "Giải quyết"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (91/100)",
+    "options": [
+      "Thông báo",
+      "Tin tức",
+      "Giao tiếp",
+      "Báo cáo"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '報告（ほうこく）' có nghĩa là gì? (92/100)",
+    "options": [
+      "Thông báo",
+      "Giao tiếp",
+      "Báo cáo",
+      "Tin tức"
+    ],
+    "answer": "Báo cáo"
+  },
+  {
+    "question": "Từ '必要（ひつよう）' có nghĩa là gì? (93/100)",
+    "options": [
+      "Cần thiết",
+      "Thừa thãi",
+      "Quan trọng",
+      "Không cần thiết"
+    ],
+    "answer": "Cần thiết"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (94/100)",
+    "options": [
+      "Kinh nghiệm",
+      "Quan hệ",
+      "Kết quả",
+      "Vấn đề"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '関係（かんけい）' nghĩa là gì? (95/100)",
+    "options": [
+      "Kinh nghiệm",
+      "Kết quả",
+      "Vấn đề",
+      "Quan hệ"
+    ],
+    "answer": "Quan hệ"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (96/100)",
+    "options": [
+      "Tăng lên",
+      "Tiếp tục",
+      "Thêm vào",
+      "Giảm xuống"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "Từ '経済（けいざい）' nghĩa là gì? (97/100)",
+    "options": [
+      "Giáo dục",
+      "Chính trị",
+      "Công nghệ",
+      "Kinh tế"
+    ],
+    "answer": "Kinh tế"
+  },
+  {
+    "question": "Từ '減る（へる）' có nghĩa là gì? (98/100)",
+    "options": [
+      "Giảm xuống",
+      "Tăng lên",
+      "Thêm vào",
+      "Tiếp tục"
+    ],
+    "answer": "Giảm xuống"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (99/100)",
+    "options": [
+      "Giải thích",
+      "Bắt đầu",
+      "Kết thúc",
+      "Chuẩn bị"
+    ],
+    "answer": "Chuẩn bị"
+  },
+  {
+    "question": "Từ '準備（じゅんび）' có nghĩa là gì? (100/100)",
+    "options": [
+      "Giải thích",
+      "Chuẩn bị",
+      "Kết thúc",
+      "Bắt đầu"
+    ],
+    "answer": "Chuẩn bị"
+  }
+]

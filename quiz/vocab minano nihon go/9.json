@@ -1,0 +1,252 @@
+[
+  {
+    "question": "Khi bạn nắm được một vấn đề gì đó, bạn sẽ nói là ____.",
+    "options": ["わかります", "あります", "すき[な]", "きらい[な]"],
+    "answer": "わかります"
+  },
+  {
+    "question": "Để nói rằng bạn có một thứ gì đó (sở hữu), ví dụ: 'Tôi có một quyển sách.', bạn sẽ dùng từ nào?",
+    "options": ["います", "あります", "いますか", "ありますか"],
+    "answer": "あります"
+  },
+  {
+    "question": "Nếu bạn rất thích một thứ gì đó, bạn sẽ dùng từ nào?",
+    "options": ["きらい[な]", "すき[な]", "へた[な]", "じょうず[な]"],
+    "answer": "すき[な]"
+  },
+  {
+    "question": "Từ nào diễn tả cảm xúc 'ghét, không thích'?",
+    "options": ["すき[な]", "きらい[な]", "わかります", "へた[な]"],
+    "answer": "きらい[な]"
+  },
+  {
+    "question": "Khi muốn khen ai đó 'giỏi, khéo' trong một việc gì đó, bạn dùng từ nào?",
+    "options": ["へた[な]", "じょうず[な]", "よく", "たくさん"],
+    "answer": "じょうず[な]"
+  },
+  {
+    "question": "Ngược lại với 'giỏi', từ nào có nghĩa là 'kém' hoặc 'vụng về'?",
+    "options": ["じょうず[な]", "へた[な]", "わかります", "すこし"],
+    "answer": "へた[な]"
+  },
+  {
+    "question": "Từ nào dùng để chỉ 'món ăn' hoặc 'việc nấu ăn'?",
+    "options": ["飲み物", "スポーツ", "料理", "音楽"],
+    "answer": "料理"
+  },
+  {
+    "question": "Tất cả các loại nước uống nói chung được gọi là gì?",
+    "options": ["料理", "飲み物", "音楽", "スポーツ"],
+    "answer": "飲み物"
+  },
+  {
+    "question": "Các hoạt động rèn luyện sức khỏe, ví dụ: bóng đá, bơi lội, được gọi chung là gì? (Kèm theo ～をします để 'chơi ~')",
+    "options": ["料理", "飲み物", "スポーツ", "音楽"],
+    "answer": "スポーツ"
+  },
+  {
+    "question": "Môn thể thao nào mà người chơi dùng gậy đánh bóng và chạy quanh các gôn?",
+    "options": ["サッカー", "やきゅう", "テニス", "バスケットボール"],
+    "answer": "やきゅう"
+  },
+  {
+    "question": "Khi bạn cử động cơ thể theo điệu nhạc, đó là hoạt động gì?",
+    "options": ["歌", "ダンス", "スポーツ", "やきゅう"],
+    "answer": "ダンス"
+  },
+  {
+    "question": "Nghệ thuật của âm thanh, giai điệu được gọi là gì?",
+    "options": ["歌", "音楽", "絵", "字"],
+    "answer": "音楽"
+  },
+  {
+    "question": "Tác phẩm được cất lên bằng giọng hát là gì?",
+    "options": ["音楽", "歌", "コンサート", "カラオケ"],
+    "answer": "歌"
+  },
+  {
+    "question": "Thể loại nhạc được sáng tác từ nhiều thế kỷ trước, thường do các nhà soạn nhạc nổi tiếng tạo ra?",
+    "options": ["ジャズ", "クラシック", "ポップ", "ロック"],
+    "answer": "クラシック"
+  },
+  {
+    "question": "Thể loại nhạc có nguồn gốc từ người Mỹ gốc Phi, nổi tiếng với sự ngẫu hứng và nhịp điệu đặc trưng?",
+    "options": ["クラシック", "ジャズ", "ロック", "ポップ"],
+    "answer": "ジャズ"
+  },
+  {
+    "question": "Sự kiện mà các nhạc sĩ biểu diễn trực tiếp trên sân khấu được gọi là gì?",
+    "options": ["カラオケ", "コンサート", "映画", "芝居"],
+    "answer": "コンサート"
+  },
+  {
+    "question": "Hoạt động giải trí mà mọi người hát theo nhạc nền tại một địa điểm công cộng?",
+    "options": ["コンサート", "カラオケ", "映画", "スポーツ"],
+    "answer": "カラオケ"
+  },
+  {
+    "question": "Một loại hình ca kịch truyền thống của Nhật Bản, nổi tiếng với trang phục và hóa trang độc đáo?",
+    "options": ["相撲", "歌舞伎", "茶道", "華道"],
+    "answer": "歌舞伎"
+  },
+  {
+    "question": "Tác phẩm nghệ thuật được tạo ra bằng cách vẽ trên bề mặt phẳng?",
+    "options": ["字", "絵", "歌", "本"],
+    "answer": "絵"
+  },
+  {
+    "question": "Các ký hiệu được viết hoặc in để tạo thành từ, câu được gọi là gì?",
+    "options": ["絵", "字", "音楽", "映画"],
+    "answer": "字"
+  },
+  {
+    "question": "Loại chữ cái có nguồn gốc từ Trung Quốc và được sử dụng rộng rãi trong tiếng Nhật?",
+    "options": ["ひらがな", "カタカナ", "ローマ字", "漢字"],
+    "answer": "漢字"
+  },
+  {
+    "question": "Bảng chữ cái tiếng Nhật cơ bản, thường được dùng để viết các từ thuần Nhật?",
+    "options": ["カタカナ", "ひらがな", "漢字", "ローマ字"],
+    "answer": "ひらがな"
+  },
+  {
+    "question": "Bảng chữ cái tiếng Nhật dùng để viết các từ mượn từ nước ngoài?",
+    "options": ["ひらがな", "カタカナ", "漢字", "ローマ字"],
+    "answer": "カタカナ"
+  },
+  {
+    "question": "Hệ thống chữ cái dùng các ký tự Latinh để biểu diễn âm tiếng Nhật?",
+    "options": ["ひらがな", "カタカナ", "漢字", "ローマ字"],
+    "answer": "ローマ字"
+  },
+  {
+    "question": "Để chỉ các đồng xu hoặc tờ tiền có mệnh giá nhỏ, ta dùng cụm từ nào?",
+    "options": ["お金", "チケット", "細かいお金", "時間"],
+    "answer": "細かいお金"
+  },
+  {
+    "question": "Vật dùng để vào cửa xem hòa nhạc, xem phim, hoặc đi tàu xe?",
+    "options": ["お金", "チケット", "切手", "手紙"],
+    "answer": "チケット"
+  },
+  {
+    "question": "Khái niệm chung chỉ khoảng khắc hoặc khoảng kéo dài của cuộc sống?",
+    "options": ["ようじ", "時間", "約束", "ご主人"],
+    "answer": "時間"
+  },
+  {
+    "question": "Khi bạn có công việc hoặc sự kiện cần giải quyết, đó là gì?",
+    "options": ["約束", "用事", "時間", "休み"],
+    "answer": "用事"
+  },
+  {
+    "question": "Sự thỏa thuận hoặc cuộc hẹn giữa hai hay nhiều người?",
+    "options": ["用事", "約束", "時間", "電話"],
+    "answer": "約束"
+  },
+  {
+    "question": "Cách gọi 'chồng' của người khác một cách lịch sự?",
+    "options": ["ご主人", "おっと", "しゅじん", "つま"],
+    "answer": "ご主人"
+  },
+  {
+    "question": "Để nói về 'chồng' của chính mình, ta dùng từ nào?",
+    "options": ["ご主人", "おっと/主人", "おくさん", "妻"],
+    "answer": "おっと/主人"
+  },
+  {
+    "question": "Cách gọi 'vợ' của người khác một cách lịch sự?",
+    "options": ["つま", "かない", "おくさん", "ご主人"],
+    "answer": "おくさん"
+  },
+  {
+    "question": "Để nói về 'vợ' của chính mình, ta dùng từ nào?",
+    "options": ["おくさん", "ご主人", "つま/家内", "子ども"],
+    "answer": "つま/家内"
+  },
+  {
+    "question": "Từ chung để chỉ con của mình, hoặc trẻ em nói chung?",
+    "options": ["男の子", "女の子", "家族", "子ども"],
+    "answer": "子ども"
+  },
+  {
+    "question": "Trạng từ nào có nghĩa là 'tốt, rõ' và chỉ mức độ cao?",
+    "options": ["だいたい", "たくさん", "すこし", "よく"],
+    "answer": "よく"
+  },
+  {
+    "question": "Từ nào có nghĩa là 'đại khái, đại thể'?",
+    "options": ["たくさん", "すこし", "ぜんぜん", "だいたい"],
+    "answer": "だいたい"
+  },
+  {
+    "question": "Để diễn tả số lượng 'nhiều', ta dùng từ nào?",
+    "options": ["すこし", "たくさん", "ぜんぜん", "あまり"],
+    "answer": "たくさん"
+  },
+  {
+    "question": "Ngược lại với 'nhiều', từ nào có nghĩa là 'ít, một ít'?",
+    "options": ["たくさん", "すこし", "ぜんぜん", "よく"],
+    "answer": "すこし"
+  },
+  {
+    "question": "Trạng từ nào thường đi kèm với phủ định để diễn tả ý 'hoàn toàn ~ không'?",
+    "options": ["たくさん", "すこし", "ぜんぜん", "だいたい"],
+    "answer": "ぜんぜん"
+  },
+  {
+    "question": "Từ nào có nghĩa là 'sớm' hoặc 'nhanh'?",
+    "options": ["ゆっくり", "はやく", "あとで", "いま"],
+    "answer": "はやく"
+  },
+  {
+    "question": "Khi bạn muốn giải thích 'vì ~' một lý do nào đó, bạn sẽ dùng từ nào?",
+    "options": ["そして", "でも", "から", "また"],
+    "answer": "～から"
+  },
+  {
+    "question": "Để hỏi 'tại sao' một điều gì đó xảy ra, bạn dùng từ để hỏi nào?",
+    "options": ["どこ", "いつ", "だれ", "どうして"],
+    "answer": "どうして"
+  },
+  {
+    "question": "Khi một điều gì đó không diễn ra như mong muốn và bạn cảm thấy buồn hoặc tiếc, bạn nói: 'Thật đáng tiếc nhỉ/ buồn nhỉ' bằng cách nào?",
+    "options": ["おめでとうございます", "ありがとうございます", "残念です[ね]", "お疲れ様です"],
+    "answer": "残念です[ね]"
+  },
+  {
+    "question": "Từ nào dùng để nói 'Xin lỗi' hoặc để thu hút sự chú ý?",
+    "options": ["ありがとう", "すみません", "さようなら", "おはよう"],
+    "answer": "すみません"
+  },
+  {
+    "question": "Từ nào dùng khi bạn nhấc máy điện thoại và bắt đầu cuộc gọi?",
+    "options": ["もしもし", "こんにちは", "こんばんは", "おやすみ"],
+    "answer": "もしもし"
+  },
+  {
+    "question": "Khi bạn đã tìm được đúng người mình cần nói chuyện trên điện thoại, bạn có thể nói 'a' bằng cách nào?",
+    "options": ["はい", "いいえ", "ああ", "ええ"],
+    "answer": "ああ"
+  },
+  {
+    "question": "Câu nào dùng để mời ai đó cùng làm gì đó với bạn?",
+    "options": ["どこに行きますか", "いっしょにいかがですか", "何をしますか", "いつ来ますか"],
+    "answer": "いっしょにいかがですか"
+  },
+  {
+    "question": "Cách từ chối khéo một lời mời, ví dụ: 'Tôi bận [thì] có lẽ không được rồi'?",
+    "options": ["はい、できます", "いいえ、できません", "[～は]ちょっと….", "もちろんです"],
+    "answer": "[～は]ちょっと…."
+  },
+  {
+    "question": "Khi bạn thắc mắc liệu điều gì đó có thể xảy ra hay không, bạn hỏi 'Không được à?' bằng cách nào?",
+    "options": ["いいですか", "だめですか。", "できますか", "わかりませんか"],
+    "answer": "だめですか。"
+  },
+  {
+    "question": "Khi bạn muốn hẹn lần sau vì không thể tham gia bây giờ, bạn nói gì?",
+    "options": ["ありがとうございます", "さようなら", "またこんどおねがいします", "がんばってください"],
+    "answer": "またこんどおねがいします"
+  }
+]

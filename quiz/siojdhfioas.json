@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Thuật ngữ nào mô tả khuynh hướng người dùng nhìn vào các yếu tố lớn, nổi bật trước khi chú ý đến các chi tiết nhỏ hơn trên giao diện?",
+    "options": ["Nguyên tắc Fitts", "Hiệu ứng Von Restorff", "Học thuyết Gestalt", "Luật Hick"],
+    "answer": "Học thuyết Gestalt"
+  },
+  {
+    "question": "Khi thiết kế một biểu mẫu, yếu tố nào sau đây có thể giúp giảm tỷ lệ bỏ dở của người dùng?",
+    "options": ["Tăng số lượng trường nhập liệu", "Sử dụng phông chữ phức tạp", "Hiển thị tiến độ hoàn thành", "Loại bỏ nhãn trường"],
+    "answer": "Hiển thị tiến độ hoàn thành"
+  },
+  {
+    "question": "Hiệu ứng Zeigarnik trong UX đề cập đến điều gì?",
+    "options": ["Người dùng dễ dàng nhớ các nhiệm vụ đã hoàn thành", "Người dùng dễ dàng nhớ các nhiệm vụ chưa hoàn thành hoặc bị gián đoạn", "Người dùng quên các nhiệm vụ sau khi hoàn thành", "Người dùng thích các nhiệm vụ ngắn gọn"],
+    "answer": "Người dùng dễ dàng nhớ các nhiệm vụ chưa hoàn thành hoặc bị gián đoạn"
+  },
+  {
+    "question": "Yếu tố nào sau đây có thể ảnh hưởng đến **tốc độ ra quyết định** của người dùng?",
+    "options": ["Màu sắc chủ đạo của trang", "Số lượng lựa chọn có sẵn", "Kích thước của nút bấm", "Vị trí của logo"],
+    "answer": "Số lượng lựa chọn có sẵn"
+  },
+  {
+    "question": "Hiện tượng 'blindness banner' mô tả hành vi nào của người dùng?",
+    "options": ["Người dùng không thể nhìn thấy các biểu ngữ quảng cáo", "Người dùng bỏ qua hoặc không chú ý đến các biểu ngữ quảng cáo", "Người dùng luôn nhấp vào các biểu ngữ quảng cáo", "Người dùng bị phân tâm bởi các biểu ngữ quảng cáo"],
+    "answer": "Người dùng bỏ qua hoặc không chú ý đến các biểu ngữ quảng cáo"
+  },
+  {
+    "question": "Khi người dùng có xu hướng lựa chọn phương án mặc định thay vì xem xét các lựa chọn khác, đây là ví dụ về loại thiên kiến nhận thức nào?",
+    "options": ["Thiên kiến xác nhận", "Thiên kiến neo giữ", "Thiên kiến mặc định", "Thiên kiến khả dụng"],
+    "answer": "Thiên kiến mặc định"
+  },
+  {
+    "question": "Để cải thiện khả năng đọc của văn bản trên giao diện, bạn nên ưu tiên yếu tố nào?",
+    "options": ["Sử dụng nhiều kiểu chữ khác nhau", "Tăng kích thước phông chữ quá mức", "Đảm bảo độ tương phản cao giữa văn bản và nền", "Sử dụng màu sắc rực rỡ cho văn bản"],
+    "answer": "Đảm bảo độ tương phản cao giữa văn bản và nền"
+  },
+  {
+    "question": "Nguyên tắc Gestalt nào gợi ý rằng người dùng có xu hướng nhóm các đối tượng gần nhau lại với nhau?",
+    "options": ["Nguyên tắc tương đồng", "Nguyên tắc liên tục", "Nguyên tắc gần gũi", "Nguyên tắc đóng"],
+    "answer": "Nguyên tắc gần gũi"
+  },
+  {
+    "question": "Một người dùng dễ dàng tìm thấy thông tin trên trang web vì cách sắp xếp hợp lý. Đây là ví dụ về một khía cạnh tốt của gì?",
+    "options": ["Thẩm mỹ", "Khả năng truy cập", "Khả năng điều hướng", "Khả năng mở rộng"],
+    "answer": "Khả năng điều hướng"
+  },
+  {
+    "question": "Thiết kế UI/UX nên tập trung vào việc giảm thiểu **gánh nặng nhận thức** cho người dùng bằng cách nào?",
+    "options": ["Cung cấp càng nhiều thông tin càng tốt", "Sử dụng ngôn ngữ kỹ thuật phức tạp", "Đơn giản hóa quy trình và lựa chọn", "Yêu cầu người dùng nhớ nhiều thông tin"],
+    "answer": "Đơn giản hóa quy trình và lựa chọn"
+  },
+  {
+    "question": "Khi người dùng hoàn thành một tác vụ và nhận được phản hồi rõ ràng (ví dụ: thông báo 'Đã gửi thành công'), đây là một ví dụ về nguyên tắc UX nào?",
+    "options": ["Tính linh hoạt", "Tính nhất quán", "Phản hồi", "Tính hiệu quả"],
+    "answer": "Phản hồi"
+  },
+  {
+    "question": "Yếu tố nào sau đây là quan trọng nhất để xây dựng **lòng tin** của người dùng đối với một sản phẩm kỹ thuật số?",
+    "options": ["Màu sắc thương hiệu bắt mắt", "Tính năng phức tạp", "Bố cục đẹp mắt", "Minh bạch và đáng tin cậy"],
+    "answer": "Minh bạch và đáng tin cậy"
+  },
+  {
+    "question": "Khi người dùng tìm kiếm thông tin và có xu hướng quét nhanh trang thay vì đọc kỹ từng từ, đây là hành vi nào?",
+    "options": ["Đọc sâu", "Đọc nhanh", "Quét tìm kiếm", "Đọc hiểu"],
+    "answer": "Quét tìm kiếm"
+  },
+  {
+    "question": "Nguyên tắc 'Don't make me think' trong UX có ý nghĩa gì?",
+    "options": ["Thiết kế phải phức tạp để người dùng suy nghĩ nhiều hơn", "Người dùng không cần phải suy nghĩ để sử dụng sản phẩm", "Người dùng cần phải tự khám phá các tính năng", "Thiết kế nên thách thức người dùng"],
+    "answer": "Người dùng không cần phải suy nghĩ để sử dụng sản phẩm"
+  },
+  {
+    "question": "Khi thiết kế cho các thiết bị di động, yếu tố nào sau đây là cực kỳ quan trọng để đảm bảo trải nghiệm người dùng tốt?",
+    "options": ["Màn hình lớn", "Khả năng tương tác bằng chuột", "Thiết kế responsive", "Sử dụng nhiều văn bản dài"],
+    "answer": "Thiết kế responsive"
+  }
+]

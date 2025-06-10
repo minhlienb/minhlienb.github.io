@@ -1,0 +1,262 @@
+[
+  {
+    "question": "Để nói \"sân ga số 1\", ta điền số vào chỗ trống của từ nào? 「いち____」",
+    "options": ["ばんせん", "ホーム", "ドア", "出口"],
+    "answer": "ばんせん"
+  },
+  {
+    "question": "Từ nào có nghĩa là \"đi\"?",
+    "options": ["来ます", "帰ります", "行きます", "食べます"],
+    "answer": "行きます"
+  },
+  {
+    "question": "Ngược lại với \"đi\", từ nào có nghĩa là \"đến\"?",
+    "options": ["行きます", "来ます", "帰ります", "読みます"],
+    "answer": "来ます"
+  },
+  {
+    "question": "Khi bạn kết thúc một ngày và trở về nhà, bạn dùng động từ nào?",
+    "options": ["行きます", "来ます", "帰ります", "寝ます"],
+    "answer": "帰ります"
+  },
+  {
+    "question": "Nơi mà học sinh, sinh viên thường đến để học tập là gì?",
+    "options": ["スーパー", "駅", "学校", "病院"],
+    "answer": "学校"
+  },
+  {
+    "question": "Nơi bạn thường mua sắm thực phẩm và đồ dùng hàng ngày với giá phải chăng?",
+    "options": ["学校", "駅", "スーパー", "銀行"],
+    "answer": "スーパー"
+  },
+  {
+    "question": "Địa điểm mà tàu điện, tàu hỏa dừng lại để đón/trả khách?",
+    "options": ["バス停", "駅", "空港", "公園"],
+    "answer": "駅"
+  },
+  {
+    "question": "Phương tiện di chuyển trên không?",
+    "options": ["船", "電車", "飛行機", "バス"],
+    "answer": "飛行機"
+  },
+  {
+    "question": "Phương tiện di chuyển trên biển hoặc sông?",
+    "options": ["飛行機", "電車", "船", "バス"],
+    "answer": "船"
+  },
+  {
+    "question": "Tàu chạy bằng điện, phổ biến ở các thành phố lớn?",
+    "options": ["地下鉄", "新幹線", "電車", "バス"],
+    "answer": "電車"
+  },
+  {
+    "question": "Loại tàu chạy dưới lòng đất ở đô thị?",
+    "options": ["電車", "新幹線", "地下鉄", "バス"],
+    "answer": "地下鉄"
+  },
+  {
+    "question": "Tàu điện siêu tốc nổi tiếng của Nhật Bản?",
+    "options": ["電車", "地下鉄", "新幹線", "バス"],
+    "answer": "新幹線"
+  },
+  {
+    "question": "Phương tiện giao thông công cộng lớn, chạy trên đường bộ, có nhiều điểm dừng?",
+    "options": ["タクシー", "自転車", "バス", "電車"],
+    "answer": "バス"
+  },
+  {
+    "question": "Xe hơi có tài xế, bạn trả tiền theo quãng đường đi?",
+    "options": ["バス", "自転車", "タクシー", "電車"],
+    "answer": "タクシー"
+  },
+  {
+    "question": "Phương tiện cá nhân có hai bánh, chạy bằng sức đạp chân?",
+    "options": ["車", "自転車", "バス", "オートバイ"],
+    "answer": "自転車"
+  },
+  {
+    "question": "Khi bạn không dùng phương tiện nào mà di chuyển bằng chân, đó là gì?",
+    "options": ["乗って", "走って", "歩いて", "飛んで"],
+    "answer": "歩いて"
+  },
+  {
+    "question": "Từ nào chung nhất để chỉ \"con người\"?",
+    "options": ["友達", "彼", "彼女", "人"],
+    "answer": "人"
+  },
+  {
+    "question": "Người mà bạn thường xuyên nói chuyện, chia sẻ và tin tưởng?",
+    "options": ["家族", "先生", "友達", "会社員"],
+    "answer": "友達"
+  },
+  {
+    "question": "Từ nào dùng để chỉ người con trai mà bạn đang yêu?",
+    "options": ["彼女", "家族", "彼", "人"],
+    "answer": "彼"
+  },
+  {
+    "question": "Từ nào dùng để chỉ người con gái mà bạn đang yêu?",
+    "options": ["彼", "家族", "彼女", "友達"],
+    "answer": "彼女"
+  },
+  {
+    "question": "Tập hợp những người sống cùng nhau, có quan hệ huyết thống hoặc hôn nhân?",
+    "options": ["友達", "会社", "家族", "学校"],
+    "answer": "家族"
+  },
+  {
+    "question": "Khoảng thời gian 7 ngày ngay trước tuần này?",
+    "options": ["今週", "来週", "先週", "毎週"],
+    "answer": "先週"
+  },
+  {
+    "question": "Khoảng thời gian 7 ngày hiện tại?",
+    "options": ["先週", "来週", "今週", "毎週"],
+    "answer": "今週"
+  },
+  {
+    "question": "Khoảng thời gian 7 ngày ngay sau tuần này?",
+    "options": ["今週", "先週", "来週", "来月"],
+    "answer": "来週"
+  },
+  {
+    "question": "Khoảng thời gian 30 ngày ngay trước tháng này?",
+    "options": ["今月", "来月", "先月", "毎月"],
+    "answer": "先月"
+  },
+  {
+    "question": "Khoảng thời gian 30 ngày hiện tại?",
+    "options": ["先月", "来月", "今月", "毎年"],
+    "answer": "今月"
+  },
+  {
+    "question": "Khoảng thời gian 30 ngày ngay sau tháng này?",
+    "options": ["今月", "先月", "来月", "去年"],
+    "answer": "来月"
+  },
+  {
+    "question": "Năm ngay trước năm hiện tại?",
+    "options": ["今年", "来年", "去年", "毎年"],
+    "answer": "去年"
+  },
+  {
+    "question": "Năm hiện tại?",
+    "options": ["去年", "来年", "今年", "毎日"],
+    "answer": "今年"
+  },
+  {
+    "question": "Năm ngay sau năm hiện tại?",
+    "options": ["今年", "去年", "来年", "毎晩"],
+    "answer": "来年"
+  },
+  {
+    "question": "Để hỏi về tháng nào, bạn dùng từ nào? 「____ですか。」",
+    "options": ["何日", "何月", "何時", "いつ"],
+    "answer": "何月"
+  },
+  {
+    "question": "Ngày đầu tiên của một tháng?",
+    "options": ["ふつか", "みっか", "ついたち", "とおか"],
+    "answer": "ついたち"
+  },
+  {
+    "question": "Ngày thứ hai hoặc 2 ngày?",
+    "options": ["ついたち", "ふつか", "みっか", "よっか"],
+    "answer": "ふつか"
+  },
+  {
+    "question": "Ngày thứ ba hoặc 3 ngày?",
+    "options": ["ふつか", "みっか", "よっか", "いつか"],
+    "answer": "みっか"
+  },
+  {
+    "question": "Ngày thứ tư hoặc 4 ngày?",
+    "options": ["みっか", "よっか", "いつか", "むいか"],
+    "answer": "よっか"
+  },
+  {
+    "question": "Ngày thứ năm hoặc 5 ngày?",
+    "options": ["よっか", "いつか", "むいか", "なのか"],
+    "answer": "いつか"
+  },
+  {
+    "question": "Ngày thứ sáu hoặc 6 ngày?",
+    "options": ["いつか", "むいか", "なのか", "ようか"],
+    "answer": "むいか"
+  },
+  {
+    "question": "Ngày thứ bảy hoặc 7 ngày?",
+    "options": ["むいか", "なのか", "ようか", "ここのか"],
+    "answer": "なのか"
+  },
+  {
+    "question": "Ngày thứ tám hoặc 8 ngày?",
+    "options": ["なのか", "ようか", "ここのか", "とおか"],
+    "answer": "ようか"
+  },
+  {
+    "question": "Ngày thứ chín hoặc 9 ngày?",
+    "options": ["ようか", "ここのか", "とおか", "じゅうよっか"],
+    "answer": "ここのか"
+  },
+  {
+    "question": "Ngày thứ mười hoặc 10 ngày?",
+    "options": ["ここのか", "とおか", "じゅうよっか", "はつか"],
+    "answer": "とおか"
+  },
+  {
+    "question": "Ngày thứ mười bốn hoặc 14 ngày?",
+    "options": ["とおか", "じゅうよっか", "はつか", "にじゅうよっか"],
+    "answer": "じゅうよっか"
+  },
+  {
+    "question": "Ngày thứ hai mươi hoặc 20 ngày?",
+    "options": ["じゅうよっか", "はつか", "にじゅうよっか", "なんにち"],
+    "answer": "はつか"
+  },
+  {
+    "question": "Ngày thứ hai mươi tư hoặc 24 ngày?",
+    "options": ["はつか", "にじゅうよっか", "なんにち", "いつ"],
+    "answer": "にじゅうよっか"
+  },
+  {
+    "question": "Để hỏi \"ngày mấy\" hoặc \"mấy ngày\", ta dùng từ nào?",
+    "options": ["何月", "何時", "何日", "いつ"],
+    "answer": "何日"
+  },
+  {
+    "question": "Để hỏi \"bao giờ, khi nào\" một sự kiện diễn ra?",
+    "options": ["何日", "何月", "何時", "いつ"],
+    "answer": "いつ"
+  },
+  {
+    "question": "Ngày kỷ niệm bạn được sinh ra đời là gì?",
+    "options": ["お正月", "クリスマス", "誕生日", "お祭り"],
+    "answer": "誕生日"
+  },
+  {
+    "question": "Loại tàu dừng ở tất cả các ga, kể cả ga lẻ?",
+    "options": ["急行", "特急", "普通", "準急"],
+    "answer": "普通"
+  },
+  {
+    "question": "Loại tàu chạy nhanh hơn tàu thường, bỏ qua một số ga?",
+    "options": ["普通", "特急", "急行", "各駅停車"],
+    "answer": "急行"
+  },
+  {
+    "question": "Loại tàu chạy nhanh nhất, chỉ dừng ở các ga chính?",
+    "options": ["普通", "急行", "特急", "各駅停車"],
+    "answer": "特急"
+  },
+  {
+    "question": "Để nói về cái gì đó \"tiếp theo\", ví dụ: \"ga tiếp theo\", ta dùng từ nào?",
+    "options": ["前の", "最後の", "次の", "はじめての"],
+    "answer": "次の"
+  },
+  {
+    "question": "Khi ai đó cảm ơn bạn, bạn đáp lại \"Không có chi\" bằng cách nào?",
+    "options": ["ありがとうございます", "どういたしまして", "すみません", "さようなら"],
+    "answer": "どういたしまして"
+  }
+]

@@ -1,0 +1,492 @@
+[
+  {
+    "question": "Từ Kanji nào có nghĩa là 'Question booklet'?",
+    "options": ["言語知識", "問題用紙", "読解", "試験"],
+    "answer": "問題用紙"
+  },
+  {
+    "question": "Từ Hiragana 'mondai' có nghĩa là gì?",
+    "options": ["câu trả lời", "câu hỏi", "ví dụ", "ghi chú"],
+    "answer": "câu hỏi"
+  },
+  {
+    "question": "Từ '試験' có cách đọc là gì?",
+    "options": ["しけん", "しけんが", "じかん", "しけい"],
+    "answer": "しけん"
+  },
+  {
+    "question": "Từ nào sau đây có nghĩa là 'To begin'?",
+    "options": ["始める", "始まります", "終わる", "始まる"],
+    "answer": "始まる"
+  },
+  {
+    "question": "Từ '名前' có cách đọc là gì?",
+    "options": ["なまえ", "なま", "なめえ", "なまえい"],
+    "answer": "なまえ"
+  },
+  {
+    "question": "Từ Kanji nào có nghĩa là 'All'?",
+    "options": ["一番", "全部", "問題", "解答"],
+    "answer": "全部"
+  },
+  {
+    "question": "Từ '電車' có nghĩa là gì?",
+    "options": ["xe hơi", "xe đạp", "tàu điện", "xe buýt"],
+    "answer": "tàu điện"
+  },
+  {
+    "question": "Từ '時間' có cách đọc là gì?",
+    "options": ["じかん", "じけん", "じか", "じげん"],
+    "answer": "じかん"
+  },
+  {
+    "question": "Từ nào sau đây có nghĩa là 'Japanese cuisine'?",
+    "options": ["日本料理", "日本語", "日本", "日本食"],
+    "answer": "日本料理"
+  },
+  {
+    "question": "Từ '好き' có nghĩa là gì?",
+    "options": ["ghét", "thích", "không thích", "yêu"],
+    "answer": "thích"
+  },
+  {
+    "question": "Từ '病気' có cách đọc là gì?",
+    "options": ["びょうき", "びょうきん", "びょうく", "びょうかい"],
+    "answer": "びょうき"
+  },
+  {
+    "question": "Từ '山' có nghĩa là gì?",
+    "options": ["sông", "biển", "núi", "hồ"],
+    "answer": "núi"
+  },
+  {
+    "question": "Từ '多い' có nghĩa là gì?",
+    "options": ["ít", "nhiều", "nhỏ", "lớn"],
+    "answer": "nhiều"
+  },
+  {
+    "question": "Từ '今日' có cách đọc là gì?",
+    "options": ["きょう", "こんにち", "きゅう", "こんひ"],
+    "answer": "きょう"
+  },
+  {
+    "question": "Từ '食べました' là thể quá khứ của động từ nào?",
+    "options": ["食べる", "食べます", "食べません", "食べられる"],
+    "answer": "食べる"
+  },
+  {
+    "question": "Từ '一緒' có nghĩa là gì?",
+    "options": ["một mình", "riêng biệt", "cùng nhau", "khác nhau"],
+    "answer": "cùng nhau"
+  },
+  {
+    "question": "Từ '姉' có cách đọc là gì?",
+    "options": ["あね", "あにい", "あな", "おね"],
+    "answer": "あね"
+  },
+  {
+    "question": "Từ '背' có nghĩa là gì?",
+    "options": ["chiều cao", "cân nặng", "tuổi", "tên"],
+    "answer": "chiều cao"
+  },
+  {
+    "question": "Từ '高い' có nghĩa là gì?",
+    "options": ["thấp", "ngắn", "cao", "to"],
+    "answer": "cao"
+  },
+  {
+    "question": "Từ '聞きます' có nghĩa là gì?",
+    "options": ["nói", "viết", "nghe", "đọc"],
+    "answer": "nghe"
+  },
+  {
+    "question": "Từ '兄' có cách đọc là gì?",
+    "options": ["あに", "おにい", "ああに", "あね"],
+    "answer": "あに"
+  },
+  {
+    "question": "Từ '部屋' có nghĩa là gì?",
+    "options": ["nhà bếp", "phòng", "nhà vệ sinh", "phòng khách"],
+    "answer": "phòng"
+  },
+  {
+    "question": "Từ '上' có nghĩa là gì?",
+    "options": ["dưới", "bên cạnh", "trên", "giữa"],
+    "answer": "trên"
+  },
+  {
+    "question": "Từ '庭' có cách đọc là gì?",
+    "options": ["にわ", "にわい", "には", "にへ"],
+    "answer": "にわ"
+  },
+  {
+    "question": "Từ '大きい' có nghĩa là gì?",
+    "options": ["nhỏ", "lớn", "dài", "ngắn"],
+    "answer": "lớn"
+  },
+  {
+    "question": "Từ '動物園' có nghĩa là gì?",
+    "options": ["công viên", "sở thú", "bảo tàng", "thư viện"],
+    "answer": "sở thú"
+  },
+  {
+    "question": "Từ '年' có cách đọc là gì?",
+    "options": ["ねん", "とし", "とねん", "ねんね"],
+    "answer": "ねん"
+  },
+  {
+    "question": "Từ '前' có nghĩa là gì?",
+    "options": ["sau", "trước", "bên phải", "bên trái"],
+    "answer": "trước"
+  },
+  {
+    "question": "Từ '公園' có nghĩa là gì?",
+    "options": ["công viên", "vườn", "sân chơi", "quảng trường"],
+    "answer": "công viên"
+  },
+  {
+    "question": "Từ '肉' có cách đọc là gì?",
+    "options": ["にく", "にき", "にう", "にゅく"],
+    "answer": "にく"
+  },
+  {
+    "question": "Từ '魚' có nghĩa là gì?",
+    "options": ["thịt", "trứng", "rau", "cá"],
+    "answer": "cá"
+  },
+  {
+    "question": "Từ '文章' có nghĩa là gì?",
+    "options": ["từ", "câu", "đoạn văn", "chữ cái"],
+    "answer": "đoạn văn"
+  },
+  {
+    "question": "Từ '意味' có cách đọc là gì?",
+    "options": ["いみ", "いまい", "いめい", "いんみ"],
+    "answer": "いみ"
+  },
+  {
+    "question": "Từ '作文' có nghĩa là gì?",
+    "options": ["đọc hiểu", "viết", "nghe", "bài luận"],
+    "answer": "bài luận"
+  },
+  {
+    "question": "Từ '国' có nghĩa là gì?",
+    "options": ["thành phố", "tỉnh", "quốc gia", "làng"],
+    "answer": "quốc gia"
+  },
+  {
+    "question": "Từ '旅行' có cách đọc là gì?",
+    "options": ["りょこう", "りょこ", "りょこお", "りょこうい"],
+    "answer": "りょこう"
+  },
+  {
+    "question": "Từ '色々' có nghĩa là gì?",
+    "options": ["một loại", "ít loại", "nhiều loại", "không có"],
+    "answer": "nhiều loại"
+  },
+  {
+    "question": "Từ '所' có nghĩa là gì?",
+    "options": ["thời gian", "nơi chốn", "người", "vật"],
+    "answer": "nơi chốn"
+  },
+  {
+    "question": "Từ '行きたい' có nghĩa là gì?",
+    "options": ["muốn ăn", "muốn uống", "muốn đi", "muốn ngủ"],
+    "answer": "muốn đi"
+  },
+  {
+    "question": "Từ '先週' có cách đọc là gì?",
+    "options": ["せんしゅう", "せんしゅ", "せんじゅう", "せんしゅうう"],
+    "answer": "せんしゅう"
+  },
+  {
+    "question": "Từ '隣' có nghĩa là gì?",
+    "options": ["phía trước", "phía sau", "bên cạnh", "đối diện"],
+    "answer": "bên cạnh"
+  },
+  {
+    "question": "Từ '町' có nghĩa là gì?",
+    "options": ["thành phố", "làng", "thị trấn", "quận"],
+    "answer": "thị trấn"
+  },
+  {
+    "question": "Từ '遠い' có nghĩa là gì?",
+    "options": ["gần", "xa", "rộng", "hẹp"],
+    "answer": "xa"
+  },
+  {
+    "question": "Từ '読みました' là thể quá khứ của động từ nào?",
+    "options": ["読む", "読みます", "読まない", "読める"],
+    "answer": "読む"
+  },
+  {
+    "question": "Từ '友だち' có nghĩa là gì?",
+    "options": ["gia đình", "giáo viên", "bạn bè", "đồng nghiệp"],
+    "answer": "bạn bè"
+  },
+  {
+    "question": "Từ '買い物' có nghĩa là gì?",
+    "options": ["nấu ăn", "giặt giũ", "mua sắm", "làm việc"],
+    "answer": "mua sắm"
+  },
+  {
+    "question": "Từ '賑やか' có cách đọc là gì?",
+    "options": ["にぎやか", "にぎやかあ", "にぎやかか", "にぎやき"],
+    "answer": "にぎやか"
+  },
+  {
+    "question": "Từ '何' có nghĩa là gì?",
+    "options": ["ai", "khi nào", "cái gì", "ở đâu"],
+    "answer": "cái gì"
+  },
+  {
+    "question": "Từ '買いました' là thể quá khứ của động từ nào?",
+    "options": ["買う", "買います", "買わない", "買える"],
+    "answer": "買う"
+  },
+  {
+    "question": "Từ '学生' có nghĩa là gì?",
+    "options": ["giáo viên", "học sinh", "bác sĩ", "kỹ sư"],
+    "answer": "học sinh"
+  },
+  {
+    "question": "Từ '紙' có cách đọc là gì?",
+    "options": ["かみ", "かま", "かみい", "かみゅ"],
+    "answer": "かみ"
+  },
+  {
+    "question": "Từ '留学生' có nghĩa là gì?",
+    "options": ["giáo viên nước ngoài", "học sinh nước ngoài", "người nước ngoài", "du khách"],
+    "answer": "học sinh nước ngoài"
+  },
+  {
+    "question": "Từ '夏休み' có nghĩa là gì?",
+    "options": ["kỳ nghỉ đông", "kỳ nghỉ xuân", "kỳ nghỉ hè", "kỳ nghỉ thu"],
+    "answer": "kỳ nghỉ hè"
+  },
+  {
+    "question": "Từ '日本語' có nghĩa là gì?",
+    "options": ["tiếng Anh", "tiếng Trung", "tiếng Hàn", "tiếng Nhật"],
+    "answer": "tiếng Nhật"
+  },
+  {
+    "question": "Từ '授業' có cách đọc là gì?",
+    "options": ["じゅぎょう", "じゅぎょ", "じゅぎょうう", "じゅぎゅう"],
+    "answer": "じゅぎょう"
+  },
+  {
+    "question": "Từ '知らせ' có nghĩa là gì?",
+    "options": ["báo cáo", "tin tức", "thông báo", "bản tin"],
+    "answer": "thông báo"
+  },
+  {
+    "question": "Từ '大学' có nghĩa là gì?",
+    "options": ["trường học", "trường cấp ba", "trường tiểu học", "đại học"],
+    "answer": "đại học"
+  },
+  {
+    "question": "Từ '会社' có cách đọc là gì?",
+    "options": ["かいしゃ", "かいしゃい", "かいし", "かいしゅ"],
+    "answer": "かいしゃ"
+  },
+  {
+    "question": "Từ '頭' có nghĩa là gì?",
+    "options": ["tay", "chân", "đầu", "bụng"],
+    "answer": "đầu"
+  },
+  {
+    "question": "Từ '痛い' có nghĩa là gì?",
+    "options": ["vui", "buồn", "đau", "khỏe"],
+    "answer": "đau"
+  },
+  {
+    "question": "Từ '熱' có cách đọc là gì?",
+    "options": ["ねつ", "ねず", "ねち", "ねい"],
+    "answer": "ねつ"
+  },
+  {
+    "question": "Từ '病院' có nghĩa là gì?",
+    "options": ["trường học", "cửa hàng", "bệnh viện", "nhà hàng"],
+    "answer": "bệnh viện"
+  },
+  {
+    "question": "Từ '帰ります' có nghĩa là gì?",
+    "options": ["đi", "đến", "trở về", "ở lại"],
+    "answer": "trở về"
+  },
+  {
+    "question": "Từ '明日' có cách đọc là gì?",
+    "options": ["あした", "あす", "あさって", "みょうにち"],
+    "answer": "あした"
+  },
+  {
+    "question": "Từ '会議' có nghĩa là gì?",
+    "options": ["bữa tiệc", "cuộc họp", "buổi hòa nhạc", "buổi học"],
+    "answer": "cuộc họp"
+  },
+  {
+    "question": "Từ '書類' có cách đọc là gì?",
+    "options": ["しょるい", "しょらい", "しょるう", "しょるいり"],
+    "answer": "しょるい"
+  },
+  {
+    "question": "Từ '冬' có nghĩa là gì?",
+    "options": ["xuân", "hạ", "thu", "đông"],
+    "answer": "đông"
+  },
+  {
+    "question": "Từ '寒い' có nghĩa là gì?",
+    "options": ["nóng", "ấm", "lạnh", "mát"],
+    "answer": "lạnh"
+  },
+  {
+    "question": "Từ '暖かい' có cách đọc là gì?",
+    "options": ["あたたかい", "あたたくい", "あたたかいね", "あたたか"],
+    "answer": "あたたかい"
+  },
+  {
+    "question": "Từ '雪' có nghĩa là gì?",
+    "options": ["mưa", "gió", "tuyết", "nắng"],
+    "answer": "tuyết"
+  },
+  {
+    "question": "Từ '道' có cách đọc là gì?",
+    "options": ["みち", "みちい", "みつ", "みちゅ"],
+    "answer": "みち"
+  },
+  {
+    "question": "Từ '白い' có nghĩa là gì?",
+    "options": ["đen", "đỏ", "xanh", "trắng"],
+    "answer": "trắng"
+  },
+  {
+    "question": "Từ 'きれい' có nghĩa là gì?",
+    "options": ["xấu xí", "bẩn", "đẹp/sạch", "cũ"],
+    "answer": "đẹp/sạch"
+  },
+  {
+    "question": "Từ '楽しい' có cách đọc là gì?",
+    "options": ["たのしい", "たのし", "たのしいい", "たのしみ"],
+    "answer": "たのしい"
+  },
+  {
+    "question": "Từ '一年中' có nghĩa là gì?",
+    "options": ["một năm", "nửa năm", "cả năm", "cuối năm"],
+    "answer": "cả năm"
+  },
+  {
+    "question": "Từ '夏' có nghĩa là gì?",
+    "options": ["xuân", "hạ", "thu", "đông"],
+    "answer": "hạ"
+  },
+  {
+    "question": "Từ '春' có cách đọc là gì?",
+    "options": ["はる", "はるい", "はあ", "はらい"],
+    "answer": "はる"
+  },
+  {
+    "question": "Từ '秋' có nghĩa là gì?",
+    "options": ["xuân", "hạ", "thu", "đông"],
+    "answer": "thu"
+  },
+  {
+    "question": "Từ '面白い' có nghĩa là gì?",
+    "options": ["buồn tẻ", "thú vị", "khó", "dễ"],
+    "answer": "thú vị"
+  },
+  {
+    "question": "Từ '気持ち' có cách đọc là gì?",
+    "options": ["きもち", "きもと", "きみち", "きもちい"],
+    "answer": "きもち"
+  },
+  {
+    "question": "Từ '店' có nghĩa là gì?",
+    "options": ["trường học", "cửa hàng", "bệnh viện", "công ty"],
+    "answer": "cửa hàng"
+  },
+  {
+    "question": "Từ '値段' có cách đọc là gì?",
+    "options": ["ねだん", "ねだんい", "ねだ", "ねだい"],
+    "answer": "ねだん"
+  },
+  {
+    "question": "Từ '円' có nghĩa là gì?",
+    "options": ["Đô la", "Euro", "Yên", "Bảng Anh"],
+    "answer": "Yên"
+  },
+  {
+    "question": "Từ '肉料理' có nghĩa là gì?",
+    "options": ["món cá", "món rau", "món thịt", "món súp"],
+    "answer": "món thịt"
+  },
+  {
+    "question": "Từ 'ご飯' có cách đọc là gì?",
+    "options": ["ごはん", "ごほん", "ごはんい", "ごはあん"],
+    "answer": "ごはん"
+  },
+  {
+    "question": "Từ '紅葉' (trong văn cảnh về mùa) có nghĩa là gì?",
+    "options": ["hoa anh đào", "lá đỏ", "tuyết trắng", "mưa"],
+    "answer": "lá đỏ"
+  },
+  {
+    "question": "Từ '午前' có nghĩa là gì?",
+    "options": ["buổi chiều", "buổi tối", "buổi sáng", "nửa đêm"],
+    "answer": "buổi sáng"
+  },
+  {
+    "question": "Từ '午後' có cách đọc là gì?",
+    "options": ["ごご", "ごごう", "ごこ", "ごこお"],
+    "answer": "ごご"
+  },
+  {
+    "question": "Trong câu '私はきのう、友だちと買い物に行きました。', 'きのう' có nghĩa là gì?",
+    "options": ["hôm nay", "ngày mai", "hôm qua", "tuần trước"],
+    "answer": "hôm qua"
+  },
+  {
+    "question": "Trong câu 'まちはとてもにぎやかでした。', 'にぎやか' có nghĩa là gì?",
+    "options": ["yên tĩnh", "buồn tẻ", "náo nhiệt", "cũ kỹ"],
+    "answer": "náo nhiệt"
+  },
+  {
+    "question": "Từ 'もんだいようし' có Kanji là gì?",
+    "options": ["問題用紙", "解答用紙", "試験用紙", "答案用紙"],
+    "answer": "問題用紙"
+  },
+  {
+    "question": "Trong câu '「わたし」は何を買いましたか。', '何' có nghĩa là gì?",
+    "options": ["cái nào", "cái gì", "ai", "bao nhiêu"],
+    "answer": "cái gì"
+  },
+  {
+    "question": "Từ Hiragana 'ありません' là thể phủ định của động từ nào?",
+    "options": ["ある", "いる", "する", "くる"],
+    "answer": "ある"
+  },
+  {
+    "question": "Từ 'どこ' có nghĩa là gì?",
+    "options": ["cái gì", "ai", "ở đâu", "khi nào"],
+    "answer": "ở đâu"
+  },
+  {
+    "question": "Từ 'もう' có nghĩa là gì?",
+    "options": ["chưa", "vẫn", "đã", "không bao giờ"],
+    "answer": "đã"
+  },
+  {
+    "question": "Từ 'たぶん' có nghĩa là gì?",
+    "options": ["chắc chắn", "có lẽ", "không thể", "nhất định"],
+    "answer": "có lẽ"
+  },
+  {
+    "question": "Từ 'よく' có nghĩa là gì?",
+    "options": ["hiếm khi", "không bao giờ", "thường xuyên", "thỉnh thoảng"],
+    "answer": "thường xuyên"
+  },
+  {
+    "question": "Từ 'でしょうか' dùng để làm gì?",
+    "options": ["đặt câu hỏi", "mời gọi", "đưa ra ý kiến", "khẳng định"],
+    "answer": "đưa ra ý kiến"
+  }
+]

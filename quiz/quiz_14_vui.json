@@ -1,0 +1,142 @@
+[
+  {
+    "question": "Con gì càng chạy càng bé?",
+    "options": [
+      "Con kiến",
+      "Con voi",
+      "Con ốc sên",
+      "Con đường"
+    ],
+    "answer": "Con đường"
+  },
+  {
+    "question": "Cái gì càng lấy ra thì càng to?",
+    "options": [
+      "Cái bánh",
+      "Lỗ hổng",
+      "Cái gương",
+      "Cái tủ"
+    ],
+    "answer": "Lỗ hổng"
+  },
+  {
+    "question": "Con gì mang được cục gạch trên lưng mà không mỏi?",
+    "options": [
+      "Con lừa",
+      "Con kiến",
+      "Con rùa",
+      "Con người"
+    ],
+    "answer": "Con rùa"
+  },
+  {
+    "question": "Cái gì không có bắt đầu cũng không có kết thúc?",
+    "options": [
+      "Vòng tròn",
+      "Đường thẳng",
+      "Cái bánh xe",
+      "Cái bóng"
+    ],
+    "answer": "Vòng tròn"
+  },
+  {
+    "question": "Con gì biết bay mà không có cánh?",
+    "options": [
+      "Con dơi",
+      "Con ma",
+      "Con tàu",
+      "Thời gian"
+    ],
+    "answer": "Thời gian"
+  },
+  {
+    "question": "Tôi luôn ở trước bạn nhưng bạn không bao giờ thấy tôi. Tôi là gì?",
+    "options": [
+      "Bóng tối",
+      "Tương lai",
+      "Cái bóng",
+      "Gió"
+    ],
+    "answer": "Tương lai"
+  },
+  {
+    "question": "Càng lau tôi càng nhỏ, tôi là gì?",
+    "options": [
+      "Cục tẩy",
+      "Bánh xà phòng",
+      "Khăn lau",
+      "Cục đá"
+    ],
+    "answer": "Bánh xà phòng"
+  },
+  {
+    "question": "Cái gì càng nhiều người chia sẻ thì lại càng lớn?",
+    "options": [
+      "Tiền",
+      "Bí mật",
+      "Niềm vui",
+      "Nỗi buồn"
+    ],
+    "answer": "Niềm vui"
+  },
+  {
+    "question": "Tháng nào có 28 ngày?",
+    "options": [
+      "Tháng 2",
+      "Tháng 4",
+      "Tất cả các tháng",
+      "Tháng 12"
+    ],
+    "answer": "Tất cả các tháng"
+  },
+  {
+    "question": "Cái gì bạn có một lần mỗi ngày, hai lần mỗi tuần, nhưng không bao giờ trong một tháng?",
+    "options": [
+      "Chữ 'a'",
+      "Chữ 'e'",
+      "Chữ 'd'",
+      "Chữ 'n'"
+    ],
+    "answer": "Chữ 'a'"
+  },
+  {
+    "question": "Bạn làm gì trước khi ăn sáng?",
+    "options": [
+      "Đánh răng",
+      "Thức dậy",
+      "Đi vệ sinh",
+      "Rửa mặt"
+    ],
+    "answer": "Thức dậy"
+  },
+  {
+    "question": "Nhà nào không có tường, không có cửa, không có mái?",
+    "options": [
+      "Nhà sàn",
+      "Nhà tù",
+      "Nhà kính",
+      "Nhà trời"
+    ],
+    "answer": "Nhà trời"
+  },
+  {
+    "question": "Cái gì khi bị đập lại không vỡ mà còn nhân đôi?",
+    "options": [
+      "Cái gương",
+      "Quả trứng",
+      "Sự chia sẻ",
+      "Lời chúc"
+    ],
+    "answer": "Sự chia sẻ"
+  },
+  {
+    "question": "Sông nào không có nước?",
+    "options": [
+      "Sông Hồng",
+      "Sông Tranh",
+      "Bản đồ",
+      "Sông Mê Kông"
+    ],
+    "answer": "Bản đồ"
+  }
+]

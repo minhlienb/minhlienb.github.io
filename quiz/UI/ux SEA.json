@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Trong bối cảnh Việt Nam và Đông Nam Á, yếu tố nào sau đây thường được ưu tiên trong thiết kế UI/UX liên quan đến sự tương tác cộng đồng và chia sẻ?",
+    "options": ["Tính năng cá nhân hóa mạnh mẽ", "Khả năng ẩn danh cao", "Tính năng chia sẻ mạng xã hội và bình luận", "Tập trung vào trải nghiệm độc lập"],
+    "answer": "Tính năng chia sẻ mạng xã hội và bình luận"
+  },
+  {
+    "question": "Mức độ 'tin tưởng' vào hình ảnh và video của người dùng Việt Nam thường như thế nào so với văn bản khi quyết định mua hàng online?",
+    "options": ["Thấp hơn nhiều", "Tương đương", "Cao hơn đáng kể", "Không liên quan"],
+    "answer": "Cao hơn đáng kể"
+  },
+  {
+    "question": "Khi thiết kế các ứng dụng thương mại điện tử cho thị trường Việt Nam/Đông Nam Á, yếu tố nào sau đây thường được chú trọng để tạo sự tin cậy?",
+    "options": ["Thiết kế tối giản, hiện đại", "Hiển thị rõ ràng các chứng nhận, đánh giá từ người dùng khác", "Sử dụng nhiều hình ảnh minh họa sống động", "Tập trung vào tốc độ tải trang"],
+    "answer": "Hiển thị rõ ràng các chứng nhận, đánh giá từ người dùng khác"
+  },
+  {
+    "question": "Màu sắc nào thường mang ý nghĩa tích cực, may mắn và thịnh vượng trong văn hóa Việt Nam và nhiều nước Đông Nam Á, nên được cân nhắc sử dụng trong UI/UX?",
+    "options": ["Màu đen", "Màu trắng", "Màu đỏ/vàng", "Màu xanh lam"],
+    "answer": "Màu đỏ/vàng"
+  },
+  {
+    "question": "Tính năng 'Chat' hoặc 'Hỏi đáp trực tiếp' với người bán/nhà cung cấp thường được người dùng Việt Nam/Đông Nam Á đánh giá cao vì lý do gì?",
+    "options": ["Thích sự riêng tư", "Muốn kiểm soát hoàn toàn thông tin", "Ưu tiên sự tương tác trực tiếp và thương lượng", "Không thích đọc hướng dẫn"],
+    "answer": "Ưu tiên sự tương tác trực tiếp và thương lượng"
+  },
+  {
+    "question": "Trong bối cảnh người dùng Việt Nam và Đông Nam Á chủ yếu sử dụng di động để truy cập internet, nguyên tắc thiết kế nào là quan trọng nhất?",
+    "options": ["Desktop-first", "Mobile-first", "Tablet-first", "Console-first"],
+    "answer": "Mobile-first"
+  },
+  {
+    "question": "Khi thiết kế luồng thanh toán cho người dùng Việt Nam, phương thức nào sau đây cần được tích hợp và nổi bật nhất?",
+    "options": ["Thẻ tín dụng quốc tế", "Thanh toán qua ví điện tử và COD (Thanh toán khi nhận hàng)", "Chuyển khoản ngân hàng quốc tế", "Séc"],
+    "answer": "Thanh toán qua ví điện tử và COD (Thanh toán khi nhận hàng)"
+  },
+  {
+    "question": "Yếu tố 'khuyến mãi', 'flash sale', 'ưu đãi giới hạn' thường có tác động mạnh mẽ đến hành vi mua sắm trực tuyến của người dùng Việt Nam. Điều này nên được thể hiện trong UI như thế nào?",
+    "options": ["Ẩn đi hoặc làm mờ nhạt", "Hiển thị nổi bật, có đồng hồ đếm ngược hoặc số lượng giới hạn", "Chỉ thông báo qua email", "Chỉ áp dụng cho khách hàng thân thiết"],
+    "answer": "Hiển thị nổi bật, có đồng hồ đếm ngược hoặc số lượng giới hạn"
+  },
+  {
+    "question": "Người dùng Việt Nam thường có xu hướng tìm kiếm và tham khảo thông tin từ nguồn nào trước khi đưa ra quyết định mua hàng?",
+    "options": ["Trang web chính thức của nhà sản xuất", "Các diễn đàn nước ngoài", "Review từ cộng đồng, bạn bè và người thân", "Các tạp chí chuyên ngành"],
+    "answer": "Review từ cộng đồng, bạn bè và người thân"
+  },
+  {
+    "question": "Trong thiết kế giao diện cho người lớn tuổi ở Việt Nam, yếu tố nào cần được đặc biệt quan tâm?",
+    "options": ["Sử dụng nhiều hiệu ứng động phức tạp", "Kích thước chữ nhỏ, màu sắc tương phản thấp", "Nút bấm lớn, chữ rõ ràng, quy trình đơn giản", "Yêu cầu nhiều bước xác thực phức tạp"],
+    "answer": "Nút bấm lớn, chữ rõ ràng, quy trình đơn giản"
+  },
+  {
+    "question": "Văn hóa 'mặc cả', 'thương lượng' truyền thống có thể ảnh hưởng đến trải nghiệm người dùng trong các ứng dụng thương mại điện tử như thế nào ở Việt Nam?",
+    "options": ["Không ảnh hưởng", "Khuyến khích các tính năng đàm phán giá hoặc trả giá", "Loại bỏ hoàn toàn khả năng thương lượng", "Chỉ tập trung vào giá niêm yết"],
+    "answer": "Khuyến khích các tính năng đàm phán giá hoặc trả giá"
+  },
+  {
+    "question": "Khi thiết kế thông báo lỗi hoặc cảnh báo, cách tiếp cận nào thường được người dùng Việt Nam/Đông Nam Á đón nhận tốt hơn?",
+    "options": ["Thông báo trực tiếp, gay gắt", "Sử dụng ngôn ngữ lịch sự, mang tính gợi ý và hướng dẫn", "Không hiển thị thông báo lỗi", "Sử dụng các thuật ngữ chuyên ngành phức tạp"],
+    "answer": "Sử dụng ngôn ngữ lịch sự, mang tính gợi ý và hướng dẫn"
+  },
+  {
+    "question": "Nền tảng mạng xã hội nào thường có ảnh hưởng lớn đến hành vi và thói quen sử dụng ứng dụng của người dùng Việt Nam?",
+    "options": ["Twitter", "LinkedIn", "Facebook/Zalo/TikTok", "Reddit"],
+    "answer": "Facebook/Zalo/TikTok"
+  },
+  {
+    "question": "Yếu tố nào sau đây thường được người dùng Việt Nam/Đông Nam Á ưa chuộng trong các ứng dụng giải trí và truyền thông?",
+    "options": ["Nội dung chuyên sâu, hàn lâm", "Nội dung ngắn gọn, dễ hiểu, mang tính giải trí cao", "Tập trung vào tin tức quốc tế", "Chỉ hiển thị văn bản"],
+    "answer": "Nội dung ngắn gọn, dễ hiểu, mang tính giải trí cao"
+  },
+  {
+    "question": "Khi thiết kế biểu tượng (icons) cho ứng dụng tại Việt Nam, điều gì cần được xem xét để tránh hiểu lầm?",
+    "options": ["Sử dụng các biểu tượng phổ biến ở phương Tây", "Đảm bảo biểu tượng mang ý nghĩa rõ ràng, phù hợp với văn hóa địa phương", "Chỉ sử dụng chữ thay cho biểu tượng", "Thiết kế các biểu tượng trừu tượng"],
+    "answer": "Đảm bảo biểu tượng mang ý nghĩa rõ ràng, phù hợp với văn hóa địa phương"
+  }
+]

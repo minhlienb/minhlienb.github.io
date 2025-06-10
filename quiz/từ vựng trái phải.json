@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Từ Hiragana 'となり' (sát bên, cùng loại) có Kanji là gì?",
+    "options": ["横", "後", "隣", "前"],
+    "answer": "隣"
+  },
+  {
+    "question": "Từ tiếng Việt 'Gần nhau, không nhất thiết cùng loại' có Kanji là gì?",
+    "options": ["隣", "前", "横", "中"],
+    "answer": "横"
+  },
+  {
+    "question": "Từ Hiragana 'まえ' (trước mặt, phía trước) có Kanji là gì?",
+    "options": ["後", "外", "前", "右"],
+    "answer": "前"
+  },
+  {
+    "question": "Từ tiếng Việt 'Đằng sau' có Kanji là gì?",
+    "options": ["前", "後ろ", "中", "外"],
+    "answer": "後ろ"
+  },
+  {
+    "question": "Từ Hiragana 'なか' (trong) có Kanji là gì?",
+    "options": ["外", "中", "左", "右"],
+    "answer": "中"
+  },
+  {
+    "question": "Từ tiếng Việt 'Ngoài' có Kanji là gì?",
+    "options": ["中", "左", "外", "右"],
+    "answer": "外"
+  },
+  {
+    "question": "Từ Hiragana 'ひだり' (bên trái) có Kanji là gì?",
+    "options": ["右", "左", "東", "西"],
+    "answer": "左"
+  },
+  {
+    "question": "Từ tiếng Việt 'Bên phải' có Kanji là gì?",
+    "options": ["左", "東", "右", "西"],
+    "answer": "右"
+  },
+  {
+    "question": "Từ Hiragana 'ひがし' (hướng mặt trời mọc) có Kanji là gì?",
+    "options": ["西", "南", "東", "北"],
+    "answer": "東"
+  },
+  {
+    "question": "Từ tiếng Việt 'Hướng mặt trời lặn' có Kanji là gì?",
+    "options": ["東", "南", "西", "北"],
+    "answer": "西"
+  },
+  {
+    "question": "Từ Hiragana 'みなみ' (hướng sáng, ấm) có Kanji là gì?",
+    "options": ["北", "東", "南", "西"],
+    "answer": "南"
+  },
+  {
+    "question": "Từ tiếng Việt 'Hướng lạnh, gió bắc thổi' có Kanji là gì?",
+    "options": ["南", "東", "西", "北"],
+    "answer": "北"
+  }
+]
