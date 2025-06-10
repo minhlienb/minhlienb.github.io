@@ -75,7 +75,13 @@
 
   <h1>Trắc Nghiệm</h1>
 
-  <input type="file" id="fileInput" accept=".json" />
+  <label>
+    <input type="radio" name="dataSource" value="fetch" checked /> Lấy dữ liệu từ URL
+  </label>
+  <label>
+    <input type="radio" name="dataSource" value="file" /> Chọn file JSON
+  </label>
+  <input type="file" id="fileInput" accept=".json" style="display: none;" />
 
   <div id="quizContainer"></div>
   <div class="result" id="result"></div>
@@ -87,25 +93,60 @@
   let score = 0;
   let userAnswers = [];
 
-  document.getElementById('fileInput').addEventListener('change', function(e) {
+  const fileInput = document.getElementById('fileInput');
+  const dataSourceRadios = document.getElementsByName('dataSource');
+
+  // Handle data source selection
+  dataSourceRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (radio.value === 'file') {
+        fileInput.style.display = 'block';
+        fetchQuestionsFromURL(); // Reset quiz if switching from fetch
+      } else {
+        fileInput.style.display = 'none';
+        fetchQuestionsFromURL();
+      }
+    });
+  });
+
+  // Fetch JSON data from the provided URL
+  function fetchQuestionsFromURL() {
+    fetch('https://minhlienb.vercel.app/quiz/hsk2_vocab.json')
+      .then(response => response.json())
+      .then(data => {
+        initializeQuiz(data);
+      })
+      .catch(err => {
+        alert('Không thể tải dữ liệu từ URL');
+        console.error(err);
+      });
+  }
+
+  // Load JSON data from file input
+  fileInput.addEventListener('change', function (e) {
     const file = e.target.files[0];
     const reader = new FileReader();
-    reader.onload = function(event) {
+    reader.onload = function (event) {
       try {
-        questions = JSON.parse(event.target.result);
-        questions = questions.sort(() => Math.random() - 0.5); // Randomize question order
-        current = 0;
-        score = 0;
-        userAnswers = [];
-        document.getElementById('result').innerText = '';
-        document.getElementById('nextBtn').style.display = 'none';
-        showQuestion();
+        const data = JSON.parse(event.target.result);
+        initializeQuiz(data);
       } catch (err) {
         alert('File JSON không hợp lệ');
       }
     };
     reader.readAsText(file);
   });
+
+  // Initialize quiz with data
+  function initializeQuiz(data) {
+    questions = data.sort(() => Math.random() - 0.5); // Randomize question order
+    current = 0;
+    score = 0;
+    userAnswers = [];
+    document.getElementById('result').innerText = '';
+    document.getElementById('nextBtn').style.display = 'none';
+    showQuestion();
+  }
 
   function showQuestion() {
     const container = document.getElementById('quizContainer');
@@ -195,8 +236,10 @@
     current++;
     showQuestion();
   };
-</script>
 
+  // Fetch questions by default on page load
+  fetchQuestionsFromURL();
+  </script>
 
 </body>
 </html>

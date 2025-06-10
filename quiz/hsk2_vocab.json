@@ -1,0 +1,782 @@
+[
+  {
+    "question": "Khi bạn nắm được một vấn đề gì đó, bạn sẽ nói là ____. (hiểu)",
+    "options": ["わかります", "あります", "すき[な]", "きらい[な]"],
+    "answer": "わかります"
+  },
+  {
+    "question": "Để nói rằng bạn có một thứ gì đó (sở hữu), ví dụ: 'Tôi có một quyển sách.', bạn sẽ dùng từ nào? (có)",
+    "options": ["います", "あります", "いますか", "ありますか"],
+    "answer": "あります"
+  },
+  {
+    "question": "Để diễn tả một hành động đang diễn ra (ví dụ: 'Cô ấy đang mặc chiếc váy'), bạn sẽ dùng từ nào? (đang)",
+    "options": ["着 (zhe)", "过 (guò)", "了 (le)", "在 (zài)"],
+    "answer": "着 (zhe)"
+  },
+  {
+    "question": "Khi bạn muốn hỏi ai đó về họ của họ (kính trọng), bạn sẽ nói là 'Xin hỏi bạn họ gì?' và dùng từ ____. (họ)",
+    "options": ["请问您贵姓？", "请问你什么姓？", "你姓什么？", "你贵姓？"],
+    "answer": "请问您贵姓？"
+  },
+  {
+    "question": "Để nói 'Bà ngoại' trong tiếng Trung, bạn sẽ dùng từ nào? (bà ngoại)",
+    "options": ["外婆 (wàipó)", "奶奶 (nǎinai)", "姥姥 (lǎolao)", "婆婆 (pópo)"],
+    "answer": "外婆 (wàipó)"
+  },
+  {
+    "question": "Khi muốn nói 'Cái gì cũng không biết', bạn sẽ dùng thành ngữ nào? (cái gì cũng không biết)",
+    "options": ["一问三不知 (yí wèn sānbùzhī)", "不懂装懂 (bù dǒng zhuāng dǒng)", "一窍不通 (yīqiàobùtōng)", "一无所知 (yīwúsuǒzhī)"],
+    "answer": "一问三不知 (yí wèn sānbùzhī)"
+  },
+  {
+    "question": "Để nói 'Đến chết cũng không đổi' hoặc 'một lòng một dạ', bạn sẽ dùng thành ngữ nào liên quan đến 'nó'? (đến chết không đổi)",
+    "options": ["至死靡它 (zhìsǐmítā)", "它死我活 (tā sǐ wǒ huó)", "非它莫属 (fēi tā mò shǔ)", "舍它其谁 (shě tā qí shuí)"],
+    "answer": "至死靡它 (zhìsǐmítā)"
+  },
+  {
+    "question": "Để diễn tả 'Việc bé xé ra to', bạn sẽ dùng thành ngữ nào? (việc bé xé ra to)",
+    "options": ["小题大做 (xiǎotídàzuò)", "大材小用 (dàcáixiǎoyòng)", "画蛇添足 (huàshétiānzú)", "杯弓蛇影 (bēigōngshéyǐng)"],
+    "answer": "小题大做 (xiǎotídàzuò)"
+  },
+  {
+    "question": "Khi muốn diễn tả sự 'biến chuyển từng ngày, thay đổi từng ngày', bạn sẽ dùng từ nào liên quan đến 'mới'? (biến chuyển từng ngày)",
+    "options": ["日新月异 (rìxīnyuèyì)", "焕然一新 (huànrányīxīn)", "改头换面 (gǎitóuhuànmiàn)", "耳目一新 (ěrmùyīxīn)"],
+    "answer": "日新月异 (rìxīnyuèyì)"
+  },
+  {
+    "question": "Để diễn tả 'Cực kỳ chính xác', bạn sẽ dùng thành ngữ nào có từ 'thật'? (cực kỳ chính xác)",
+    "options": ["千真万确 (qiānzhēnwànquè)", "真材实料 (zhēncáishíliào)", "货真价实 (huòzhēnjiàshí)", "真凭实据 (zhēnpíngshíjù)"],
+    "answer": "千真万确 (qiānzhēnwànquè)"
+  },
+  {
+    "question": "Để nói 'Tiếng thơm vang xa', bạn sẽ dùng thành ngữ nào có từ 'xa'? (tiếng thơm vang xa)",
+    "options": ["远近闻名 (yuǎnjìn wénmíng)", "名扬四海 (míngyángsìhǎi)", "声名远播 (shēngmíngyuǎnbò)", "家喻户晓 (jiāyùhùxiǎo)"],
+    "answer": "远近闻名 (yuǎnjìn wénmíng)"
+  },
+  {
+    "question": "Khi muốn diễn tả một sự việc đã xảy ra 'thoáng qua như phù du', bạn sẽ dùng từ nào có từ 'qua'? (thoáng qua như phù du)",
+    "options": ["过眼云烟 (guòyǎnyúnyān)", "过河拆桥 (guòhéchāiqiáo)", "过犹不及 (guòyóubùjí)", "过街老鼠 (guòjiēlǎoshǔ)"],
+    "answer": "过眼云烟 (guòyǎnyúnyān)"
+  },
+  {
+    "question": "Khi bạn 'giúp đỡ' ai đó, bạn sẽ dùng từ nào? (giúp đỡ)",
+    "options": ["帮助 (bāngzhù)", "告诉 (gàosù)", "送 (sòng)", "问 (wèn)"],
+    "answer": "帮助 (bāngzhù)"
+  },
+  {
+    "question": "Loại báo mà bạn cầm trên tay, không phải báo mạng, thì được gọi là gì? (báo giấy)",
+    "options": ["报纸 (bàozhǐ)", "杂志 (zázhì)", "书籍 (shūjí)", "邮件 (yóujiàn)"],
+    "answer": "报纸 (bàozhǐ)"
+  },
+  {
+    "question": "Nếu bạn muốn nói 'Tôi cao hơn anh ta', bạn sẽ dùng từ so sánh nào? (so với)",
+    "options": ["比 (bǐ)", "和 (hé)", "跟 (gēn)", "从 (cóng)"],
+    "answer": "比 (bǐ)"
+  },
+  {
+    "question": "Từ nào dùng để nói 'khác' (ví dụ: 'màu khác')? (khác)",
+    "options": ["别 (bié)", "这 (zhè)", "那 (nà)", "很 (hěn)"],
+    "answer": "别 (bié)"
+  },
+  {
+    "question": "Để nói một thứ gì đó 'dài', bạn sẽ dùng tính từ nào? (dài)",
+    "options": ["长 (cháng)", "短 (duǎn)", "高 (gāo)", "大 (dà)"],
+    "answer": "长 (cháng)"
+  },
+  {
+    "question": "Khi bạn 'hát', bạn sẽ dùng động từ nào? (hát)",
+    "options": ["唱歌 (chànggē)", "跳舞 (tiàowǔ)", "画画 (huàhuà)", "跑步 (pǎobù)"],
+    "answer": "唱歌 (chànggē)"
+  },
+  {
+    "question": "Để nói rằng một sự việc 'xảy ra' hoặc 'xuất hiện', bạn sẽ dùng động từ nào? (ra)",
+    "options": ["出 (chū)", "进 (jìn)", "来 (lái)", "去 (qù)"],
+    "answer": "出 (chū)"
+  },
+  {
+    "question": "Hành động 'mặc' quần áo được diễn tả bằng từ nào? (mặc)",
+    "options": ["穿 (chuān)", "戴 (dài)", "脱 (tuō)", "洗 (xǐ)"],
+    "answer": "穿 (chuān)"
+  },
+  {
+    "question": "Loại phương tiện đi lại trên nước này được gọi là gì? (thuyền)",
+    "options": ["船 (chuán)", "飞机 (fēijī)", "火车 (huǒchē)", "汽车 (qìchē)"],
+    "answer": "船 (chuán)"
+  },
+  {
+    "question": "Từ dùng để chỉ 'lần' (số lần) là gì? (lần)",
+    "options": ["次 (cì)", "个 (gè)", "本 (běn)", "张 (zhāng)"],
+    "answer": "次 (cì)"
+  },
+  {
+    "question": "Khi bạn muốn nói 'từ' một điểm nào đó (ví dụ: 'từ nhà'), bạn sẽ dùng giới từ nào? (từ)",
+    "options": ["从 (cóng)", "到 (dào)", "在 (zài)", "往 (wǎng)"],
+    "answer": "从 (cóng)"
+  },
+  {
+    "question": "Nếu một việc gì đó 'sai' hoặc 'nhầm lẫn', bạn sẽ dùng từ nào? (sai)",
+    "options": ["错 (cuò)", "对 (duì)", "好 (hǎo)", "是 (shì)"],
+    "answer": "错 (cuò)"
+  },
+  {
+    "question": "Hoạt động thể thao 'đánh bóng rổ' được diễn tả bằng cụm từ nào? (đánh bóng rổ)",
+    "options": ["打篮球 (dǎ lánqiú)", "踢足球 (tī zúqiú)", "游泳 (yóuyǒng)", "跑步 (pǎobù)"],
+    "answer": "打篮球 (dǎ lánqiú)"
+  },
+  {
+    "question": "Từ 'mọi người' trong tiếng Trung là gì? (mọi người)",
+    "options": ["大家 (dàjiā)", "他们 (tāmen)", "我们 (wǒmen)", "你们 (nǐmen)"],
+    "answer": "大家 (dàjiā)"
+  },
+  {
+    "question": "Khi muốn nói 'nhưng mà', bạn sẽ dùng liên từ nào? (nhưng mà)",
+    "options": ["但是 (dànshì)", "所以 (suǒyǐ)", "因为 (yīnwèi)", "如果 (rúguǒ)"],
+    "answer": "但是 (dànshì)"
+  },
+  {
+    "question": "Để nói 'đến' một địa điểm nào đó, bạn sẽ dùng động từ nào? (đến)",
+    "options": ["到 (dào)", "去 (qù)", "来 (lái)", "回 (huí)"],
+    "answer": "到 (dào)"
+  },
+  {
+    "question": "Từ nào được dùng khi bạn 'có được' một thứ gì đó? (có được)",
+    "options": ["得 (dé)", "给 (gěi)", "要 (yào)", "想 (xiǎng)"],
+    "answer": "得 (dé)"
+  },
+  {
+    "question": "Khi bạn 'đợi' ai đó, bạn sẽ dùng từ nào? (đợi)",
+    "options": ["等 (děng)", "看 (kàn)", "听 (tīng)", "说 (shuō)"],
+    "answer": "等 (děng)"
+  },
+  {
+    "question": "Danh xưng 'em trai' trong tiếng Trung là gì? (em trai)",
+    "options": ["弟弟 (dìdì)", "哥哥 (gēgē)", "妹妹 (mèimei)", "姐姐 (jiějie)"],
+    "answer": "弟弟 (dìdì)"
+  },
+  {
+    "question": "Để chỉ 'thứ nhất' hoặc 'lần đầu', bạn sẽ dùng từ nào? (thứ nhất)",
+    "options": ["第一 (dì yī)", "第二 (dì èr)", "最后 (zuìhòu)", "开始 (kāishǐ)"],
+    "answer": "第一 (dì yī)"
+  },
+  {
+    "question": "Khi bạn 'hiểu' một vấn đề gì đó, bạn sẽ dùng từ nào? (hiểu)",
+    "options": ["懂 (dǒng)", "听 (tīng)", "看 (kàn)", "说 (shuō)"],
+    "answer": "懂 (dǒng)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả sự 'đúng' hoặc 'đối với' ai đó? (đúng/đối)",
+    "options": ["对 (duì)", "错 (cuò)", "好 (hǎo)", "是 (shì)"],
+    "answer": "对 (duì)"
+  },
+  {
+    "question": "Nơi bạn ngủ hoặc sinh hoạt trong nhà được gọi là gì? (căn phòng)",
+    "options": ["房间 (fángjiān)", "厨房 (chúfáng)", "浴室 (yùshì)", "客厅 (kètīng)"],
+    "answer": "房间 (fángjiān)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ mức độ 'cực kỳ' hoặc 'rất' (ví dụ: rất đẹp)? (cực kỳ)",
+    "options": ["非常 (fēicháng)", "有点儿 (yǒudiǎnr)", "不太 (bù tài)", "一般 (yībān)"],
+    "answer": "非常 (fēicháng)"
+  },
+  {
+    "question": "Người làm việc trong nhà hàng, khách sạn được gọi là gì? (nhân viên phục vụ)",
+    "options": ["服务员 (fúwùyuán)", "老师 (lǎoshī)", "医生 (yīshēng)", "学生 (xuésheng)"],
+    "answer": "服务员 (fúwùyuán)"
+  },
+  {
+    "question": "Từ nào dùng để nói một người hoặc một vật 'cao'? (cao)",
+    "options": ["高 (gāo)", "矮 (ǎi)", "大 (dà)", "小 (xiǎo)"],
+    "answer": "高 (gāo)"
+  },
+  {
+    "question": "Khi bạn 'nói cho biết' hoặc 'báo cho' ai đó, bạn sẽ dùng từ nào? (nói cho biết)",
+    "options": ["告诉 (gàosù)", "问 (wèn)", "听 (tīng)", "看 (kàn)"],
+    "answer": "告诉 (gàosù)"
+  },
+  {
+    "question": "Danh xưng 'anh trai' trong tiếng Trung là gì? (anh trai)",
+    "options": ["哥哥 (gēgē)", "弟弟 (dìdì)", "姐姐 (jiějie)", "妹妹 (mèimei)"],
+    "answer": "哥哥 (gēgē)"
+  },
+  {
+    "question": "Từ nào dùng để 'đưa cho' hoặc 'gửi cho' ai đó? (đưa cho)",
+    "options": ["给 (gěi)", "收 (shōu)", "拿 (ná)", "买 (mǎi)"],
+    "answer": "给 (gěi)"
+  },
+  {
+    "question": "Phương tiện giao thông công cộng chạy trên đường phố này được gọi là gì? (xe buýt)",
+    "options": ["公共汽车 (gōnggòng qìchē)", "出租车 (chūzūchē)", "地铁 (dìtiě)", "火车 (huǒchē)"],
+    "answer": "公共汽车 (gōnggòng qìchē)"
+  },
+  {
+    "question": "Đơn vị đo lường trọng lượng này tương đương 1000 gram là gì? (kilogam)",
+    "options": ["公斤 (gōngjīn)", "克 (kè)", "斤 (jīn)", "米 (mǐ)"],
+    "answer": "公斤 (gōngjīn)"
+  },
+  {
+    "question": "Nơi mà bạn làm việc, một tổ chức hoặc doanh nghiệp, được gọi là gì? (công ty)",
+    "options": ["公司 (gōngsī)", "学校 (xuéxiào)", "医院 (yīyuàn)", "商店 (shāngdiàn)"],
+    "answer": "公司 (gōngsī)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả một thứ gì đó có giá 'đắt'? (đắt)",
+    "options": ["贵 (guì)", "便宜 (piányi)", "多 (duō)", "少 (shǎo)"],
+    "answer": "贵 (guì)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ 'trẻ con'? (trẻ con)",
+    "options": ["孩子 (háizi)", "大人 (dàrén)", "老人 (lǎorén)", "男人 (nánrén)"],
+    "answer": "孩子 (háizi)"
+  },
+  {
+    "question": "Nếu một món ăn có vị 'ngon', bạn sẽ dùng từ nào? (ngon)",
+    "options": ["好吃 (hǎochī)", "好喝 (hǎohē)", "好听 (hǎotīng)", "好看 (hǎokàn)"],
+    "answer": "好吃 (hǎochī)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ 'số' hoặc 'hiệu' (ví dụ: số nhà)? (số/hiệu)",
+    "options": ["号 (hào)", "个 (gè)", "块 (kuài)", "张 (zhāng)"],
+    "answer": "号 (hào)"
+  },
+  {
+    "question": "Màu sắc của bầu trời ban đêm hoặc than đá là gì? (màu đen)",
+    "options": ["黑 (hēi)", "白 (bái)", "红 (hóng)", "绿 (lǜ)"],
+    "answer": "黑 (hēi)"
+  },
+  {
+    "question": "Màu sắc của máu hoặc cờ Việt Nam là gì? (màu đỏ)",
+    "options": ["红 (hóng)", "白 (bái)", "黑 (hēi)", "黄 (huáng)"],
+    "answer": "红 (hóng)"
+  },
+  {
+    "question": "Khi bạn muốn 'chào đón' ai đó, bạn sẽ dùng từ nào? (chào đón)",
+    "options": ["欢迎 (huānyíng)", "再见 (zàijiàn)", "谢谢 (xièxie)", "对不起 (duìbuqǐ)"],
+    "answer": "欢迎 (huānyíng)"
+  },
+  {
+    "question": "Khi bạn 'trả lời' một câu hỏi, bạn sẽ dùng động từ nào? (trả lời)",
+    "options": ["回答 (huídá)", "问 (wèn)", "说 (shuō)", "听 (tīng)"],
+    "answer": "回答 (huídá)"
+  },
+  {
+    "question": "Nơi máy bay cất cánh và hạ cánh là gì? (sân bay)",
+    "options": ["机场 (jīchǎng)", "火车站 (huǒchēzhàn)", "汽车站 (qìchēzhàn)", "码头 (mǎtóu)"],
+    "answer": "机场 (jīchǎng)"
+  },
+  {
+    "question": "Thực phẩm được đẻ ra từ gia cầm, thường có màu trắng hoặc nâu, dùng để ăn là gì? (trứng gà)",
+    "options": ["鸡蛋 (jīdàn)", "鸭蛋 (yādàn)", "鸭肉 (yāròu)", "鸡肉 (jīròu)"],
+    "answer": "鸡蛋 (jīdàn)"
+  },
+  {
+    "question": "Lượng từ dùng để chỉ 'chiếc', 'kiện' (ví dụ: một chiếc áo) là gì? (chiếc/kiện)",
+    "options": ["件 (jiàn)", "个 (gè)", "本 (běn)", "张 (zhāng)"],
+    "answer": "件 (jiàn)"
+  },
+  {
+    "question": "Nơi học sinh đến để học tập là gì? (phòng học)",
+    "options": ["教室 (jiàoshì)", "办公室 (bàngōngshì)", "图书馆 (túshūguǎn)", "食堂 (shítáng)"],
+    "answer": "教室 (jiàoshì)"
+  },
+  {
+    "question": "Danh xưng 'chị gái' trong tiếng Trung là gì? (chị gái)",
+    "options": ["姐姐 (jiějie)", "妹妹 (mèimei)", "哥哥 (gēgē)", "弟弟 (dìdì)"],
+    "answer": "姐姐 (jiějie)"
+  },
+  {
+    "question": "Khi bạn muốn 'giới thiệu' một người hoặc một vật, bạn sẽ dùng động từ nào? (giới thiệu)",
+    "options": ["介绍 (jièshào)", "告诉 (gàosù)", "问 (wèn)", "说 (shuō)"],
+    "answer": "介绍 (jièshào)"
+  },
+  {
+    "question": "Khi bạn muốn 'tiến vào' một nơi nào đó, bạn sẽ dùng động từ nào? (tiến vào)",
+    "options": ["进 (jìn)", "出 (chū)", "去 (qù)", "来 (lái)"],
+    "answer": "进 (jìn)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả khoảng cách 'gần'? (gần)",
+    "options": ["近 (jìn)", "远 (yuǎn)", "大 (dà)", "小 (xiǎo)"],
+    "answer": "近 (jìn)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ sự 'đến', 'bắt đầu' hoặc 'hoàn thành' một việc gì đó? (đến/hoàn thành)",
+    "options": ["就 (jiù)", "才 (cái)", "都 (dōu)", "也 (yě)"],
+    "answer": "就 (jiù)"
+  },
+  {
+    "question": "Khi bạn 'cảm thấy' hoặc 'cho rằng' điều gì đó, bạn sẽ dùng động từ nào? (cảm thấy/cho rằng)",
+    "options": ["觉得 (juédé)", "看 (kàn)", "听 (tīng)", "说 (shuō)"],
+    "answer": "觉得 (juédé)"
+  },
+  {
+    "question": "Loại đồ uống màu nâu, có vị đắng nhưng nhiều người yêu thích là gì? (cà phê)",
+    "options": ["咖啡 (kāfēi)", "茶 (chá)", "水 (shuǐ)", "牛奶 (niúnǎi)"],
+    "answer": "咖啡 (kāfēi)"
+  },
+  {
+    "question": "Khi một sự việc 'bắt đầu', bạn sẽ dùng động từ nào? (bắt đầu)",
+    "options": ["开始 (kāishǐ)", "结束 (jiéshù)", "完成 (wánchéng)", "停止 (tíngzhǐ)"],
+    "answer": "开始 (kāishǐ)"
+  },
+  {
+    "question": "Hoạt động 'kiểm tra' kiến thức hoặc kỹ năng được gọi là gì? (kì thi/kiểm tra)",
+    "options": ["考试 (kǎoshì)", "学习 (xuéxí)", "练习 (liànxí)", "复习 (fùxí)"],
+    "answer": "考试 (kǎoshì)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả điều gì đó 'có khả năng' xảy ra hoặc 'có lẽ'? (có khả năng/có lẽ)",
+    "options": ["可能 (kěnéng)", "一定 (yīdìng)", "当然 (dāngrán)", "必须 (bìxū)"],
+    "answer": "可能 (kěnéng)"
+  },
+  {
+    "question": "Khi bạn được phép làm một việc gì đó, bạn sẽ dùng từ nào? (có thể)",
+    "options": ["可以 (kěyǐ)", "不能 (bù néng)", "应该 (yīnggāi)", "想要 (xiǎng yào)"],
+    "answer": "可以 (kěyǐ)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ 'môn học' hoặc 'tiết học'? (môn học/tiết học)",
+    "options": ["课 (kè)", "书 (shū)", "本 (běn)", "纸 (zhǐ)"],
+    "answer": "课 (kè)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả tốc độ 'nhanh'? (nhanh)",
+    "options": ["快 (kuài)", "慢 (màn)", "好 (hǎo)", "多 (duō)"],
+    "answer": "快 (kuài)"
+  },
+  {
+    "question": "Khi bạn cảm thấy 'vui vẻ', bạn sẽ dùng tính từ nào? (vui vẻ)",
+    "options": ["快乐 (kuàilè)", "难过 (nánguò)", "生气 (shēngqì)", "累 (lèi)"],
+    "answer": "快乐 (kuàilè)"
+  },
+  {
+    "question": "Khi bạn cảm thấy 'mệt' mỏi, bạn sẽ dùng tính từ nào? (mệt)",
+    "options": ["累 (lèi)", "饿 (è)", "渴 (kě)", "困 (kùn)"],
+    "answer": "累 (lèi)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ sự 'ly biệt' hoặc 'cách ly' một khoảng cách? (ly/cách)",
+    "options": ["离 (lí)", "在 (zài)", "从 (cóng)", "到 (dào)"],
+    "answer": "离 (lí)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ số 'hai' (khi đứng trước lượng từ)? (hai)",
+    "options": ["两 (liǎng)", "二 (èr)", "双 (shuāng)", "对 (duì)"],
+    "answer": "两 (liǎng)"
+  },
+  {
+    "question": "Nơi bạn đi bộ hoặc các phương tiện di chuyển là gì? (đường)",
+    "options": ["路 (lù)", "桥 (qiáo)", "河 (hé)", "山 (shān)"],
+    "answer": "路 (lù)"
+  },
+  {
+    "question": "Hoạt động đi đến các địa điểm khác để giải trí và khám phá là gì? (du lịch)",
+    "options": ["旅游 (lǚyóu)", "工作 (gōngzuò)", "学习 (xuéxí)", "吃饭 (chīfàn)"],
+    "answer": "旅游 (lǚyóu)"
+  },
+  {
+    "question": "Khi bạn 'bán' một món đồ, bạn sẽ dùng động từ nào? (bán)",
+    "options": ["卖 (mài)", "买 (mǎi)", "看 (kàn)", "听 (tīng)"],
+    "answer": "卖 (mài)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả tốc độ 'chậm'? (chậm)",
+    "options": ["慢 (màn)", "快 (kuài)", "大 (dà)", "小 (xiǎo)"],
+    "answer": "慢 (màn)"
+  },
+  {
+    "question": "Khi bạn có nhiều việc phải làm, bạn sẽ dùng tính từ nào để diễn tả trạng thái của mình? (bận)",
+    "options": ["忙 (máng)", "闲 (xián)", "累 (lèi)", "舒服 (shūfu)"],
+    "answer": "忙 (máng)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ 'mỗi' một thứ gì đó? (mỗi)",
+    "options": ["每 (měi)", "都 (dōu)", "也 (yě)", "还 (hái)"],
+    "answer": "每 (měi)"
+  },
+  {
+    "question": "Danh xưng 'em gái' trong tiếng Trung là gì? (em gái)",
+    "options": ["妹妹 (mèimei)", "姐姐 (jiějie)", "哥哥 (gēgē)", "弟弟 (dìdì)"],
+    "answer": "妹妹 (mèimei)"
+  },
+  {
+    "question": "Nơi để ra vào một căn phòng hoặc tòa nhà là gì? (cửa)",
+    "options": ["门 (mén)", "窗 (chuāng)", "墙 (qiáng)", "屋顶 (wūdǐng)"],
+    "answer": "门 (mén)"
+  },
+  {
+    "question": "Người thuộc giới tính nam, đã trưởng thành được gọi là gì? (đàn ông)",
+    "options": ["男人 (nánrén)", "女人 (nǚrén)", "男孩 (nánhái)", "女孩 (nǚhái)"],
+    "answer": "男人 (nánrén)"
+  },
+  {
+    "question": "Cách gọi tôn trọng đối với người đối diện (ngài) là gì?",
+    "options": ["您 (nín)", "你 (nǐ)", "他 (tā)", "她 (tā)"],
+    "answer": "您 (nín)"
+  },
+  {
+    "question": "Đồ uống màu trắng, thường có nguồn gốc từ động vật, giàu dinh dưỡng là gì? (sữa bò)",
+    "options": ["牛奶 (niúnǎi)", "水 (shuǐ)", "果汁 (guǒzhī)", "啤酒 (píjiǔ)"],
+    "answer": "牛奶 (niúnǎi)"
+  },
+  {
+    "question": "Người thuộc giới tính nữ, đã trưởng thành được gọi là gì? (phụ nữ)",
+    "options": ["女人 (nǚrén)", "男人 (nánrén)", "女孩 (nǚhái)", "男孩 (nánhái)"],
+    "answer": "女人 (nǚrén)"
+  },
+  {
+    "question": "Vị trí nằm ở cạnh một vật thể khác là gì? (bên cạnh)",
+    "options": ["旁边 (pángbiān)", "前面 (qiánmiàn)", "后面 (hòumiàn)", "上面 (shàngmiàn)"],
+    "answer": "旁边 (pángbiān)"
+  },
+  {
+    "question": "Hoạt động di chuyển bằng cách nhanh chóng đưa chân lên xuống là gì? (chạy bộ)",
+    "options": ["跑步 (pǎobù)", "走路 (zǒulù)", "跳 (tiào)", "游泳 (yóuyǒng)"],
+    "answer": "跑步 (pǎobù)"
+  },
+  {
+    "question": "Khi một món đồ có giá thành thấp, bạn sẽ dùng tính từ nào? (rẻ)",
+    "options": ["便宜 (piányi)", "贵 (guì)", "大 (dà)", "小 (xiǎo)"],
+    "answer": "便宜 (piányi)"
+  },
+  {
+    "question": "Tờ giấy nhỏ dùng để vào rạp chiếu phim, lên tàu, xe buýt là gì? (vé)",
+    "options": ["票 (piào)", "钱 (qián)", "卡 (kǎ)", "证 (zhèng)"],
+    "answer": "票 (piào)"
+  },
+  {
+    "question": "Người phụ nữ đã kết hôn được gọi là gì? (vợ)",
+    "options": ["妻子 (qīzi)", "丈夫 (zhàngfu)", "朋友 (péngyou)", "同事 (tóngshì)"],
+    "answer": "妻子 (qīzi)"
+  },
+  {
+    "question": "Hành động rời khỏi giường sau khi ngủ dậy là gì? (dậy)",
+    "options": ["起床 (qǐchuáng)", "睡觉 (shuìjiào)", "吃饭 (chīfàn)", "洗澡 (xǐzǎo)"],
+    "answer": "起床 (qǐchuáng)"
+  },
+  {
+    "question": "Số lượng lớn, bằng mười lần một trăm là gì? (ngàn)",
+    "options": ["千 (qiān)", "百 (bǎi)", "万 (wàn)", "亿 (yì)"],
+    "answer": "千 (qiān)"
+  },
+  {
+    "question": "Khi trời không có mây, nắng đẹp, bạn sẽ dùng tính từ nào? (trời trong)",
+    "options": ["晴 (qíng)", "阴 (yīn)", "雨 (yǔ)", "多云 (duōyún)"],
+    "answer": "晴 (qíng)"
+  },
+  {
+    "question": "Năm ngay trước năm hiện tại được gọi là gì? (năm trước/năm ngoái)",
+    "options": ["去年 (qùnián)", "今年 (jīnnián)", "明年 (míngnián)", "每天 (měitiān)"],
+    "answer": "去年 (qùnián)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả việc 'khiến' ai đó làm gì, hoặc 'nhường' đường? (khiến/nhường)",
+    "options": ["让 (ràng)", "给 (gěi)", "叫 (jiào)", "请 (qǐng)"],
+    "answer": "让 (ràng)"
+  },
+  {
+    "question": "Hành động bắt đầu công việc vào buổi sáng là gì? (đi làm)",
+    "options": ["上班 (shàngbān)", "下班 (xiàbān)", "放学 (fàngxué)", "回家 (huíjiā)"],
+    "answer": "上班 (shàngbān)"
+  },
+  {
+    "question": "Phần cơ thể con người hoặc động vật là gì? (cơ thể)",
+    "options": ["身体 (shēntǐ)", "头 (tóu)", "手 (shǒu)", "脚 (jiǎo)"],
+    "answer": "身体 (shēntǐ)"
+  },
+  {
+    "question": "Khi bạn cảm thấy không khỏe, có bệnh, bạn sẽ dùng từ nào? (sinh bệnh/ốm)",
+    "options": ["生病 (shēngbìng)", "健康 (jiànkāng)", "高兴 (gāoxìng)", "难过 (nánguò)"],
+    "answer": "生病 (shēngbìng)"
+  },
+  {
+    "question": "Ngày kỷ niệm bạn được sinh ra là gì? (sinh nhật)",
+    "options": ["生日 (shēngrì)", "节日 (jiérì)", "周末 (zhōumò)", "假期 (jiàqī)"],
+    "answer": "生日 (shēngrì)"
+  },
+  {
+    "question": "Khoảng thời gian trong ngày hoặc một sự kiện là gì? (thời gian)",
+    "options": ["时间 (shíjiān)", "日子 (rìzi)", "小时 (xiǎoshí)", "分钟 (fēnzhōng)"],
+    "answer": "时间 (shíjiān)"
+  },
+  {
+    "question": "Một sự kiện hoặc công việc nào đó được gọi là gì? (sự tình/sự việc)",
+    "options": ["事情 (shìqíng)", "问题 (wèntí)", "办法 (bànfǎ)", "主意 (zhǔyì)"],
+    "answer": "事情 (shìqíng)"
+  },
+  {
+    "question": "Thiết bị đeo ở cổ tay để xem giờ là gì? (đồng hồ đeo tay)",
+    "options": ["手表 (shǒubiǎo)", "手机 (shǒujī)", "电脑 (diànnǎo)", "电视 (diànshì)"],
+    "answer": "手表 (shǒubiǎo)"
+  },
+  {
+    "question": "Thiết bị cầm tay dùng để nghe gọi, nhắn tin, truy cập internet là gì? (điện thoại di động)",
+    "options": ["手机 (shǒujī)", "电话 (diànhuà)", "电脑 (diànnǎo)", "电视 (diànshì)"],
+    "answer": "手机 (shǒujī)"
+  },
+  {
+    "question": "Khi bạn 'tặng' quà cho ai đó, bạn sẽ dùng động từ nào? (tặng)",
+    "options": ["送 (sòng)", "买 (mǎi)", "卖 (mài)", "收 (shōu)"],
+    "answer": "送 (sòng)"
+  },
+  {
+    "question": "Từ nào dùng để kết nối nguyên nhân và kết quả, có nghĩa là 'vì thế' hoặc 'vì vậy'? (vì thế/vì vậy)",
+    "options": ["所以 (suǒyǐ)", "因为 (yīnwèi)", "但是 (dànshì)", "而且 (érqiě)"],
+    "answer": "所以 (suǒyǐ)"
+  },
+  {
+    "question": "Đại từ dùng để chỉ một vật hoặc động vật 'nó' là gì? (nó)",
+    "options": ["它 (tā)", "他 (tā)", "她 (tā)", "他们 (tāmen)"],
+    "answer": "它 (tā)"
+  },
+  {
+    "question": "Hoạt động thể thao dùng chân đá vào bóng là gì? (đá bóng)",
+    "options": ["踢足球 (tī zúqiú)", "打篮球 (dǎ lánqiú)", "游泳 (yóuyǒng)", "跑步 (pǎobù)"],
+    "answer": "踢足球 (tī zúqiú)"
+  },
+  {
+    "question": "Một bài tập hoặc đề tài cần giải quyết là gì? (đề/bài)",
+    "options": ["题 (tí)", "字 (zì)", "词 (cí)", "句 (jù)"],
+    "answer": "题 (tí)"
+  },
+  {
+    "question": "Hoạt động di chuyển theo nhạc, thường dùng chân và cơ thể là gì? (khiêu vũ/nhảy)",
+    "options": ["跳舞 (tiàowǔ)", "唱歌 (chànggē)", "跑步 (pǎobù)", "游泳 (yóuyǒng)"],
+    "answer": "跳舞 (tiàowǔ)"
+  },
+  {
+    "question": "Vị trí nằm ở phía 'ngoài' của một vật thể hoặc khu vực là gì? (ngoài)",
+    "options": ["外 (wài)", "里 (lǐ)", "上 (shàng)", "下 (xià)"],
+    "answer": "外 (wài)"
+  },
+  {
+    "question": "Hành động giải trí, tiêu khiển là gì? (chơi)",
+    "options": ["玩 (wán)", "做 (zuò)", "吃 (chī)", "喝 (hē)"],
+    "answer": "玩 (wán)"
+  },
+  {
+    "question": "Khi một công việc được 'hoàn thành', bạn sẽ dùng động từ nào? (xong)",
+    "options": ["完 (wán)", "开始 (kāishǐ)", "做 (zuò)", "说 (shuō)"],
+    "answer": "完 (wán)"
+  },
+  {
+    "question": "Khoảng thời gian từ chiều tối đến khi đi ngủ là gì? (buổi tối)",
+    "options": ["晚上 (wǎnshàng)", "早上 (zǎoshang)", "中午 (zhōngwǔ)", "下午 (xiàwǔ)"],
+    "answer": "晚上 (wǎnshàng)"
+  },
+  {
+    "question": "Từ dùng để hỏi về nguyên nhân, lý do 'vì sao' là gì? (vì sao)",
+    "options": ["为什么 (wèishéme)", "什么 (shénme)", "谁 (shéi)", "哪里 (nǎlǐ)"],
+    "answer": "为什么 (wèishéme)"
+  },
+  {
+    "question": "Khi bạn muốn 'hỏi' ai đó điều gì, bạn sẽ dùng động từ nào? (hỏi)",
+    "options": ["问 (wèn)", "答 (dá)", "说 (shuō)", "听 (tīng)"],
+    "answer": "问 (wèn)"
+  },
+  {
+    "question": "Một điều cần được giải quyết hoặc một câu hỏi cần trả lời là gì? (vấn đề/câu hỏi)",
+    "options": ["问题 (wèntí)", "事情 (shìqíng)", "答案 (dá'àn)", "方法 (fāngfǎ)"],
+    "answer": "问题 (wèntí)"
+  },
+  {
+    "question": "Loại trái cây lớn, vỏ xanh, ruột đỏ, nhiều nước, thường ăn vào mùa hè là gì? (dưa hấu)",
+    "options": ["西瓜 (xīguā)", "苹果 (píngguǒ)", "香蕉 (xiāngjiāo)", "橘子 (júzi)"],
+    "answer": "西瓜 (xīguā)"
+  },
+  {
+    "question": "Khi bạn 'hy vọng' điều gì đó sẽ xảy ra, bạn sẽ dùng động từ nào? (hy vọng)",
+    "options": ["希望 (xīwàng)", "想 (xiǎng)", "知道 (zhīdào)", "相信 (xiāngxìn)"],
+    "answer": "希望 (xīwàng)"
+  },
+  {
+    "question": "Hành động dùng nước và chất tẩy rửa để làm sạch là gì? (rửa)",
+    "options": ["洗 (xǐ)", "穿 (chuān)", "吃 (chī)", "喝 (hē)"],
+    "answer": "洗 (xǐ)"
+  },
+  {
+    "question": "Từ nào dùng để chỉ hướng 'hướng đến' hoặc 'về phía'? (hướng đến)",
+    "options": ["向 (xiàng)", "在 (zài)", "从 (cóng)", "到 (dào)"],
+    "answer": "向 (xiàng)"
+  },
+  {
+    "question": "Đơn vị đo thời gian, bằng 60 phút là gì? (giờ/tiếng đồng hồ)",
+    "options": ["小时 (xiǎoshí)", "分钟 (fēnzhōng)", "秒 (miǎo)", "天 (tiān)"],
+    "answer": "小时 (xiǎoshí)"
+  },
+  {
+    "question": "Khi bạn biểu lộ niềm vui bằng cách mở miệng và phát ra âm thanh, đó là gì? (cười)",
+    "options": ["笑 (xiào)", "哭 (kū)", "说 (shuō)", "听 (tīng)"],
+    "answer": "笑 (xiào)"
+  },
+  {
+    "question": "Từ nào dùng để diễn tả một vật hoặc một khái niệm 'mới'? (mới)",
+    "options": ["新 (xīn)", "旧 (jiù)", "大 (dà)", "小 (xiǎo)"],
+    "answer": "新 (xīn)"
+  },
+  {
+    "question": "Thuộc về dòng họ, dòng dõi của bạn là gì? (họ)",
+    "options": ["姓 (xìng)", "名 (míng)", "字 (zì)", "称呼 (chēnghu)"],
+    "answer": "姓 (xìng)"
+  },
+  {
+    "question": "Hành động ngừng làm việc hoặc hoạt động để thư giãn là gì? (nghỉ ngơi)",
+    "options": ["休息 (xiūxi)", "工作 (gōngzuò)", "学习 (xuéxí)", "吃饭 (chīfàn)"],
+    "answer": "休息 (xiūxi)"
+  },
+  {
+    "question": "Hiện tượng thời tiết khi nước đóng băng từ trên trời rơi xuống là gì? (tuyết)",
+    "options": ["雪 (xuě)", "雨 (yǔ)", "风 (fēng)", "云 (yún)"],
+    "answer": "雪 (xuě)"
+  },
+  {
+    "question": "Đặc điểm của một vật thể được xác định bằng cách mắt cảm nhận sự phản xạ ánh sáng là gì? (màu sắc)",
+    "options": ["颜色 (yánsè)", "形状 (xíngzhuàng)", "大小 (dàxiǎo)", "味道 (wèidào)"],
+    "answer": "颜色 (yánsè)"
+  },
+  {
+    "question": "Bộ phận trên khuôn mặt dùng để nhìn là gì? (đôi mắt)",
+    "options": ["眼睛 (yǎnjīng)", "鼻子 (bízi)", "嘴巴 (zuǐba)", "耳朵 (ěrduo)"],
+    "answer": "眼睛 (yǎnjīng)"
+  },
+  {
+    "question": "Loại thịt từ một loài động vật có sừng, thường được chăn nuôi để lấy lông và thịt là gì? (thịt dê)",
+    "options": ["羊肉 (yángròu)", "牛肉 (niúròu)", "猪肉 (zhūròu)", "鸡肉 (jīròu)"],
+    "answer": "羊肉 (yángròu)"
+  },
+  {
+    "question": "Khi bạn muốn làm một việc gì đó, bạn sẽ dùng động từ nào? (muốn/cần)",
+    "options": ["要 (yào)", "可以 (kěyǐ)", "会 (huì)", "能 (néng)"],
+    "answer": "要 (yào)"
+  },
+  {
+    "question": "Chất được dùng để chữa bệnh là gì? (thuốc)",
+    "options": ["药 (yào)", "水 (shuǐ)", "食物 (shíwù)", "衣服 (yīfu)"],
+    "answer": "药 (yào)"
+  },
+  {
+    "question": "Trợ từ ngữ khí dùng để diễn tả sự tương đồng, có nghĩa là 'cũng' là gì? (cũng)",
+    "options": ["也 (yě)", "都 (dōu)", "很 (hěn)", "不 (bù)"],
+    "answer": "也 (yě)"
+  },
+  {
+    "question": "Phó từ chỉ thời gian dùng để diễn tả một hành động đã xảy ra 'đã' hoặc 'rồi' là gì? (đã/rồi)",
+    "options": ["已经 (yǐjīng)", "还没 (hái méi)", "正在 (zhèngzài)", "将来 (jiānglái)"],
+    "answer": "已经 (yǐjīng)"
+  },
+  {
+    "question": "Trạng từ chỉ sự đồng hành, có nghĩa là 'cùng với' hoặc 'cùng nhau' là gì? (cùng với/cùng nhau)",
+    "options": ["一起 (yìqǐ)", "分开 (fēnkāi)", "独自 (dúzì)", "各 (gè)"],
+    "answer": "一起 (yìqǐ)"
+  },
+  {
+    "question": "Ý nghĩa hoặc điều muốn biểu đạt của một từ, câu nói, hành động là gì? (ý nghĩa)",
+    "options": ["意思 (yìsi)", "问题 (wèntí)", "答案 (dá'àn)", "办法 (bànfǎ)"],
+    "answer": "意思 (yìsi)"
+  },
+  {
+    "question": "Tính từ chỉ phần đối lập với 'dương', thường liên quan đến bóng tối, lạnh lẽo là gì? (âm)",
+    "options": ["阴 (yīn)", "阳 (yáng)", "明 (míng)", "暗 (àn)"],
+    "answer": "阴 (yīn)"
+  },
+  {
+    "question": "Liên từ dùng để chỉ nguyên nhân, lý do 'bởi vì' là gì? (bởi vì)",
+    "options": ["因为 (yīnwèi)", "所以 (suǒyǐ)", "但是 (dànshì)", "如果 (rúguǒ)"],
+    "answer": "因为 (yīnwèi)"
+  },
+  {
+    "question": "Hoạt động di chuyển trong nước bằng cách dùng tay và chân là gì? (bơi lội)",
+    "options": ["游泳 (yóuyǒng)", "跑步 (pǎobù)", "跳舞 (tiàowǔ)", "打篮球 (dǎ lánqiú)"],
+    "answer": "游泳 (yóuyǒng)"
+  },
+  {
+    "question": "Vị trí nằm ở phía 'bên phải' của một vật thể là gì? (bên phải)",
+    "options": ["右边 (yòubiān)", "左边 (zuǒbiān)", "前面 (qiánmiàn)", "后面 (hòumiàn)"],
+    "answer": "右边 (yòubiān)"
+  },
+  {
+    "question": "Động vật sống dưới nước, có vây và mang là gì? (cá)",
+    "options": ["鱼 (yú)", "肉 (ròu)", "蛋 (dàn)", "菜 (cài)"],
+    "answer": "鱼 (yú)"
+  },
+  {
+    "question": "Đơn vị tiền tệ cơ bản của Trung Quốc, tương đương tệ là gì? (đồng)",
+    "options": ["元 (yuán)", "角 (jiǎo)", "分 (fēn)", "块 (kuài)"],
+    "answer": "元 (yuán)"
+  },
+  {
+    "question": "Tính từ nào dùng để diễn tả khoảng cách 'xa'? (xa)",
+    "options": ["远 (yuǎn)", "近 (jìn)", "大 (dà)", "小 (xiǎo)"],
+    "answer": "远 (yuǎn)"
+  },
+  {
+    "question": "Hành động di chuyển hoặc rèn luyện cơ thể để khỏe mạnh là gì? (vận động)",
+    "options": ["运动 (yùndòng)", "休息 (xiūxi)", "吃饭 (chīfàn)", "睡觉 (shuìjiào)"],
+    "answer": "运动 (yùndòng)"
+  },
+  {
+    "question": "Phó từ dùng để diễn tả sự lặp lại, có nghĩa là 'lại lần nữa' là gì? (lại lần nữa)",
+    "options": ["再 (zài)", "也 (yě)", "都 (dōu)", "很 (hěn)"],
+    "answer": "再 (zài)"
+  },
+  {
+    "question": "Khoảng thời gian từ lúc mặt trời mọc đến trưa là gì? (buổi sáng)",
+    "options": ["早上 (zǎoshang)", "晚上 (wǎnshàng)", "中午 (zhōngwǔ)", "下午 (xiàwǔ)"],
+    "answer": "早上 (zǎoshang)"
+  },
+  {
+    "question": "Lượng từ dùng để chỉ 'trang' (giấy) hoặc là một họ phổ biến là gì? (trang/họ)",
+    "options": ["张 (zhāng)", "本 (běn)", "个 (gè)", "件 (jiàn)"],
+    "answer": "张 (zhāng)"
+  },
+  {
+    "question": "Người đàn ông đã kết hôn được gọi là gì? (chồng)",
+    "options": ["丈夫 (zhàngfu)", "妻子 (qīzi)", "朋友 (péngyou)", "同事 (tóngshì)"],
+    "answer": "丈夫 (zhàngfu)"
+  },
+  {
+    "question": "Khi bạn cố gắng 'tìm kiếm' một thứ gì đó, bạn sẽ dùng động từ nào? (tìm/tìm kiếm)",
+    "options": ["找 (zhǎo)", "看 (kàn)", "听 (tīng)", "说 (shuō)"],
+    "answer": "找 (zhǎo)"
+  },
+  {
+    "question": "Tính từ nào dùng để diễn tả một điều gì đó 'thật' hoặc 'chính xác'? (thật/chính xác)",
+    "options": ["真 (zhēn)", "假 (jiǎ)", "大 (dà)", "小 (xiǎo)"],
+    "answer": "真 (zhēn)"
+  },
+  {
+    "question": "Trạng từ chỉ thời gian dùng để diễn tả một hành động 'đang' diễn ra là gì? (đang/vẫn đang)",
+    "options": ["正在 (zhèngzài)", "已经 (yǐjīng)", "还没 (hái méi)", "将来 (jiānglái)"],
+    "answer": "正在 (zhèngzài)"
+  },
+  {
+    "question": "Khi bạn có thông tin hoặc kiến thức về một điều gì đó, bạn sẽ dùng động từ nào? (biết)",
+    "options": ["知道 (zhīdào)", "学习 (xuéxí)", "看 (kàn)", "听 (tīng)"],
+    "answer": "知道 (zhīdào)"
+  },
+  {
+    "question": "Khi bạn 'chuẩn bị' cho một việc gì đó, bạn sẽ dùng động từ nào? (chuẩn bị)",
+    "options": ["准备 (zhǔnbèi)", "开始 (kāishǐ)", "完成 (wánchéng)", "结束 (jiéshù)"],
+    "answer": "准备 (zhǔnbèi)"
+  },
+  {
+    "question": "Phương tiện di chuyển có hai bánh, dùng sức người đạp là gì? (xe đạp)",
+    "options": ["自行车 (zìxíngchē)", "汽车 (qìchē)", "摩托车 (mótuōchē)", "火车 (huǒchē)"],
+    "answer": "自行车 (zìxíngchē)"
+  },
+  {
+    "question": "Hành động di chuyển bằng chân là gì? (đi)",
+    "options": ["走 (zǒu)", "跑 (pǎo)", "跳 (tiào)", "飞 (fēi)"],
+    "answer": "走 (zǒu)"
+  },
+  {
+    "question": "Phó từ chỉ mức độ cao nhất, có nghĩa là 'nhất' là gì? (nhất)",
+    "options": ["最 (zuì)", "很 (hěn)", "非常 (fēicháng)", "有点儿 (yǒudiǎnr)"],
+    "answer": "最 (zuì)"
+  },
+  {
+    "question": "Vị trí nằm ở phía 'bên trái' của một vật thể là gì? (bên trái)",
+    "options": ["左边 (zuǒbiān)", "右边 (yòubiān)", "前面 (qiánmiàn)", "后面 (hòumiàn)"],
+    "answer": "左边 (zuǒbiān)"
+  }
+]
