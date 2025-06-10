@@ -2,21 +2,32 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Add viewport meta tag -->
   <title>Trắc nghiệm</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans bg-gradient-to-br from-white/80 via-blue-200/80 to-blue-300/80 bg-cover bg-fixed max-w-4xl mx-auto p-4">
+<body class="font-sans bg-gradient-to-br from-white/80 via-blue-200/80 to-blue-300/80 bg-cover bg-fixed max-w-4xl mx-auto p-4 relative">
 
-  <h1 class="text-center text-2xl font-bold text-gray-800 mb-6">Trắc Nghiệm</h1>
+  <!-- Blur Dimmer -->
+  <div data-state="0" id="dimmer" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 50; height: 100vh; width: 100vw; opacity: 0.0001; backdrop-filter: blur(15px); transition: 0.56s;"></div>
 
-  <div class="flex justify-center gap-4 mb-4">
+  <!-- Menu Button -->
+  <div class="fixed top-4 right-4 z-50">
+    <button onclick="BlurAnim()" class="w-[80px] hover:w-[90px] transition-all duration-300 px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-400">
+      Menu
+    </button>
+  </div>
+
+  <h1 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-6">Trắc Nghiệm</h1>
+
+  <div class="flex flex-col md:flex-row justify-center gap-4 mb-4">
     <label class="flex items-center gap-2">
       <input type="radio" name="dataSource" value="file" checked class="cursor-pointer" />
       <span class="text-gray-700">Chọn file JSON</span>
     </label>
   </div>
 
-  <div class="">
+  <div class="w-full">
     <input type="file" id="fileInput" accept=".json" class="block w-full max-w-xs mx-auto px-4 py-2 bg-white/20 text-[#121212] rounded-lg border border-blue-600 shadow-md cursor-pointer hover:bg-blue-200 transition file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-white file:bg-blue-400 file:cursor-pointer file:hover:bg-blue-500" />
   </div>
 
@@ -27,7 +38,9 @@
 
   <div id="quizContainer" class="mt-4"></div>
   <div id="result" class="text-center text-lg font-bold mt-4"></div>
-  <button id="nextBtn" class="hidden mt-4 px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-500 transition">Câu tiếp theo</button>
+  <button id="nextBtn" class="hidden mt-4 px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-500 transition">
+    Câu tiếp theo
+  </button>
 
   <script>
   let questions = [];
@@ -189,6 +202,18 @@
 
   // Load state on page load
   window.onload = loadState;
+
+  function BlurAnim() {
+    const dimmer = document.querySelector('#dimmer');
+    const state = dimmer.getAttribute('data-state');
+    if (state === '0') {
+      dimmer.style.opacity = '1';
+      dimmer.setAttribute('data-state', '1');
+    } else {
+      dimmer.style.opacity = '0.0001';
+      dimmer.setAttribute('data-state', '0');
+    }
+  }
   </script>
 
 </body>
