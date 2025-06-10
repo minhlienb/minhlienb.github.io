@@ -82,7 +82,7 @@
     q.options.forEach(opt => {
       const btn = document.createElement('button');
       btn.innerText = opt;
-      btn.className = 'block w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition';
+      btn.className = 'block w-full px-4 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-400 transition';
       btn.onclick = () => {
         const isCorrect = (opt === q.answer);
         if (isCorrect) {
