@@ -11,15 +11,11 @@
 
   <div class="flex justify-center gap-4 mb-4">
     <label class="flex items-center gap-2">
-      <input type="radio" name="dataSource" value="fetch" checked class="cursor-pointer" />
-      <span class="text-gray-700">Lấy dữ liệu từ URL</span>
-    </label>
-    <label class="flex items-center gap-2">
-      <input type="radio" name="dataSource" value="file" class="cursor-pointer" />
+      <input type="radio" name="dataSource" value="file" checked class="cursor-pointer" />
       <span class="text-gray-700">Chọn file JSON</span>
     </label>
   </div>
-  <input type="file" id="fileInput" accept=".json" class="hidden" />
+  <input type="file" id="fileInput" accept=".json" />
 
   <div id="quizContainer" class="bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-lg border border-white/30"></div>
   <div id="result" class="text-center text-lg font-bold mt-4"></div>
@@ -32,33 +28,6 @@
   let userAnswers = [];
 
   const fileInput = document.getElementById('fileInput');
-  const dataSourceRadios = document.getElementsByName('dataSource');
-
-  // Handle data source selection
-  dataSourceRadios.forEach(radio => {
-    radio.addEventListener('change', () => {
-      if (radio.value === 'file') {
-        fileInput.classList.remove('hidden');
-        fetchQuestionsFromURL(); // Reset quiz if switching from fetch
-      } else {
-        fileInput.classList.add('hidden');
-        fetchQuestionsFromURL();
-      }
-    });
-  });
-
-  // Fetch JSON data from the provided URL
-  function fetchQuestionsFromURL() {
-    fetch('https://minhlienb.vercel.app/quiz/hsk2_vocab.json')
-      .then(response => response.json())
-      .then(data => {
-        initializeQuiz(data);
-      })
-      .catch(err => {
-        alert('Không thể tải dữ liệu từ URL');
-        console.error(err);
-      });
-  }
 
   // Load JSON data from file input
   fileInput.addEventListener('change', function (e) {
@@ -174,9 +143,6 @@
     current++;
     showQuestion();
   };
-
-  // Fetch questions by default on page load
-  fetchQuestionsFromURL();
   </script>
 
 </body>
