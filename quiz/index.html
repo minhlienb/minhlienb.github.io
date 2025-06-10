@@ -20,6 +20,11 @@
     <input type="file" id="fileInput" accept=".json" class="block w-full max-w-xs mx-auto px-4 py-2 bg-white/20 text-[#121212] rounded-lg border border-blue-600 shadow-md cursor-pointer hover:bg-blue-200 transition file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-white file:bg-blue-400 file:cursor-pointer file:hover:bg-blue-500" />
   </div>
 
+  <!-- Add question progress display -->
+  <div id="progress" class="text-center text-lg font-semibold text-gray-700 mt-4 mb-4">
+    Câu hỏi: 0/0
+  </div>
+
   <div id="quizContainer" class="mt-4"></div>
   <div id="result" class="text-center text-lg font-bold mt-4"></div>
   <button id="nextBtn" class="hidden mt-4 px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-500 transition">Câu tiếp theo</button>
@@ -47,6 +52,30 @@
     reader.readAsText(file);
   });
 
+  // Save quiz state to localStorage
+  function saveState() {
+    const state = {
+      questions,
+      current,
+      score,
+      userAnswers,
+    };
+    localStorage.setItem('quizState', JSON.stringify(state));
+  }
+
+  // Load quiz state from localStorage
+  function loadState() {
+    const savedState = localStorage.getItem('quizState');
+    if (savedState) {
+      const state = JSON.parse(savedState);
+      questions = state.questions;
+      current = state.current;
+      score = state.score;
+      userAnswers = state.userAnswers;
+      showQuestion();
+    }
+  }
+
   // Initialize quiz with data
   function initializeQuiz(data) {
     questions = data.sort(() => Math.random() - 0.5); // Randomize question order
@@ -55,7 +84,13 @@
     userAnswers = [];
     document.getElementById('result').innerText = '';
     document.getElementById('nextBtn').classList.add('hidden');
+    saveState();
     showQuestion();
+  }
+
+  function updateProgress() {
+    const progress = document.getElementById('progress');
+    progress.innerText = `Câu hỏi: ${current + 1}/${questions.length}`;
   }
 
   function showQuestion() {
@@ -67,6 +102,8 @@
       showSummary();
       return;
     }
+
+    updateProgress(); // Update progress display
 
     const q = questions[current];
     const card = document.createElement('div');
@@ -102,6 +139,7 @@
         });
         Array.from(optionsDiv.children).forEach(b => b.classList.add('pointer-events-none', 'opacity-80'));
         document.getElementById('nextBtn').classList.remove('hidden');
+        saveState();
       };
       optionsDiv.appendChild(btn);
     });
@@ -140,12 +178,17 @@
 
       container.appendChild(card);
     });
+
+    localStorage.removeItem('quizState'); // Clear state after completion
   }
 
   document.getElementById('nextBtn').onclick = () => {
     current++;
     showQuestion();
   };
+
+  // Load state on page load
+  window.onload = loadState;
   </script>
 
 </body>
