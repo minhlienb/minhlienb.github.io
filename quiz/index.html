@@ -129,6 +129,10 @@
     const optionsDiv = document.createElement('div');
     optionsDiv.className = 'space-y-2';
 
+    // Giải thích sẽ được thêm vào đây sau khi chọn đáp án
+    const explainDiv = document.createElement('div');
+    explainDiv.className = 'mt-4 text-sm text-blue-900 font-medium';
+
     q.options.forEach(opt => {
       const btn = document.createElement('button');
       btn.innerText = opt;
@@ -148,17 +152,22 @@
           question: q.question,
           selected: opt,
           correct: q.answer,
-          isCorrect: isCorrect
+          isCorrect: isCorrect,
+          explain: typeof q.explain === "undefined" ? "" : q.explain // hỗ trợ những câu hỏi không có trường explain
         });
         Array.from(optionsDiv.children).forEach(b => b.classList.add('pointer-events-none', 'opacity-80'));
         document.getElementById('nextBtn').classList.remove('hidden');
         saveState();
+
+        // Hiển thị giải thích nếu có
+        explainDiv.innerHTML = q.explain ? `<span class="block mt-2 italic">💡 Giải thích: ${q.explain}</span>` : '';
       };
       optionsDiv.appendChild(btn);
     });
 
     card.appendChild(question);
     card.appendChild(optionsDiv);
+    card.appendChild(explainDiv);
     container.appendChild(card);
   }
 
@@ -188,6 +197,14 @@
       `;
       aText.className = 'mt-2';
       card.appendChild(aText);
+
+      // Hiển thị giải thích nếu có
+      if (ua.explain) {
+        const explainDiv = document.createElement('div');
+        explainDiv.className = 'mt-2 italic text-blue-900';
+        explainDiv.innerHTML = `💡 Giải thích: ${ua.explain}`;
+        card.appendChild(explainDiv);
+      }
 
       container.appendChild(card);
     });
